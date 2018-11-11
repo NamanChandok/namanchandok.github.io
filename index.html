@@ -1,0 +1,471 @@
+<html>
+<head>
+<title>Naman Chandok | Amateur Web Designer</title>  
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,400italic,500,100italic,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+$(document).ready(function() {
+	
+	setTimeout(function(){
+		$('body').addClass('loaded');
+	}, 3000);
+	
+});	  
+</script>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*/-- Loader --/*/
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #270072;
+
+    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+
+    z-index: 1001;
+}
+
+    #loader:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #5c14ff;
+
+        -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+        animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #00a7ff;
+
+        -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+          animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    @-webkit-keyframes spin {
+        0%   { 
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+    @keyframes spin {
+        0%   { 
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+
+    #loader-wrapper .loader-section {
+        position: fixed;
+        top: 0;
+        width: 51%;
+        height: 100%;
+        background: #222222;
+        z-index: 1000;
+        -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateX(0);  /* IE 9 */
+        transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader-wrapper .loader-section.section-left {
+        left: 0;
+    }
+
+    #loader-wrapper .loader-section.section-right {
+        right: 0;
+    }
+
+.loaded #loader-wrapper .loader-section.section-left {
+        -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(-100%);  /* IE 9 */
+                transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    .loaded #loader-wrapper .loader-section.section-right {
+        -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(100%);  /* IE 9 */
+                transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+
+-webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+    
+    .loaded #loader {
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;  
+                transition: all 0.3s ease-out;
+    }
+    .loaded #loader-wrapper {
+        visibility: hidden;
+
+        -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateY(-100%);  /* IE 9 */
+                transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.3s 1s ease-out;  
+                transition: all 0.3s 1s ease-out;
+    }
+
+/*/-- Home --/*/
+
+    #home { 
+        background-image: url(images/homebg.jpg);
+        height: 100%;
+        background-size: cover;
+        background-attachment: fixed;
+        padding-top: 20%;
+        z-index: -1000;
+    }    
+    
+    #home .heading {
+        visibility: visible;
+        z-index: 1000;
+        padding-bottom: 160px;
+    }
+    
+    #home .heading h1, h3 {
+        color: white;
+        font-size: 37.0224;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    #home h3 {
+        font-size: 28.8;
+    }
+    
+    .overlay {
+        background: rgba(0, 0, 0, 0.65);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+    
+    .scroll-down a i {
+        width: 35px;
+        height: 35px;
+        border: 2px solid #fff;
+        line-height: 30px;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -webkit-transition: all 500ms ease-in-out 0s;
+        -moz-transition: all 500ms ease-in-out 0s;
+        -ms-transition: all 500ms ease-in-out 0s;
+        transition: all 500ms ease-in-out 0s;
+        text-align: center;
+        color: #fff;
+        margin: 0 auto;
+    }
+    
+    #about .row .col-md-4 h2 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+    }
+    
+    .row {
+        margin: 0;
+    }
+    
+    #about {
+        padding-left: 200;
+        padding-top: 50;
+        padding-bottom: 50;
+    }
+    
+    #about .row .col-md-4 {
+        border-right: 2px solid #afafaf;
+        padding-bottom: 60;
+    }
+    
+    #about .row .col-md-6 p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+    }
+    
+    #works .row .col-md-4 h2 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+    }
+    
+    .row {
+        margin: 0;
+    }
+    
+    #works {
+        padding-top: 50;
+        padding-bottom: 50;
+    }
+    
+    #works .row .col-md-4 {
+        border-right: 2px solid #afafaf;
+        padding-left: 200;
+        width: 570;
+        margin-bottom: 20px;
+    }
+    
+    #works .row .col-md-6 p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        padding-top: 20
+    }
+    
+    hr {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    
+    .image {
+        width: 50%;
+    }
+    
+    .image img {
+        width: 100%;
+    }
+    
+    .written {
+        width: 30%;
+    }
+    
+    .written h3 {
+        color: black;
+        font-size: 30;
+    }
+    
+    .abc .col-md-6 {
+        padding-left: 0;
+    }
+    
+    #works .abc .col-md-4 {
+        border-right: none;
+        margin-top: 50;
+        padding-left: 60;
+    }
+    
+    #contact {
+        background-color: #333333;
+    }
+    
+    #contact .row .col-md-4 h2 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        color: white;
+    }
+    
+    .row {
+        margin: 0;
+    }
+    
+    #contact {
+        padding-left: 200;
+        padding-top: 50;
+        padding-bottom: 50;
+    }
+    
+    #contact .row .col-md-4 {
+        border-right: 2px solid #e0e0e0;
+        padding-bottom: 60;
+    }
+    
+    #contact .row .col-md-6 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        color: white;
+        padding: 15
+    }
+    
+    #end {
+        background-color: rgb(248, 248, 248);
+        color: rgb(153, 153, 153);
+        font-size: 11px;
+        font-family: 'Open Sans', sans-serif;
+        padding: 30px;
+    }
+    
+    .font-alt {
+        color: rgb(17, 17, 17);
+        font-family: 'Dosis', sans-serif;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    
+    #end img {
+        width: 10%;
+    }
+</style>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});    
+</script>
+</head>
+<body>
+<div id="loader-wrapper">
+<div id="loader"></div>
+
+<div class="loader-section section-left"></div>
+<div class="loader-section section-right"></div>
+
+</div>   
+    
+<div id="home">
+<div class="heading">
+<center>
+<h1>Naman Chandok</h1>
+<h3>Amateur Web Designer</h3>
+</center>
+</div>
+<div class="scroll-down">
+<center>
+<a href="#about"><i class="fa fa-long-arrow-alt-down"></i></a>
+</center>
+</div>
+</div>
+    
+<div id="about">
+<div class="row">
+<div class="col-md-4">
+<h2>About Me</h2>    
+</div>    
+<div class="col-md-6">
+<p>Born on 10th December 2004, Naman Chandok is an amateur web designer. <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sapien erat, ultricies eleifend faucibus aliquam, fringilla eget arcu. Suspendisse quis arcu sit amet diam vulputate volutpat. Nulla consectetur porttitor molestie. Quisque in neque tellus. Integer consequat, risus sed ultrices ultrices, nunc tellus ullamcorper tortor, rutrum tempus libero dui vel libero.</p>    
+</div>
+</div>    
+</div>
+    <hr>
+<div id="works">
+<div class="row">
+<div class="col-md-4">
+<h2>Works</h2>    
+</div>    
+<div class="col-md-6">
+<p><b>The websites designed by Naman Chandok.</b></p>    
+</div>
+</div> 
+    
+<div class="row abc">
+<div class="image col-md-6">
+<img src="images/works1.jpg">
+</div>
+<div class="written col-md-4">
+<h3>Team Vulcan</h3>
+<p>Website designed for a team in the competition F1 in Schools India: Season 2.</p>
+</div>
+</div>
+</div>
+<hr>
+    
+<div id="contact">
+<div class="row">
+<div class="col-md-4">
+<h2>Contact Me</h2>    
+</div>    
+<div class="col-md-6">
+<i class="fas fa-phone"></i> +91 8750-627-282<br><br>
+<i class="fas fa-envelope"></i> namanchandok1@gmail.com<br><br>
+<i class="fas fa-map-marked-alt"></i> New Delhi, India<br>
+</div>
+</div> 
+</div>
+    
+<div class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.692033247572!2d77.06544621466256!3d28.638990782415306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04e5f360fd1f%3A0x74de1e2966049666!2sCharak+Sadan%2C+E+Block%2C+Vikaspuri%2C+Budella%2C+Vikaspuri%2C+Delhi%2C+110018!5e0!3m2!1sen!2sin!4v1541838781522" width="1309" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+    
+<div id="end">
+<center>
+<div class="footer-text">
+<div class="footer-copy font-alt">
+<a href="#home"><img src="images/logo.png" width="78" height="36" alt=""></a><br><br><br>
+© Naman Chandok
+</div>
+<br>
+<big><p class="footer-made"> Made By: Naman Chandok</p> </big>
+<big><p class="footer-made"> Website Hosted by <a href="https://www.flaunt7.com"> Github</a> </p></big>   
+</div>
+</center>
+</div>
+</body>
+</html>
