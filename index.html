@@ -1,13 +1,13 @@
 <html>
 <head>
 <title>Naman Chandok | Amateur Web Designer</title>  
-<link rel="icon" type="image/ico" href="favicon.ico">
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,400italic,500,100italic,700' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans" rel="stylesheet">
+<link href="animate.css" rel="stylesheet">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/wow.min.js"></script>
@@ -19,6 +19,19 @@ $(document).ready(function() {
 	}, 3000);
 	
 });	  
+    
+$(window).scroll(function() {
+var y_scroll_pos = window.pageYOffset;
+var scroll_pos_test = 100;
+
+if(y_scroll_pos > scroll_pos_test) {
+   $(".navbar").css("background-color","#2a2a2a");
+}
+    
+if(y_scroll_pos < scroll_pos_test) {
+    $(".navabar").css("background-color","none")
+}
+});
 </script>
 <style>
 * {
@@ -341,8 +354,6 @@ $(document).ready(function() {
     #end {
         background-color: #222;
         color: #eee;
-        background-color: #333333;
-        color: rgb(153, 153, 153);
         font-size: 11px;
         font-family: 'Open Sans', sans-serif;
         padding: 30px;
@@ -365,11 +376,13 @@ $(document).ready(function() {
 }
     .navbar {
     overflow: hidden;
-    background-color: #61892f;
+    background-color: none;
     position: fixed;
     width: 100%;
         border-radius: 0;
         z-index: 500;
+        padding-left: 70px;
+        padding-top: 10px;
 }
     .navbar a {
     float: left;
@@ -422,10 +435,10 @@ $(document).ready(function(){
   <a href="#contact">Contact Me</a>
 </div>    
 <div id="home">
-<div class="heading">
+<div class="heading animated fadeInDown">
 <center>
 <h1>Naman Chandok</h1>
-<h3>Amateur Web Designer</h3>
+<h3>Web Designer</h3>
 </center>
 </div>
 <div class="scroll-down">
