@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Naman Chandok | Amateur Web Designer</title>  
+<title>Naman Chandok | Web Designer</title>  
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,400italic,500,100italic,700' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css" rel="stylesheet">
@@ -19,19 +19,13 @@ $(document).ready(function() {
 	}, 3000);
 	
 });	  
-    
-$(window).scroll(function() {
-var y_scroll_pos = window.pageYOffset;
-var scroll_pos_test = 100;
-
-if(y_scroll_pos > scroll_pos_test) {
-   $(".navbar").css("background-color","#2a2a2a");
-}
-    
-if(y_scroll_pos < scroll_pos_test) {
-    $(".navabar").css("background-color","none")
-}
-});
+jQuery(document).on("scroll", function () {
+    if ($(document).scrollTop() > 120) {
+        $(".navbar").css("background-color","#2a2a2a");
+    } else {
+        $(".navbar").css("background","none");
+    }
+});    
 </script>
 <style>
 * {
@@ -191,8 +185,36 @@ if(y_scroll_pos < scroll_pos_test) {
         visibility: visible;
         z-index: 1000;
         padding-bottom: 160px;
+	    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+	    -webkit-animation-name: fadeInDown;
+            animation-name: fadeInDown;
+	    animation-delay: 4s;
+	    -webkit-animation-delay: 4s;
     }
-    
+    @-webkit-keyframes fadeInDown {
+            0% {
+               opacity: 0;
+               -webkit-transform: translateY(-20px);
+            }
+            100% {
+               opacity: 1;
+               -webkit-transform: translateY(0);
+            }
+         }
+         
+         @keyframes fadeInDown {
+            0% {
+               opacity: 0;
+               transform: translateY(-20px);
+            }
+            100% {
+               opacity: 1;
+               transform: translateY(0);
+            }
+         }
     #home .heading h1, h3 {
         color: #86c232;
         font-size: 37.0224;
@@ -396,6 +418,8 @@ if(y_scroll_pos < scroll_pos_test) {
     .right {
     align: right;
     text-align: right;
+    right: 0;
+    margin-right: 0;
 }
 </style>
 <script>
@@ -426,6 +450,11 @@ $(document).ready(function(){
 </script>
 </head>
 <body>
+	
+<audio autoplay loop hide>
+    <source src="music.mp3">
+</audio>
+	
 <div id="loader-wrapper">
 <div id="loader"></div>
 
@@ -485,12 +514,12 @@ $(document).ready(function(){
 </div>
 </div>
 <div class="row abc right">
-<div class="written col-sm-6">
+<div class="written col-md-6">
 <h3>Richard Mathew Stallman</h3>
 <p>Website designed for a prelim submission at a competition Byite.it at Bal Bharti School, Pitampura.</p>
 <p>See it here: <a href="https://yuvrajsharma07.github.io/prelimsub/" target="_blank">yuvrajsharma07.github.io/prelimsub</a>
 </div>
-<div class="image col-sm-6">
+<div class="image col-md-6">
 <img src="images/works2.png">
 </div>
 </div>
