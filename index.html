@@ -249,15 +249,6 @@ font-family : 'Raleway', sans-serif;
         font-size: 28.8;
     }
     
-    .overlay {
-        background: rgba(0, 0, 0, 0.65);
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 0;
-    }
     
     .scroll-down a i {
         width: 35px;
@@ -342,13 +333,6 @@ font-family : 'Raleway', sans-serif;
         width: 570;
         margin-bottom: 20px;
     }
-	
-	#people .row .col-md-4 {
-        border-right: 2px solid #afafaf;
-        padding-left: 200;
-        width: 570;
-        margin-bottom: 20px;
-    }
     
     #works .row .col-md-6 p {
         font-family: 'Raleway', sans-serif;
@@ -356,11 +340,6 @@ font-family : 'Raleway', sans-serif;
         padding-top: 20
     }
 	
-	#people .row .col-md-6 p {
-        font-family: 'Raleway', sans-serif;
-        font-weight: 300;
-        padding-top: 20
-    }
     
     hr {
         margin-left: 70px;
@@ -378,10 +357,7 @@ font-family : 'Raleway', sans-serif;
     .written {
         width: 30%;
     }
-    #people .abc .written h3 {
-        color: #eee;
-        font-size: 30;
-    }    
+  
     #works .abc .written h3 {
         color: black;
         font-size: 30;
@@ -396,17 +372,8 @@ font-family : 'Raleway', sans-serif;
         margin-top: 50;
         padding-left: 60;
     }
-	
-	#people .abc {
-        border-right: none;
-        margin-top: 50;
-        padding-left: 60;
-    }
-    
-	#people .right .image img {
-	width: 397.5;
-	}
-	
+
+  	
     #contact {
         background-color: #eee;
         color: #222;
@@ -493,6 +460,46 @@ font-family : 'Raleway', sans-serif;
     text-align: right;
     right: 0;
     margin-right: 0;
+}
+	
+	
+	
+	
+	.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(255,255,255,0.7);
+}
+	
+	.container:hover .overlay {
+  opacity: 1;
+}
+
+	
+	
+	.text {
+  color: #000;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 </style>
 <script>
@@ -632,39 +639,28 @@ $(document).ready(function(){
 <p><b>The people Naman Chandok has worked with.</b></p>    
 </div>
 </div> 
-	
-	<div class="row abc">
-<div class="image col-sm-6">
-<img src="images/people1.jpg">
+	<center>
+	<div class="row">
+<div class="col-sm-2">
+<img src="images/people1.jpg" class="img">
+  <div class="overlay">
+    <div class="text">Yuvraj Sharma</div>
+  </div>
 </div>
-<div class="written col-sm-6">
-<h3>Yuvraj Sharma</h3>
-<p>Head of the web-designing section of the pyrotech club of the school</p>
-<p>See his website here: <a href="https://yuvrajsharma07.github.io" target="_blank">yuvrajsharma07.github.io</a></p>
-	</div></div>
-
-
-	<div class="row abc right">
-
-<div class="written col-sm-6">
-<h3>Namya Chhabra</h3>
-<p>A junior whose skills are a bit overrated but are still great.</p>
-<div class="image col-sm-6">
-<img src="images/people2.jpg" width="100%;">
+<div class="col-sm-2">
+<img src="images/people2.jpg" class="img">
+  <div class="overlay">
+    <div class="text">Namya Chhabra</div>
+  </div>
 </div>
-	</div></div>
-
-
-	<div class="row abc">
-<div class="image col-sm-6">
-<img src="images/people3.jpg">
+<div class="col-sm-2">
+<img src="image/people3.jpg" class="img">
+  <div class="overlay">
+    <div class="text">Devansh Pandita</div>
+  </div>
 </div>
-<div class="written col-sm-6">
-<h3>Devansh Pandita</h3>
-<p>A junior who is learning web-designing under Naman</p>
-	</div></div>
-</div>
-
+		</div></center>
+		</div>
 <div id="contact">
 <div class="row">
 <div class="col-md-4">
