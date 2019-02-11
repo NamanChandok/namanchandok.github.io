@@ -514,6 +514,90 @@ font-family : 'Raleway', sans-serif;
   transform: translate(-50%, -50%);
   text-align: center;
 }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	.main_team_area{
+    overflow: hidden;
+}
+.main_team_area .main_team_content{
+    margin-bottom:80px;
+    display: inline-block;
+}
+
+.single_team{
+    overflow: hidden;
+}
+
+.team_socail_area{
+ 
+    overflow: hidden;
+    max-height: 0;
+}
+.team_socail_area a i{
+    color: #cecece;
+    padding: 5px;
+    transition: all 0.6s;
+}
+
+.main_team_area .single_team img{
+    width:100%;
+}
+.main_team_area .single_team .single_team_text{
+    padding: 20px;
+}
+.main_team_area .single_team .single_team_text h6{
+    font-weight: 700;
+    color:#231f20;
+}
+.main_team_area .single_team .single_team_text{
+    font-weight: 300;
+}
+
+.overlays {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(255, 255, 255, 0.80);
+}
+
+.container:hover .overlays {
+  opacity: 1;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-t50%, -50%);
+  text-align: center;
+}
 </style>
 <script>
 $(document).ready(function(){
@@ -642,38 +726,69 @@ $(document).ready(function(){
     </div>
 	</div>
 <hr>
-    <center>
-<div id="people">
-	<div class="row">
-<div class="col-md-4">
-<h2>Affiliations</h2>    
-</div>    
-<div class="col-md-6">
-<p><b>The people Naman Chandok has worked with.</b></p>    
-</div>
-</div> 
-	
-	<div class="row">
-<div class="col-sm-2">
-<img src="images/people1.jpg" class="img">
-  <div class="overlay">
-    <div class="text">Yuvraj Sharma</div>
-  </div>
-</div>
-<div class="col-sm-2">
-<img src="images/people2.jpg" class="img">
-  <div class="overlay">
-    <div class="text">Namya Chhabra</div>
-  </div>
-</div>
-<div class="col-sm-2">
-<img src="images/people3.jpg" class="img">
-  <div class="overlay">
-    <div class="text">Devansh Pandita</div>
-  </div>
-</div>
-		</div>
-	    </div></div></center>
+<div id="people" class="people">
+    <div class="container">
+                    <div class="row">
+                        <div class="main_team_area m-t-3">
+                            <div class="head_title m-y-3  wow fadeInUp">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h2>Affiliations</h2>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h6>The people he has worked with.</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main_team_content wow fadeInUp">
+                                <div class="col-md-2 col-xs-12">
+                                    <div class="single_team m-t-2">
+   
+                                        <img src="images/people1.jpg" alt="" />
+                                        <div class="overlays">
+                                            <div class="text">
+                                            <h6>Yuvraj Sharma</h6>
+                                            <p>Head of the school's computer club's web-designing department.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- End of col-md-4 -->
+
+                                <div class="col-md-2 col-xs-12">
+                                    <div class="single_team  m-t-2">
+   
+                                        <img src="images/people2.jpg" alt="" />
+                                        <div class="overlays">
+                                            <div class="text">
+                                            <h6>Namya Chhabra</h6>
+                                            <p>A junior whose skills are over-rated but are still great</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- End of col-md-4 -->
+
+                                <div class="col-md-2 col-xs-12">
+                                    <div class="single_team  m-t-2">
+                                        <img src="images/people3.jpg" alt="" />
+                                        <div class="overlays">
+                                            <div class="text">
+                                            <h6>Devansh Pandita</h6>
+                                            <p>Young trainee learning web-designing under Naman.</p>
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- End of col-md-4 -->
+
+                                
+                                </div>
+                                <hr>
+                            </div>
+                            <hr>
+                        </div><!-- End of main Team area -->
+                    </div><!-- End of row -->
+	</div><!-- End of container --></div>
 <div id="contact">
 <div class="row">
 <div class="col-md-4">
