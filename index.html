@@ -32,6 +32,7 @@ jQuery(document).on("scroll", function () {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+font-family : 'Raleway', sans-serif;
 }
 
 /*/-- Loader --/*/
@@ -191,8 +192,8 @@ jQuery(document).on("scroll", function () {
             animation-fill-mode: both;
 	    -webkit-animation-name: fadeInDown;
             animation-name: fadeInDown;
-	    animation-delay: 4s;
-	    -webkit-animation-delay: 4s;
+	    animation-delay: 6s;
+	    -webkit-animation-delay: 6s;
     }
     @-webkit-keyframes fadeInDown {
             0% {
@@ -215,6 +216,26 @@ jQuery(document).on("scroll", function () {
                transform: translateY(0);
             }
          }
+	
+	    @-webkit-keyframes InDown {
+            0% {
+               opacity: 0;
+               -webkit-transform: translateY(-100px);
+            }
+            100% {
+               opacity: 1;
+               -webkit-transform: translateY(0);
+            }
+         }
+         
+         @keyframes InDown {
+            0% {
+               transform: translateY(-20px);
+            }
+            100% {
+               transform: translateY(0);
+            }
+         }
     #home .heading h1, h3 {
         color: #86c232;
         font-size: 37.0224;
@@ -228,15 +249,6 @@ jQuery(document).on("scroll", function () {
         font-size: 28.8;
     }
     
-    .overlay {
-        background: rgba(0, 0, 0, 0.65);
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 0;
-    }
     
     .scroll-down a i {
         width: 35px;
@@ -254,12 +266,22 @@ jQuery(document).on("scroll", function () {
         color: #86c232;
         margin: 0 auto;
     }
+	
+.scroll-down {
+	-webkit-animation-duration: 2s;
+            animation-duration: 2s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+	    -webkit-animation-name: fadeInDown;
+            animation-name: fadeInDown;
+	    animation-delay: 8s;
+	    -webkit-animation-delay: 8s;
+	}
     
     #about .row .col-md-4 h2 {
         font-family: 'Raleway', sans-serif;
         font-weight: 300;
     }
-    
     .row {
         margin: 0;
     }
@@ -276,12 +298,11 @@ jQuery(document).on("scroll", function () {
         border-right: 2px solid #afafaf;
         padding-bottom: 60;
     }
-    
     #about .row .col-md-6 p {
         font-family: 'Raleway', sans-serif;
         font-weight: 300;
     }
-    
+	
     #works .row .col-md-4 h2 {
         font-family: 'Raleway', sans-serif;
         font-weight: 300;
@@ -296,6 +317,7 @@ jQuery(document).on("scroll", function () {
         padding-bottom: 50;
         color: #474b4f;
     }
+	
     
     #works .row .col-md-4 {
         border-right: 2px solid #afafaf;
@@ -309,6 +331,7 @@ jQuery(document).on("scroll", function () {
         font-weight: 300;
         padding-top: 20
     }
+	
     
     hr {
         margin-left: 70px;
@@ -326,8 +349,8 @@ jQuery(document).on("scroll", function () {
     .written {
         width: 30%;
     }
-    
-    .written h3 {
+  
+    #works .abc .written h3 {
         color: black;
         font-size: 30;
     }
@@ -341,7 +364,8 @@ jQuery(document).on("scroll", function () {
         margin-top: 50;
         padding-left: 60;
     }
-    
+
+  	
     #contact {
         background-color: #eee;
         color: #222;
@@ -405,6 +429,14 @@ jQuery(document).on("scroll", function () {
         z-index: 500;
         padding-left: 70px;
         padding-top: 10px;
+	    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+	    -webkit-animation-name: InDown;
+            animation-name: InDown;
+	    animation-delay: 4s;
+	    -webkit-animation-delay: 4s;
 }
     .navbar a {
     float: left;
@@ -421,6 +453,8 @@ jQuery(document).on("scroll", function () {
     right: 0;
     margin-right: 0;
 }
+	
+
 </style>
 <script>
 $(document).ready(function(){
@@ -466,6 +500,7 @@ $(document).ready(function(){
   <a href="#home">Home</a>
   <a href="#about">About Me</a>
   <a href="#works">Works</a>
+  <a href="#people">Affiliations</a>
   <a href="#contact">Contact Me</a>
 </div>    
 <div id="home">
@@ -516,14 +551,14 @@ $(document).ready(function(){
 <div class="row abc right">
 <div class="written col-md-6">
 <h3>Richard Mathew Stallman</h3>
-<p>Website designed for a prelim submission at a competition Byite.it at Bal Bharti School, Pitampura.</p>
+<p>Website designed for a prelim submission at a competition Byite.it at Bal Bharti School, Pitampura, with the help of Namya Chabbra.</p>
 <p>See it here: <a href="https://yuvrajsharma07.github.io/prelimsub/" target="_blank">yuvrajsharma07.github.io/prelimsub</a>
 </div>
 <div class="image col-md-6">
 <img src="images/works2.png">
 </div>
 </div>
-</div>
+
 <div class="row abc">
 <div class="image col-sm-6">
 <img src="images/works3.PNG">
@@ -531,12 +566,24 @@ $(document).ready(function(){
 <div class="written col-sm-6">
 <h3>Tony Stark</h3>
 <p>Website designed as a tribute to Tony Stark, the Iron Man in the Marvel Universe</p>
-<p>See it here: <a href="https://irontony51.github.io/main.html" target="_blank">irontony51.github.io/main.html</a>
+<p>See it here: <a href="https://namanchandok.github.io/tonystark/index.html" target="_blank">namanchandok.github.io/tonystark</a>
+	</div></div>
+	
+<div class="row abc right">
+<div class="written col-md-6">
+<h3>Autopilot Cars</h3>
+<p>Website designed about autopilot cars, with the help of Devansh Pandita.</p>
+<p>See it here: <a href="https://namanchandok.github.io/autopilot" target="_blank">namanchandok.github.io/autopilot</a>
+</div>
+<div class="image col-md-6">
+<img src="images/works4.PNG">
+</div>
+</div>
 </div>
     </div>
-
+	</div>
 <hr>
-    
+
 <div id="contact">
 <div class="row">
 <div class="col-md-4">
@@ -551,7 +598,7 @@ $(document).ready(function(){
 </div>
     
 <div class="map">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.692033247572!2d77.06544621466256!3d28.638990782415306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04e5f360fd1f%3A0x74de1e2966049666!2sCharak+Sadan%2C+E+Block%2C+Vikaspuri%2C+Budella%2C+Vikaspuri%2C+Delhi%2C+110018!5e0!3m2!1sen!2sin!4v1541838781522" width="1309" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.692033247572!2d77.06544621466256!3d28.638990782415306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04e5f360fd1f%3A0x74de1e2966049666!2sCharak+Sadan%2C+E+Block%2C+Vikaspuri%2C+Budella%2C+Vikaspuri%2C+Delhi%2C+110018!5e0!3m2!1sen!2sin!4v1541838781522" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
     
 <div id="end">
