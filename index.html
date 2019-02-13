@@ -296,13 +296,38 @@ font-family : 'Raleway', sans-serif;
     
     #about .row .col-md-4 {
         border-right: 2px solid #afafaf;
-        padding-bottom: 60;
     }
     #about .row .col-md-6 p {
         font-family: 'Raleway', sans-serif;
         font-weight: 300;
     }
 	
+    #people .row .col-md-4 h2 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+    }
+    .row {
+        margin: 0;
+    }
+    
+    #people {
+        padding-left: 200;
+        padding-top: 50;
+        padding-bottom: 50;
+        background-color: #474b4f;
+        color: #fff;
+    }
+    
+    #people .row .col-md-4 {
+        border-right: 2px solid #afafaf;
+    }
+    #people .row .col-md-6 p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+    }
+    
+    
+    
     #works .row .col-md-4 h2 {
         font-family: 'Raleway', sans-serif;
         font-weight: 300;
@@ -346,12 +371,24 @@ font-family : 'Raleway', sans-serif;
         width: 100%;
     }
     
+    #people .image {
+        width: 25%;
+    }
+    
     .written {
         width: 30%;
     }
   
+    #people .written {
+        padding-top: 10%;
+    }
     #works .abc .written h3 {
         color: black;
+        font-size: 30;
+    }
+    
+    #people .abc .written h3 {
+        color: white;
         font-size: 30;
     }
     
@@ -364,7 +401,11 @@ font-family : 'Raleway', sans-serif;
         margin-top: 50;
         padding-left: 60;
     }
-
+    #people .abc {
+        border-right: none;
+        margin-top: 50;
+        padding-left: 60;
+    }
   	
     #contact {
         background-color: #eee;
@@ -580,10 +621,54 @@ $(document).ready(function(){
 </div>
 </div>
 </div>
-    </div>
-	</div>
 <hr>
+    
+    
+    
+    
+<div id="people">
+<div class="row">
+<div class="col-md-4">
+<h2>Affiliations</h2>    
+</div>    
+<div class="col-md-6">
+<p>Meet the people Naman has worked with.</p>    
+</div>
+</div>  
+    
+<div class="row abc">
+<div class="image col-sm-6">
+<img src="images/people1.jpg">
+</div>
+<div class="written col-sm-6">
+<h3>Yuvraj Sharma</h3>
+<p>The head of the school's computer club's web-designing department.</p>
+</div>
+</div>
+<div class="row abc right">
+<div class="written col-md-6">
+<h3>Namya Chhabra</h3>
+<p>A junior whose skills are over-rated but still great.</p>
+</div>
+<div class="image col-md-6">
+<img src="images/people2.jpg">
+</div>
+</div>
 
+<div class="row abc">
+<div class="image col-sm-6">
+<img src="images/people3.jpg">
+</div>
+<div class="written col-sm-6">
+<h3>Devansh Pandita</h3>
+<p>A junior learning web-designing under Naman.</p>
+	</div></div>
+</div>
+    <hr>
+    
+    
+    
+    
 <div id="contact">
 <div class="row">
 <div class="col-md-4">
