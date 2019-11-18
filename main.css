@@ -184,16 +184,17 @@ body {
         border: 2px solid #86c232;
         line-height: 30px;
         border-radius: 50%;
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -webkit-transition: all 500ms ease-in-out 0s;
-        -moz-transition: all 500ms ease-in-out 0s;
-        -ms-transition: all 500ms ease-in-out 0s;
-        transition: all 500ms ease-in-out 0s;
+        transition: 500ms;
         text-align: center;
         color: #86c232;
         margin: 0 auto;
+        justify-content: center;
+        align-content: center;
     }
+
+.scroll-down a:hover i{
+   transform: scale(1.1)
+}
 	
 .scroll-down {
 	-webkit-animation-duration: 2s;
@@ -206,56 +207,90 @@ body {
 	    -webkit-animation-delay: 4s;
 	}
     
-    #about .row .col-md-4 h2 {
+    #about .about-head h2 {
         font-family: 'Raleway', sans-serif;
         font-weight: 300;
     }
+
+#about .about-head hr {
+    border-top:solid 2px #86c232;
+    width: 20%;
+}
     .row {
         margin: 0;
     }
     
     #about {
-        padding-left: 200;
-        padding-top: 50;
-        padding-bottom: 50;
+        padding: 50;
         color: #000;
-        z-index: 2
+        z-index: 2;
+        
     }
     
-    #about .row .col-md-4 {
-        border-right: 2px solid #afafaf;
-    }
     #about .row .col-md-6 p {
         font-family: 'Raleway', sans-serif;
         text-align: left;
         font-weight: 300;
     }
 	
-    #people .row .col-md-4 h2 {
+    #people .about-head h2 {
         font-family: 'Raleway', sans-serif;
         font-weight: 300;
-        text-align: left;
     }
-    .row {
-        margin: 0;
-    }
-    
-    #people {
-        padding-left: 200;
-        padding-top: 50;
-        padding-bottom: 50;
-        color: #000;
-    }
-    
-    #people .row .col-md-4 {
-        border-right: 2px solid #afafaf;
-        text-align: left;
-    }
-    #people .row .col-md-6 p {
-        font-family: 'Raleway', sans-serif;
-        font-weight: 300;
-        text-align: left;
-    }
+
+#people .about-head hr {
+    border-top:solid 2px #86c232;
+    width: 20%;
+}
+    .people-section{
+  background: #f1f1f1;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.people-pics{
+  padding: 40px 0;
+}
+
+.people-pics img{
+  width: 150px;
+    height: 150px;
+        border-radius: 50%;
+  margin: 0 20px;
+  filter: grayscale(50%);
+  transition: .3s;
+  cursor: pointer;
+}
+
+.people-pics img:hover, .people-pics img.active{
+  filter: none;
+}
+
+
+.people-contents{
+  max-width: 600px;
+  margin: auto;
+}
+
+.people{
+  display: none;
+}
+
+.people.active{
+  display: block;
+}
+
+.people p{
+  color: #5c5c5c;
+  margin-bottom: 20px;
+}
+
+.people .description{
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 15px;
+}
+
     
     
     #works .row .col-md-4 h2 {
@@ -418,6 +453,7 @@ body {
 	    -webkit-animation-name: InDown;
             animation-name: InDown;
         top: 0;
+        transition: 0.5s;
 	    
 }
     .navbar a {
@@ -427,6 +463,7 @@ body {
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
+    transition: 0.25s;
 }
 	
     .right {

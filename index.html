@@ -46,13 +46,19 @@
     <div class="write">
 <div id="about">
     <center>
-<div class="row">
-<div class="col-md-4">
+<div class="about-head">
 <h2>About Me</h2>    
+    <hr>
 </div>    
+<div class="row">
 <div class="col-md-6">
-<p>Born on 10th December 2004, Naman Chandok is a web designer. ALso an artist, he takes his inspiration from Larry Page, the founder of google, the most known web domain on the internet.</p>    
+<p>Born on 10th December 2004, Naman Chandok is a web designer. Also an artist, he takes his inspiration from Larry Page, the founder of google, the most known web domain on the internet.</p>    
 </div>
+    <div class="col-md-4">
+    <i class="fab fa-html5"></i>
+    <i class="fab fa-css3-alt"></i>
+    <i class="fab fa-html5"></i>
+    </div>
 </div> </center>   
 </div>
     <hr>
@@ -117,33 +123,31 @@
     
 <div id="people">
     <center>
-<div class="row">
-<div class="col-md-4">
+<div class="about-head">
 <h2>Affiliations</h2>    
-</div>    
-<div class="col-md-6">
-<p>Meet the people Naman has worked with.</p>    
-</div>
-</div>  
-    
-<div class="row abc">
-<div class="image col-sm-6">
-<img src="images/people1.jpg">
-</div>
-<div class="written col-sm-6">
-<h3>Yuvraj Sharma</h3>
-<p>The head of the school's computer club's web-designing department.</p>
-</div>
-</div>
-<div class="row abc right">
-<div class="written col-md-6">
-<h3>Namya Chhabra</h3>
-<p>A junior whose skills are over-rated but still great.</p>
-</div>
-<div class="image col-md-6">
-<img src="images/people2.jpg">
-</div>
-        </div></center></div>
+    <hr>
+</div>   
+ <div class="people-pics">
+          <img src="images/people1.jpg" alt="test-1" class="active">
+          <img src="images/people2.jpg" alt="test-2">
+          <img src="images/people3.jpg" alt="test-3">
+         
+        </div>
+ <div class="people-contents">
+          <div class="people active" id="test-1">
+                <span class="description">YUVRAJ SHARMA<br>*le head</span>
+          </div>
+
+          <div class="people" id="test-2">
+            <span class="description">CHAMYA NABRA<br>*le junior head</span>
+     </div>
+
+          <div class="people" id="test-3">
+            <span class="description">TECH-SHAIVI SHEWARAMANI<br>*le teesri head</span>
+        </div>
+
+
+    </div></center></div>
     <hr>
     
     
@@ -225,6 +229,14 @@ $(document).ready(function(){
     } // End if
   });
 });    
+    
+    $('.people-pics img').click(function(){
+        $(".people-pics img").removeClass("active");
+        $(this).addClass("active");
+
+        $(".people").removeClass("active");
+        $("#"+$(this).attr("alt")).addClass("active");
+      })
 </script>
 </body>
 </html>
