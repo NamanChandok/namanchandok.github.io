@@ -84,6 +84,9 @@ body {
     #home { 
         background: rgba(0, 0, 0, 0.32);
         height: 100%;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
         z-index: -1;
         align-content: center;
         justify-content: center;
@@ -91,32 +94,25 @@ body {
 #home::before {
     background-image: url(images/homebg.jpg);
     position: absolute;
+    background-attachment: fixed;
         background-size: cover;
-    animation: aaa 20s linear infinite;
     content: "";
     height: 100%;
     width: 100%;
     z-index: -1;
     }
 .write {z-index: 1; background: white;}
-@keyframes aaa{
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.5);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
+
 
 #home .heading {
     padding-top: 35vh;
     visibility: visible;
         z-index: 1;
         padding-bottom: 160px;
-	    -webkit-animation-duration: 2s;
+    }
+
+#home .heading h1 {
+    -webkit-animation-duration: 2s;
             animation-duration: 2s;
             -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
@@ -124,28 +120,53 @@ body {
             animation-name: fadeInDown;
 	    animation-delay: 2s;
 	    -webkit-animation-delay: 2s;
-    }
+}
+
+#home .heading h3{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: aa;
+    animation-delay: 4s;
+}
     @-webkit-keyframes fadeInDown {
             0% {
                opacity: 0;
-               -webkit-transform: translateY(-20px);
             }
-            100% {
+            50% {
                opacity: 1;
-               -webkit-transform: translateY(0);
+               letter-spacing: 3px;
             }
+            75% {
+               letter-spacing: normal;
+            }
+        100% {
+               letter-spacing: normal;
+        }
          }
          
          @keyframes fadeInDown {
             0% {
                opacity: 0;
-               transform: translateY(-20px);
+            }
+            50% {
+               opacity: 1;
+               letter-spacing: 3px;
             }
             100% {
-               opacity: 1;
-               transform: translateY(0);
+               letter-spacing: normal;
             }
          }
+
+@keyframes aa {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
 	
 	    @-webkit-keyframes InDown {
             0% {
@@ -201,17 +222,28 @@ body {
             animation-duration: 2s;
             -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
-	    -webkit-animation-name: fadeInDown;
-            animation-name: fadeInDown;
-	    animation-delay: 4s;
-	    -webkit-animation-delay: 4s;
+	    -webkit-animation-name: aa;
+            animation-name: aa;
+	    animation-delay: 5s;
+	    -webkit-animation-delay: 5s;
 	}
     
-    #about .about-head h2 {
+    #about .about-head h2{
         font-family: 'Raleway', sans-serif;
         font-weight: 300;
     }
 
+#about h4,h5 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#about i {
+    font-size: 50px;
+    color: #292929;
+    margin: 10px;
+}
 #about .about-head hr {
     border-top:solid 2px #86c232;
     width: 20%;
@@ -224,13 +256,16 @@ body {
         padding: 50;
         color: #000;
         z-index: 2;
-        
+        align-content: center;
+        justify-content: center;
     }
     
-    #about .row .col-md-6 p {
+    #about .writen  {
         font-family: 'Raleway', sans-serif;
         text-align: left;
         font-weight: 300;
+        padding-left: 200px;
+        padding-right: 200px;
     }
 	
     #people .about-head h2 {
@@ -291,7 +326,12 @@ body {
   font-size: 15px;
 }
 
-    
+.people .description span {
+    display: none;
+}   
+
+.people .description:hover span {
+display: contents}
     
     #works .row .col-md-4 h2 {
         font-family: 'Raleway', sans-serif;
