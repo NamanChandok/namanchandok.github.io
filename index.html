@@ -128,15 +128,15 @@
         </div>
  <div class="people-contents">
           <div class="people active" id="test-1">
-                <span class="description">YUVRAJ SHARMA<br>*le head</span>
+                <span class="description"><span class="hove">billion dollar one</span><span class="abcdef">YUVRAJ SHARMA</span><br>*le head</span>
           </div>
 
           <div class="people" id="test-2">
-            <span class="description">CHAMYA NABRA<br>*le junior head</span>
+              <span class="description"><span class="hove">CH</span><span class="abcdef">N</span>AMYA <span class="hove">N</span><span class="abcdef">CH</span>ABRA<br>*le junior <span class="hove">bandar</span> <span class="abcdef">head</span></span>
      </div>
 
           <div class="people" id="test-3">
-              <span class="description"><span>TECH-</span>SHAIVI SHEWARAMANI<br>*le teesri head</span>
+              <span class="description"><span class="hove">TECH-</span>SHAIVI SHEWARAMANI<br>*le teesri <span class="hove">bandar</span> <span class="abcdef">head</span></span>
         </div>
 
 
@@ -148,16 +148,27 @@
     
 <div id="contact">
     <center>
-<div class="row">
-<div class="col-md-4">
+        
+<div class="about-head">
 <h2>Contact Me</h2>    
-</div>    
-<div class="col-md-6">
+    <hr>
+</div>  
+<div class="row">
+<div class="col-md-6">  
 <i class="fas fa-phone"></i> +91 8750-627-282<br><br>
 <i class="fas fa-envelope"></i> namanchandok1@gmail.com<br><br>
 <i class="fas fa-map-marked-alt"></i> New Delhi, India<br>
-</div>
-</div>
+    </div>
+<div class="col-md-4"><center>
+    <form>
+    <input placeholder="Name" name="name" type="text"><br>
+    <input placeholder="Email" name="email" type="text"><br>
+    <textarea placeholder="Comment" name="message"></textarea><br>
+    <input class="button" type="submit" value="Submit">
+    </form>
+    </center>
+    </div>
+    </div>
 </center>
 </div>
     
@@ -230,6 +241,9 @@ $(document).ready(function(){
         $(".people").removeClass("active");
         $("#"+$(this).attr("alt")).addClass("active");
       })
+    
 </script>
+    
+    
 </body>
 </html>
