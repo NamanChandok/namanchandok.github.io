@@ -23,7 +23,7 @@ html {
 body {
     overflow-x: hidden;
 }
-/*/-- Loader --/*/
+/*LOADER*/
         .load {
             height: 100%;
             width: 100%;
@@ -79,7 +79,7 @@ body {
         }
     
 
-/*/-- Home --/*/
+/*HOME*/
 
     #home { 
         background: rgba(0, 0, 0, 0.32);
@@ -228,6 +228,9 @@ body {
 	    -webkit-animation-delay: 4s;
 	}
     
+
+
+/*ABOUT*/
     #about .about-head h2{
         font-family: 'Raleway', sans-serif;
         font-weight: 300;
@@ -243,15 +246,6 @@ body {
     width: 20%;
 }
 
-
-#contact .about-head h2{
-        font-family: 'Raleway', sans-serif;
-        font-weight: 300;
-    }
-#contact .about-head hr {
-    border-top:solid 2px #86c232;
-    width: 20%;
-}
 
 #about h4,h5 {
     font-family: 'Raleway', sans-serif;
@@ -287,6 +281,9 @@ body {
         padding-left: 200px;
         padding-right: 200px;
     }
+
+
+/*PEOPLE*/
 	
     #people .about-head h2 {
         font-family: 'Raleway', sans-serif;
@@ -296,11 +293,6 @@ body {
 #people .about-head hr {
     border-top:solid 2px #86c232;
     width: 20%;
-}
-    .people-section{
-  background: #f1f1f1;
-  padding: 80px 0;
-  text-align: center;
 }
 
 .people-pics{
@@ -357,38 +349,11 @@ display: contents}
 display: none}
     
     
-    
 
-    #people .abc {
-        border-right: none;
-        margin-top: 50;
-        padding-left: 60;
-        text-align: left;
-    }
   	
-    #contact {
-        padding: 100;  
-        color: #222;
-    }
+  
     
-    
-    .row {
-        margin: 0;
-    }
-    
-    
-    #contact .row .col-md-4 {
-        padding-bottom: 60;
-        text-align: left;
-    }
-    
-    #contact .row .col-md-6 {
-        font-family: 'Raleway', sans-serif;
-        font-weight: 300;
-        padding-left: 100;
-        text-align: left;
-    }
-    
+/*END*/
     #end {
         background-color: #ddd;
         color: #000;
@@ -407,7 +372,10 @@ display: none}
     #end img {
         width: 10%;
     }
-    
+
+
+
+    /*NAVBAR*/
     .navbar a:hover {
     background-color: #ddd;
     color: black;
@@ -441,13 +409,17 @@ display: none}
     transition: 0.25s;
 }
 	
-    .right {
 
-    text-align: right;
-    right: 0;
-    margin-right: 0;
-}
-	
+
+
+
+	/*CONTACT*/
+
+  #contact {
+        padding: 100;  
+        color: #222;
+    }
+    
 
 #contact col-md-4 {
     align-content: center;
@@ -508,7 +480,10 @@ input[type="submit"]:hover{
 }
 
 
-/*nsdoxnfsdbnferasrbgsdinofzxbaiosdbznawiosdbnvioasdnvm idoanvieasndoivnz*/
+
+
+
+/*WORKS*/
 
 #works .image{
   overflow: hidden;
@@ -543,3 +518,50 @@ input[type="submit"]:hover{
   }
 }
 
+.draw{
+    content: "";
+    background-image: url(images/draw.jpg);
+    background-color: #000;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+}
+
+
+.web{
+    content: "";
+    background-image: url(images/web.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+}
+
+.tab button {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    margin: 0 20px;
+    transition: .3s;
+    filter: grayscale(75%);
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    font-size: 22;
+}
+
+.tab button:hover, button.active {
+    filter: none;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  transition: 0.5s;
+}
+
+.tabcontent#web {
+  display: block;
+}

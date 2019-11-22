@@ -62,8 +62,14 @@
 <h2>Works</h2>    
     <hr>
 </div> 
-        
-    <div class="gallery">
+         <div class="tab">
+            <button class="tablinks active web" onclick="openTab(event, 'web')"><span>WEBSITES</span></button>
+            <button class="tablinks draw" onclick="openTab(event, 'art')"><span>ART</span></button>
+         
+        </div>
+ <div class="work-contents">
+          <div id="web" class="tabcontent">
+                    <div class="gallery">
 
           <a href="https://teamvulcantis.github.io/" target="_blank" class="image">
             <img src="images/vulcan.png" alt="">
@@ -85,6 +91,17 @@
             <img src="images/altehc.png" alt="">
           </a>
         </div>
+          </div>
+
+          <div id="art" class="tabcontent">
+        <div class="gallery">
+          ndsfsdnfidnfpim
+        </div>
+          </div>
+
+    </div>
+        
+
     </center>
         </div>
 
@@ -100,7 +117,7 @@
     <hr>
 </div>   
  <div class="people-pics">
-          <img src="images/people1.jpg" alt="test-1" class="active">
+          <img src="images/people1.jpg" alt="test-1" class="nofilter">
           <img src="images/people2.jpg" alt="test-2">
           <img src="images/people3.jpg" alt="test-3">
          
@@ -222,6 +239,19 @@ $(document).ready(function(){
         $("#"+$(this).attr("alt")).addClass("active");
       })
     
+    function openTab(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
     
 </script>
     
