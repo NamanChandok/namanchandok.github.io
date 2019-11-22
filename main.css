@@ -126,7 +126,7 @@ body {
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-name: aa;
-    animation-delay: 3.5s;
+    animation-delay: 3.25s;
 }
     @-webkit-keyframes fadeInDown {
             0% {
@@ -224,14 +224,25 @@ body {
             animation-fill-mode: both;
 	    -webkit-animation-name: aa;
             animation-name: aa;
-	    animation-delay: 5s;
-	    -webkit-animation-delay: 5s;
+	    animation-delay: 4s;
+	    -webkit-animation-delay: 4s;
 	}
     
     #about .about-head h2{
         font-family: 'Raleway', sans-serif;
         font-weight: 300;
     }
+
+.about-head h2{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+    }
+
+.about-head hr {
+    border-top:solid 2px #86c232;
+    width: 20%;
+}
+
 
 #contact .about-head h2{
         font-family: 'Raleway', sans-serif;
@@ -345,84 +356,9 @@ display: contents}
 .people .description:hover span.abcdef {
 display: none}
     
-    #works .row .col-md-4 h2 {
-        font-family: 'Raleway', sans-serif;
-        font-weight: 300;
-        text-align: left;
-    }
     
-    .row {
-        margin: 0;
-    }
     
-    #works {
-        padding-top: 50;
-        padding-bottom: 50;
-        color: #474b4f;
-        padding-left: 200;
-    }
-	
-    
-    #works .row .col-md-4 {
-        border-right: 2px solid #afafaf;
-        padding-left: 200;
-        margin-bottom: 20px;
-    }
-    
-    #works .row .col-md-6 p {
-        font-family: 'Raleway', sans-serif;
-        font-weight: 300;
-        padding-top: 20;
-        text-align: left;
-    }
-	
-    
-    hr {
-        margin-left: 70px;
-        margin-right: 70px;
-    }
-    
-    .image {
-        width: 50%;
-    }
-    
-    .image img {
-        width: 100%;
-    }
-    
-    #people .image {
-        width: 25%;
-    }
-    
-    .written {
-        width: 30%;
-    }
-  
-    #people .written {
-        padding-top: 10%;
-    }
-    #works .abc .written h3 {
-        color: black;
-        font-size: 30;
-        text-align: left;
-    }
-    
-    #people .abc .written h3 {
-        color: black;
-        font-size: 30;
-        text-align: left;
-    }
-    
-    .abc .col-sm-6 {
-        padding-left: 0;
-    }
-    
-    #works .abc {
-        border-right: none;
-        margin-top: 50;
-        padding-left: 60;
-        text-align: left;
-    }
+
     #people .abc {
         border-right: none;
         margin-top: 50;
@@ -519,8 +455,8 @@ display: none}
 }
 
 #contact form input[type=email], input[type=text], textarea {
-    border: #53791f solid 2px;
-    border-radius: 30px;
+    border: transparent solid 2px;
+    border-bottom-color: #53791f;
     padding: 10;
     justify-content: center;
     align-content: center;
@@ -532,7 +468,7 @@ display: none}
 }
 
 #contact form textarea {
-    width: 280
+    width: 280;
 }
 
 input[type="submit"] {
@@ -554,17 +490,56 @@ input[type="submit"]:hover{
 }
 
 #contact form input[type="email"]:focus-within {
-    border: #86c232 solid 2px;
+    border: transparent solid 2px;
+    border-bottom-color: #86c232;
     width: 300px;
 }
 
 #contact form input[type="text"]:focus-within {
-    border: #86c232 solid 2px;
+    border: transparent solid 2px;
+    border-bottom-color: #86c232;
     width: 300px;
 }
 
 #contact form textarea:focus-within {
-    border: #86c232 solid 2px;
+    border: transparent solid 2px;
+    border-bottom-color: #86c232;
     width: 320px;
+}
+
+
+
+
+#works .image{
+  overflow: hidden;
+  cursor: pointer;    
+}
+
+#works .image img{
+  width: 25%;
+  transition: 0.4s;
+    margin: 5px;
+}
+
+#works .image:hover img{
+  transform: scale(1.05);
+}
+
+@media screen and (max-width:960px) {
+  #works .image{
+    flex: 33.33%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  #works .image{
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  #works .image{
+    flex: 100%;
+  }
 }
 

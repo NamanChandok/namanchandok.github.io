@@ -24,12 +24,13 @@
     </div>  
     <div class="mainBod" id="mainBod">
 <div class="navbar">
-  <a href="#home">Home</a>
+  <a href="#home" class="home-a">Home</a>
   <a href="#about">About Me</a>
   <a href="#works">Works</a>
   <a href="#people">Affiliations</a>
   <a href="#contact">Contact Me</a>
 </div>    
+        
 <div id="home">
 <div class="heading animated fadeInDown">
 <center>
@@ -57,58 +58,36 @@
     <hr>
 <div id="works">
     <center>
-<div class="row">
-<div class="col-md-4">
+<div class="about-head">
 <h2>Works</h2>    
-</div>    
-<div class="col-md-6">
-<p><b>The websites designed by Naman Chandok.</b></p>    
-</div>
+    <hr>
 </div> 
-    
-<div class="row abc">
-<div class="image col-sm-6">
-<img src="images/works1.png">
-</div>
-<div class="written col-sm-6">
-<h3>Team Vulcan</h3>
-<p>Website designed for a team in the competition F1 in Schools India: Season 2.</p>
-<p>See it here: <a href="https://teamvulcantis.github.io/" target="_blank">teamvulcantis.github.io</a>
-</div>
-</div>
-<div class="row abc right">
-<div class="written col-md-6">
-<h3>Richard Mathew Stallman</h3>
-<p>Website designed for a prelim submission at a competition Byite.it at Bal Bharti School, Pitampura, with the help of Namya Chabbra.</p>
-<p>See it here: <a href="https://namanchandok.github.io/stallman/index.html" target="_blank">namanchandok.github.io/stallman</a>
-</div>
-<div class="image col-md-6">
-<img src="images/works2.png">
-</div>
-</div>
+        
+    <div class="gallery">
 
-<div class="row abc">
-<div class="image col-sm-6">
-<img src="images/works3.PNG">
-</div>
-<div class="written col-sm-6">
-<h3>Tony Stark</h3>
-<p>Website designed as a tribute to Tony Stark, the Iron Man in the Marvel Universe</p>
-<p>See it here: <a href="https://namanchandok.github.io/tonystark/index.html" target="_blank">namanchandok.github.io/tonystark</a>
-	</div></div>
-	
-<div class="row abc right">
-<div class="written col-md-6">
-<h3>Autopilot Cars</h3>
-<p>Website designed about autopilot cars, with the help of Devansh Pandita.</p>
-<p>See it here: <a href="https://namanchandok.github.io/autopilot" target="_blank">namanchandok.github.io/autopilot</a>
-</div>
-<div class="image col-md-6">
-<img src="images/works4.PNG">
-</div>
-</div>
-</center>
-</div>
+          <a href="https://teamvulcantis.github.io/" target="_blank" class="image">
+            <img src="images/works1.png" alt="">
+          </a>
+
+          <a href="https://namanchandok.github.io/stallman/index.html" target="_blank" class="image">
+            <img src="images/works2.png" alt="">
+          </a>
+
+          <a href="https://namanchandok.github.io/tonystark/index.html" target="_blank" class="image">
+            <img src="images/works3.PNG" alt="">
+          </a>
+
+          <a href="https://namanchandok.github.io/autopilot" target="_blank" class="image">
+            <img src="images/works4.PNG" alt="">
+          </a>
+
+          <a href="https://namanchandok.github.io/dynamix19" target="_blank" class="image">
+            <img src="images/works5.png" alt="">
+          </a>
+        </div>
+    </center>
+        </div>
+
 <hr>
     
     
@@ -189,7 +168,7 @@
 </div>
 </center>
     </div>
-    </div>
+                </div>
     </div>
 <script>
 var myVar;
@@ -201,6 +180,7 @@ function showPage() {
   document.getElementById("load").style.display = "none";
   document.getElementById("mainBod").style.display = "block";
 } 
+    
 jQuery(document).on("scroll", function () {
     if ($(document).scrollTop() > 120) {
         $(".navbar").css("background-color","#2a2a2a");
@@ -241,6 +221,7 @@ $(document).ready(function(){
         $(".people").removeClass("active");
         $("#"+$(this).attr("alt")).addClass("active");
       })
+    
     
 </script>
     
