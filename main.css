@@ -571,3 +571,11 @@ input[type="submit"]:hover{
     margin: 0;
     padding: 0;
 }
+.gallery img:hover{
+  transform: scale(1.05);
+}
+
+.gallery img {
+    transition: 0.3s;
+    cursor: pointer;
+}
