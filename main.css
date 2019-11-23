@@ -523,8 +523,6 @@ input[type="submit"]:hover{
     background-image: url(images/draw.jpg);
     background-color: #000;
     background-size: cover;
-    height: 150px;
-    width: 150px;
 }
 
 
@@ -533,13 +531,11 @@ input[type="submit"]:hover{
     background-image: url(images/web.jpg);
     background-position: center;
     background-size: cover;
-    height: 150px;
-    width: 150px;
 }
 
 .tab button {
-    width: 150px;
-    height: 150px;
+    width: 10%;
+    height: 10%;
     border-radius: 20px;
     margin: 0 20px;
     transition: .3s;
@@ -564,4 +560,14 @@ input[type="submit"]:hover{
 
 .tabcontent#web {
   display: block;
+}
+
+#art {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
 }
