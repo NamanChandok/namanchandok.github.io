@@ -578,4 +578,5 @@ input[type="submit"]:hover{
 .gallery img {
     transition: 0.3s;
     cursor: pointer;
+    margin: 5px;
 }
