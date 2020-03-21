@@ -58,7 +58,7 @@ hr {
     border-color: var(--nav-bg-color);
 }
 
-    /* LOADER 
+    /* LOADER */
 
 .load {
     height: 100%;
@@ -107,7 +107,7 @@ hr {
 
 .mainBod {
     display: none;
-} */
+} 
 
 /*NAVBAR*/
 
@@ -240,7 +240,7 @@ input:checked + .slider:before {
     justify-content: center;
 }    
 #home::before {
-    background-image: url(images/homebg.png);
+    background-image: url(images/homebg.PNG);
     position: absolute;
     background-attachment: fixed;
     background-repeat: no-repeat;
