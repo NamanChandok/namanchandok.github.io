@@ -1,4 +1,8 @@
 <html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+    
 <head>
 
 <title>Naman Chandok | Web Designer</title>  
@@ -230,6 +234,8 @@
 
 <script>
     
+    // LOADER
+    
     var myVar;
     function myFunction() {
         myVar = setTimeout(showPage, 1500);
@@ -240,6 +246,8 @@
         document.getElementById("mainBod").style.display = "block";
     } 
     
+    // TRANSPARENT NAVBAR
+    
     jQuery(document).on("scroll", function () {
         if ($(document).scrollTop() > 120) {
             $(".navbar").css("background-color","var(--nav-bg-color)");
@@ -247,6 +255,8 @@
             $(".navbar").css("background","none");
         }
     });  
+    
+    // SMOOTH SCROLL
     
     $(document).ready(function(){
         $("a").on('click', function(event) {
@@ -263,6 +273,8 @@
         });
     });    
     
+    // PEOPLE SECTION SCRIPT
+    
     $('.people-pics img').click(function(){
         $(".people-pics img").removeClass("active");
         $(this).addClass("active");
@@ -270,6 +282,8 @@
         $(".people").removeClass("active");
         $("#"+$(this).attr("alt")).addClass("active");
     })
+    
+    // DARK MODE
     
     const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
@@ -281,18 +295,22 @@ function switchTheme(e) {
         document.documentElement.setAttribute('data-theme', 'light');
     }    
 }
+    
+    // SAVE PREFERENCE TO LOCAL STORAGE
 
 toggleSwitch.addEventListener('change', switchTheme, false);
 function switchTheme(e) {
     if (e.target.checked) {
         document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark'); //add this
+        localStorage.setItem('theme', 'dark');
     }
     else {
         document.documentElement.setAttribute('data-theme', 'light');
-        localStorage.setItem('theme', 'light'); //add this
+        localStorage.setItem('theme', 'light');
     }    
 }
+    
+    // CHECK LOCAL STORAGE FOR PREFERENCE
     
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 
