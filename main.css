@@ -6,7 +6,7 @@
     --font-color: #000;
     --bg-color: #fff;
     --heading-color: #000;
-    --nav-bg-color: #ccc;
+    --nav-bg-color: #ddd;
     --overlay-color: rgba(165, 165, 165, 0.32);
     --scroll-bg-color: #ddd;
     --scroll-fg-color: #aaa;
@@ -121,8 +121,9 @@ hr {
     width: 100%;
     border-radius: 0;
     z-index: 500;
-    padding-left: 70px;
-    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
 	-webkit-animation-duration: 2s;
     animation-duration: 2s;
     -webkit-animation-fill-mode: both;
@@ -163,12 +164,11 @@ hr {
     width: 100%;
 }
 
-/*Simple css to style it like a toggle switch*/
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
     float: right;
-    margin: 10px;
+    margin: 0 10px;
 }
 .theme-switch {
     display: inline-block;
@@ -488,7 +488,7 @@ input:checked + .slider:before {
     padding: 10;
     justify-content: center;
     align-content: center;
-    width: 250px;
+    width: 60%;;
     transition: 0.25s;
     text-align: center;
     margin: 10px auto;
@@ -496,7 +496,7 @@ input:checked + .slider:before {
 }
 
 #contact form textarea {
-    width: 280;
+    width: 80%;
 }
 
 input[type="submit"] {
@@ -506,7 +506,7 @@ input[type="submit"] {
     padding: 10;
     justify-content: center;
     align-content: center;
-    width: 150px;
+    width: 40%;
     transition: 0.5s;
     text-align: center;
     margin: 5px auto;
@@ -520,19 +520,19 @@ input[type="submit"]:hover{
 #contact form input[type="email"]:focus-within {
     border: transparent solid 2px;
     border-bottom-color: var(--primary-color);
-    width: 300px;
+    width: 70%;
 }
 
 #contact form input[type="text"]:focus-within {
     border: transparent solid 2px;
     border-bottom-color: var(--primary-color);
-    width: 300px;
+    width: 70%;
 }
 
 #contact form textarea:focus-within {
     border: transparent solid 2px;
     border-bottom-color: var(--primary-color);
-    width: 320px;
+    width: 90%;
 }
 
     /*WORKS*/
