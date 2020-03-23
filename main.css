@@ -64,7 +64,6 @@ hr {
     height: 100%;
     width: 100%;
     background-color: var(--nav-bg-color);
-    padding-top: 15%;
 }
     
 .loader-wheel {
@@ -363,7 +362,7 @@ input:checked + .slider:before {
 }
 
 #about {
-    padding: 50;
+    padding: 5% 10%;
     color: #000;
     z-index: 2;
     align-content: center;
@@ -381,6 +380,10 @@ input:checked + .slider:before {
 
     /*PEOPLE*/
 	
+#people {
+    padding: 5% 10%;
+}
+
 #people .about-head h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
@@ -472,7 +475,7 @@ input:checked + .slider:before {
     /*CONTACT*/
 
   #contact {
-        padding: 100;  
+        padding: 5% 10%;  
         color: var(--font-color);
     }
     
@@ -536,6 +539,10 @@ input[type="submit"]:hover{
 }
 
     /*WORKS*/
+
+#works {
+    padding: 5% 10%;
+}
 
 #works .image{
     overflow: hidden;
