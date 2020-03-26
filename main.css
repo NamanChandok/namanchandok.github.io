@@ -474,13 +474,12 @@ input:checked + .slider:before {
 
     /*CONTACT*/
 
-  #contact {
-        padding: 5% 10%;  
-        color: var(--font-color);
-    }
-    
+#contact {
+    padding: 5% 10%;  
+    color: var(--font-color);
+}
 
-#contact col-md-4 {
+#contact .col-md-4 {
     align-content: center;
     justify-content: center;
 }
