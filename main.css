@@ -1,7 +1,7 @@
 /* VARIABLES */
 
 :root {
-    --primary-color: #567b23;
+    --primary-color: #b1ff45;
     --secondary-color: #86c232;
     --font-color: #000;
     --bg-color: #fff;
@@ -13,9 +13,9 @@
 }
 
 [data-theme="dark"] {
-    --primary-color: rgb(177, 255, 69);
+    --primary-color: #b1ff45;
     --secondary-color: #86c232;
-    --font-color: #e1e1ff;
+    --font-color: #ffffff;
     --bg-color: #1f1f1f;
     --heading-color: #818cab;
     --nav-bg-color: #2e2e2e;
@@ -57,7 +57,7 @@ hr {
     border-color: var(--nav-bg-color);
 }
 
-    /* LOADER */
+    /* LOADER 
 
 .load {
     height: 100%;
@@ -378,6 +378,99 @@ input:checked + .slider:before {
     color: var(--font-color);
 }
 
+    /*SKILLS*/
+
+#skills {
+    padding: 5% 10%;
+}
+
+#skills .about-head h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: var(--font-color);
+}
+
+.about-head h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: var(--font-color);
+}
+
+.about-head hr {
+    border-top: solid 2px var(--primary-color);
+    width: 20%;
+}
+
+
+#skills h4,h5 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--font-color);
+}
+
+#skills .writen i {
+    font-size: 50;  
+    padding-bottom: 10;
+}
+
+#skills .writen {
+    text-align: left;    
+    color: var(--font-color);
+}
+
+#skills .writen .icon:hover {
+    color: var(--primary-color);
+}
+
+#skills .writen .icon:hover .img-top {
+    display: block;
+}
+
+#skills .writen .icon:hover img {
+    display: none;
+}
+
+#skills .writen .icon {
+    text-align: center;
+    padding: 10;
+    margin: 5;
+}
+
+#skills .writen .icon i {
+    display: block;
+}
+
+#skills .writen .icon span {
+    display: block;
+}
+
+#skills ul {
+    list-style: none;
+}
+
+#skills ul li {
+    display: inline-block;
+}
+
+#skills img {
+    height: 50;
+    padding-bottom: 10;
+    display: inline;
+}
+
+#skills img.img-top {
+    display: none;
+    filter: invert(0);
+}
+
+#skills .text-logo {
+    font-size: 35;
+    font-family: Helvetica;
+    font-weight: 700;
+}
+
     /*PEOPLE*/
 	
 #people {
@@ -535,6 +628,12 @@ input[type="submit"]:hover{
     border: transparent solid 2px;
     border-bottom-color: var(--primary-color);
     width: 90%;
+}
+
+    /*MAP*/
+
+.map iframe {
+    opacity: 0.8;
 }
 
     /*WORKS*/

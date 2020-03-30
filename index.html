@@ -89,23 +89,85 @@
 </center>
         
         
-        <!---  SKILLS   
-        
-        
-<div id="skills">
-    <center>
-<div class="about-head">
-<h2>Skills</h2>    
+        <!---  SKILLS  --->
+<center>        
+    <div id="skills">
+        <div class="about-head">
+            <h2>Skills</h2>    
+            <hr>
+        </div>    
+        <div class="writen">
+            <center>
+                <ul>
+                    <li class="icon">
+                        <center>
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                        </center>
+                    </li>
+                    <li class="icon">
+                        <center>
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </center>
+                    </li>
+                    <li class="icon">
+                        <center>
+                            <i class="fab fa-js-square"></i>
+                            <span>JAVASCRIPT</span>
+                        </center>
+                    </li>
+                    <li class="icon">
+                        <center>
+                            <img src="images/logo/jquery.png" id="skill-img">
+                            <img src="images/logo/jquery2.png" class="img-top">
+                            <span>JQUERY</span>
+                        </center>
+                    </li>
+                    <li class="icon">
+                        <center>
+                            <img src="images/logo/bootstrap.png" id="skill-img-1">
+                            <img src="images/logo/bootstrap2.png" class="img-top">
+                            <span>BOOTSTRAP</span>
+                        </center>
+                    </li>
+                    <li class="icon">
+                        <center>
+                            <span class="text-logo">Ps</span>
+                            <span>PHOTOSHOP</span>
+                        </center>
+                    </li>
+                    <li class="icon">
+                        <center>
+                            <span class="text-logo">An</span>
+                            <span>2D ANIMATION</span>
+                        </center>
+                    </li>
+                    <li class="icon">
+                        <center>
+                            <span class="text-logo">Ae</span>
+                            <span>AFTER EFFECTS</span>
+                        </center>
+                    </li>
+                    <li class="icon">
+                        <center>
+                            <img src="images/logo/filmora.png" id="skill-img-2">
+                            <img src="images/logo/filmora2.png" class="img-top">
+                            <span>FILMORA</span>
+                        </center>
+                    </li>
+                    <li class="icon">
+                        <center>
+                            <i class="fas fa-cube"></i>
+                            <span>3D ANIMATION</span>
+                        </center>
+                    </li>
+                </ul>
+            </center>
+        </div>
+    </div>
     <hr>
-</div>    
-<div class="writen">
-<h2>PROGRAMMING LANGUAGES</h2>
-    
-<h2>AUDIO AND VIDEO</h2>
-</div> </center>   
-</div>
-    <hr>
---->        
+</center> 
     
         <!---  WORKS   --->
         
@@ -295,9 +357,17 @@
 function switchTheme(e) {
     if (e.target.checked) {
         document.documentElement.setAttribute('data-theme', 'dark');
+        document.getElementById("skill-img").style.filter = "invert(100)";
+        document.getElementById("skill-img-1").style.filter = "invert(100)";
+        document.getElementById("skill-img-2").style.filter = "invert(100)";        
+        document.getElementById("skill-img-3").style.filter = "invert(100)";
     }
     else {
         document.documentElement.setAttribute('data-theme', 'light');
+        document.getElementById("skill-img").style.filter = "invert(0)";
+        document.getElementById("skill-img-1").style.filter = "invert(0)";
+        document.getElementById("skill-img-2").style.filter = "invert(0)";        
+        document.getElementById("skill-img-3").style.filter = "invert(0)";
     }    
 }
     
@@ -307,10 +377,18 @@ toggleSwitch.addEventListener('change', switchTheme, false);
 function switchTheme(e) {
     if (e.target.checked) {
         document.documentElement.setAttribute('data-theme', 'dark');
+        document.getElementById("skill-img").style.filter = "invert(100)";
+        document.getElementById("skill-img-1").style.filter = "invert(100)";
+        document.getElementById("skill-img-2").style.filter = "invert(100)";        
+        document.getElementById("skill-img-3").style.filter = "invert(100)";
         localStorage.setItem('theme', 'dark');
     }
     else {
         document.documentElement.setAttribute('data-theme', 'light');
+        document.getElementById("skill-img").style.filter = "invert(0)";
+        document.getElementById("skill-img-1").style.filter = "invert(0)";
+        document.getElementById("skill-img-2").style.filter = "invert(0)";        
+        document.getElementById("skill-img-3").style.filter = "invert(0)";
         localStorage.setItem('theme', 'light');
     }    
 }
@@ -324,6 +402,11 @@ if (currentTheme) {
 
     if (currentTheme === 'dark') {
         toggleSwitch.checked = true;
+        
+    document.getElementById("skill-img").style.filter = "invert(100)";
+    document.getElementById("skill-img-1").style.filter = "invert(100)";
+    document.getElementById("skill-img-2").style.filter = "invert(100)";        
+    document.getElementById("skill-img-3").style.filter = "invert(100)";
     }
 }
 </script>
