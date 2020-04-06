@@ -220,8 +220,8 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-.dark-mode-text:hover:after {
-    width: 0;
+.theme-switch-wrapper:hover .dark-mode-text::after {
+    width: 0 !IMPORTANT;
 }
 
 .dark-mode-text:hover {
