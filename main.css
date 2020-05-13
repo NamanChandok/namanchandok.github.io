@@ -324,19 +324,19 @@ input:checked + .slider:before {
 
     /*ABOUT*/
 
-#about .about-head h2{
+#about .section-head h2{
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     color: var(--font-color);
 }
 
-.about-head h2{
+.section-head h2{
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     color: var(--font-color);
 }
 
-.about-head hr {
+.section-head hr {
     border-top: solid 2px var(--primary-color);
     width: 20%;
 }
@@ -355,7 +355,7 @@ input:checked + .slider:before {
     margin: 10px;
     color: var(--font-color);
 }
-#about .about-head hr {
+#about .section-head hr {
     border-top:solid 2px var(--primary-color);
     width: 20%;
 }
@@ -386,19 +386,19 @@ input:checked + .slider:before {
     padding: 5% 10%;
 }
 
-#skills .about-head h2{
+#skills .section-head h2{
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     color: var(--font-color);
 }
 
-.about-head h2{
+.section-head h2{
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     color: var(--font-color);
 }
 
-.about-head hr {
+.section-head hr {
     border-top: solid 2px var(--primary-color);
     width: 20%;
 }
@@ -480,13 +480,13 @@ input:checked + .slider:before {
     padding: 5% 10%;
 }
 
-#people .about-head h2 {
+#people .section-head h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     color: var(--font-color);
 }
 
-#people .about-head hr {
+#people .section-head hr {
     border-top:solid 2px var(--primary-color);
     width: 20%;
 }
@@ -678,15 +678,12 @@ input[type="submit"]:hover{
   }
 }
 
-
 .web{
     content: "";
     background-image: url(images/web.jpg);
     background-position: center;
     background-size: cover;
 }
-
-
 
 .row {
     margin: 0;

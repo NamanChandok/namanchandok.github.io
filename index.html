@@ -76,7 +76,7 @@
 <center>        
     <div id="about">
         
-        <div class="about-head">
+        <div class="section-head">
             <h2>About Me</h2>    
             <hr>
         </div>    
@@ -92,7 +92,7 @@
         <!---  SKILLS  --->
 <center>        
     <div id="skills">
-        <div class="about-head">
+        <div class="section-head">
             <h2>Skills</h2>    
             <hr>
         </div>    
@@ -119,14 +119,14 @@
                     </li>
                     <li class="icon">
                         <center>
-                            <img src="images/logo/jquery.png" id="skill-img">
+                            <img src="images/logo/jquery.png" id="skill-img" class="skill-img">
                             <img src="images/logo/jquery2.png" class="img-top">
                             <span>JQUERY</span>
                         </center>
                     </li>
                     <li class="icon">
                         <center>
-                            <img src="images/logo/bootstrap.png" id="skill-img-1">
+                            <img src="images/logo/bootstrap.png" id="skill-img-1" class="skill-img">
                             <img src="images/logo/bootstrap2.png" class="img-top">
                             <span>BOOTSTRAP</span>
                         </center>
@@ -151,7 +151,7 @@
                     </li>
                     <li class="icon">
                         <center>
-                            <img src="images/logo/filmora.png" id="skill-img-2">
+                            <img src="images/logo/filmora.png" id="skill-img-2" class="skill-img">
                             <img src="images/logo/filmora2.png" class="img-top">
                             <span>FILMORA</span>
                         </center>
@@ -160,6 +160,13 @@
                         <center>
                             <i class="fas fa-cube"></i>
                             <span>3D ANIMATION</span>
+                        </center>
+                    </li>
+                    <li class="icon">
+                        <center>
+                            <img src="images/logo/lua.png" id="skill-img-3" class="skill-img">
+                            <img src="images/logo/lua2.png" class="img-top">
+                            <span>LUA</span>
                         </center>
                     </li>
                 </ul>
@@ -173,7 +180,7 @@
         
 <center>        
     <div id="works">
-        <div class="about-head">
+        <div class="section-head">
             <h2>Works</h2>    
             <hr>
         </div> 
@@ -217,7 +224,7 @@
     
 <center>    
     <div id="people">
-        <div class="about-head">
+        <div class="section-head">
             <h2>Affiliations</h2>    
             <hr>
         </div>   
@@ -229,15 +236,15 @@
         </div>
         <div class="people-contents">
             <div class="people active" id="test-1">
-                <span class="description"><span class="hove">billion dollar one</span><span class="abcdef">YUVRAJ SHARMA</span><br>*le head</span>
+                <span class="description"><span class="hove">billion dollar one</span><span class="abcdef">YUVRAJ SHARMA</span></span>
             </div>
             
             <div class="people" id="test-2">
-                <span class="description"><span class="hove">CH</span><span class="abcdef">N</span>AMYA <span class="hove">N</span><span class="abcdef">CH</span>ABRA<br>*le junior head</span>
+                <span class="description"><span class="hove">CH</span><span class="abcdef">N</span>AMYA <span class="hove">N</span><span class="abcdef">CH</span>ABRA</span>
             </div>
             
             <div class="people" id="test-3">
-                <span class="description"><span class="hove">TECH-</span>SHAIVI SHEWARAMANI<br>*le teesri head</span>
+                <span class="description"><span class="hove">TECH-</span>SHAIVI SHEWARAMANI</span>
             </div>
             
             
@@ -250,7 +257,7 @@
     
 <center>    
     <div id="contact">
-        <div class="about-head">
+        <div class="section-head">
             <h2>Contact Me</h2>    
             <hr>
         </div>  
@@ -367,7 +374,7 @@ function switchTheme(e) {
         document.getElementById("skill-img").style.filter = "invert(0)";
         document.getElementById("skill-img-1").style.filter = "invert(0)";
         document.getElementById("skill-img-2").style.filter = "invert(0)";        
-        document.getElementById("skill-img-3").style.filter = "invert(0)";
+        document.getElementById("skill-img-3").style.filter = "invert(0)";  
     }    
 }
     
@@ -388,7 +395,7 @@ function switchTheme(e) {
         document.getElementById("skill-img").style.filter = "invert(0)";
         document.getElementById("skill-img-1").style.filter = "invert(0)";
         document.getElementById("skill-img-2").style.filter = "invert(0)";        
-        document.getElementById("skill-img-3").style.filter = "invert(0)";
+        document.getElementById("skill-img-3").style.filter = "invert(0)";  
         localStorage.setItem('theme', 'light');
     }    
 }
@@ -402,11 +409,10 @@ if (currentTheme) {
 
     if (currentTheme === 'dark') {
         toggleSwitch.checked = true;
-        
-    document.getElementById("skill-img").style.filter = "invert(100)";
-    document.getElementById("skill-img-1").style.filter = "invert(100)";
-    document.getElementById("skill-img-2").style.filter = "invert(100)";        
-    document.getElementById("skill-img-3").style.filter = "invert(100)";
+        document.getElementById("skill-img").style.filter = "invert(100)";
+        document.getElementById("skill-img-1").style.filter = "invert(100)";
+        document.getElementById("skill-img-2").style.filter = "invert(100)";        
+        document.getElementById("skill-img-3").style.filter = "invert(100)";
     }
 }
 </script>
