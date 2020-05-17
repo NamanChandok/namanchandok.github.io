@@ -509,7 +509,6 @@ input:checked + .slider:before {
     filter: none;
 }
 
-
 .people-contents{
     max-width: 600px;
     margin: auto;
