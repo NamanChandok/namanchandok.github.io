@@ -1,31 +1,17 @@
+<!DOCTYPE html>
 <html>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="utf-8">
-
 <head>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Naman Chandok | Web Designer</title>
-
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,400italic,500,100italic,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Poiret+One&family=Raleway&display=swap&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href='main.css' rel='stylesheet' type='text/css'>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+    <link rel="icon" href="lib/favicon.png" sizes="26x26" type="image/png">
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
 </head>
 
 <body onload="myFunction()">
-
-    <!---  MUSIC  --->
-
-    <audio autoplay loop hide>
-        <source src="music.mp3">
-    </audio>
-
-    <!---  LOADER   --->
 
     <div class="load" id="load">
         <center>
@@ -34,70 +20,67 @@
         </center>
     </div>
 
+    <div class="mainbod" id="mainbod">
 
-    <div class="mainBod" id="mainBod">
+        <!--- DARK MODE SWITCH --->
 
-        <!---  NAVBAR   --->
-
-        <div class="navbar">
-            <a href="#home" class="home-a">Home</a>
-            <a href="#about">About Me</a>
-            <a href="#skills">Skills</a>
-            <a href="#works">Works</a>
-            <a href="#contact">Contact Me</a>
-            <div class="theme-switch-wrapper">
-                <a class="dark-mode-text">Dark Mode -> </a>
-                <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox" />
-                    <div class="slider round"></div>
-                </label>
-            </div>
-        </div>
-
-        <!---  HEADER   --->
-
-        <div id="home">
-            <div class="heading animated fadeInDown">
-                <center>
-                    <h1>Naman Chandok</h1>
-                    <h3>Web Designer</h3>
-                </center>
-            </div>
-            <div class="scroll-down">
-                <center>
-                    <a href="#about"><i class="fa fa-long-arrow-alt-down"></i></a>
-                </center>
-            </div>
-        </div>
-
-        <!---  ABOUT   --->
-
-        <center>
-            <div id="about">
-
-                <div class="section-head">
-                    <h2>About Me</h2>
-                    <hr>
-                </div>
-                <div class="writen">
-                    <p>Born on 10th December 2004, Naman Chandok is a web designer. Also an artist, he takes his inspiration from Larry Page, the founder of google, the most known web domain on the internet.</p>
-                </div>
-
-            </div>
-            <hr>
-        </center>
-
-
-        <!---  SKILLS  --->
-        <center>
-            <div id="skills">
-                <div class="section-head">
-                    <h2>Skills</h2>
-                    <hr>
-                </div>
-                <div class="writen">
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round">
                     <center>
-                        <ul>
+                        <img src="lib/sun.png" class="sun">
+                        <img src="lib/moon.png" class="moon">
+                    </center>
+                </div>
+            </label>
+        </div>
+
+        <!-- FULLPAGE -->
+
+        <div id="fullpage">
+
+            <!-- HOME -->
+
+            <div class="section" id="home">
+                <div class="heading fadeInDown">
+                    <center>
+                        <h1><b>Naman Chandok</b></h1>
+                    </center>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+
+            <div class="section" id="about">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 align-center">
+                        <h1 class="section-title">&#128075; Hi, I'm <b>Naman Chandok</b>.</h1>
+                        <center>
+                            <br>
+                            <div class="section-hr"></div>
+                            <br>
+                        </center>
+                        <p class="section-text">I’m a 15 year old high-school student living in New Delhi, India. I’m currently studying in Tagore International School, Vasant Vihar. I’m the vice president of my school’s computer club, Pyrotech. I'm continually endeavoring to improve my skills in graphic design, web development & art.</p>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+
+            <!-- SKILLS -->
+
+            <div class="section" id="skills">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 align-center">
+                        <h1 class="section-title">Skills</h1>
+                        <center>
+                            <br>
+                            <div class="section-hr"></div>
+                            <br>
+                        </center>
+                        <ul class="section-text icons">
                             <li class="icon">
                                 <center>
                                     <i class="fab fa-html5"></i>
@@ -118,15 +101,14 @@
                             </li>
                             <li class="icon">
                                 <center>
-                                    <img src="images/logo/jquery.png" id="skill-img" class="skill-img">
-                                    <img src="images/logo/jquery2.png" class="img-top">
+                                    <img src="lib/logo/jquery.png" id="skill-img" class="skill-img">
+                                    <img src="lib/logo/jquery2.png" class="img-top skill-img">
                                     <span>JQUERY</span>
                                 </center>
                             </li>
                             <li class="icon">
                                 <center>
-                                    <img src="images/logo/bootstrap.png" id="skill-img-1" class="skill-img">
-                                    <img src="images/logo/bootstrap2.png" class="img-top">
+                                    <i class="fab fa-bootstrap"></i>
                                     <span>BOOTSTRAP</span>
                                 </center>
                             </li>
@@ -134,6 +116,12 @@
                                 <center>
                                     <span class="text-logo">Ps</span>
                                     <span>PHOTOSHOP</span>
+                                </center>
+                            </li>
+                            <li class="icon">
+                                <center>
+                                    <span class="text-logo">Ai</span>
+                                    <span>GRAPHIC DESIGN</span>
                                 </center>
                             </li>
                             <li class="icon">
@@ -150,194 +138,133 @@
                             </li>
                             <li class="icon">
                                 <center>
-                                    <img src="images/logo/filmora.png" id="skill-img-2" class="skill-img">
-                                    <img src="images/logo/filmora2.png" class="img-top">
-                                    <span>FILMORA</span>
-                                </center>
-                            </li>
-                            <li class="icon">
-                                <center>
                                     <i class="fas fa-cube"></i>
                                     <span>3D ANIMATION</span>
                                 </center>
                             </li>
                             <li class="icon">
                                 <center>
-                                    <img src="images/logo/lua.png" id="skill-img-3" class="skill-img">
-                                    <img src="images/logo/lua2.png" class="img-top">
+                                    <img src="lib/logo/lua.png" id="skill-img-3" class="skill-img">
+                                    <img src="lib/logo/lua2.png" class="img-top skill-img">
                                     <span>LUA</span>
                                 </center>
                             </li>
                         </ul>
-                    </center>
+                    </div>
+                    <div class="col-md-2"></div>
                 </div>
             </div>
-            <hr>
-        </center>
 
-        <!---  WORKS   --->
+            <!-- WORKS -->
 
-        <center>
-            <div id="works">
-                <div class="section-head">
-                    <h2>Works</h2>
-                    <hr>
-                </div>
+            <div class="section" id="works">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 align-center">
+                        <h1 class="section-title">Works</h1>
+                        <center>
+                            <br>
+                            <div class="section-hr"></div>
+                            <br>
+                        </center>
+                        <div class="work-contents">
+                            <div id="web" class="tabcontent">
+                                <div class="gallery">
 
-                <div class="work-contents">
-                    <div id="web" class="tabcontent">
-                        <div class="gallery">
+                                    <a href="https://namanchandok.co/tysworldtv/" target="_blank" class="image">
+                                        <img src="lib/tysworldtv.png" alt="">
+                                    </a>
 
-                            <a href="https://namanchandok.github.io/tysworldtv/" target="_blank" class="image">
-                                <img src="images/tysworldtv.png" alt="">
-                            </a>
+                                    <a href="https://teamvulcantis.github.io/" target="_blank" class="image">
+                                        <img src="lib/vulcan.png" alt="">
+                                    </a>
 
-                            <a href="https://teamvulcantis.github.io/" target="_blank" class="image">
-                                <img src="images/vulcan.png" alt="">
-                            </a>
+                                    <a href="https://namanchandok.co/stallman/index.html" target="_blank" class="image">
+                                        <img src="lib/stallman.png" alt="">
+                                    </a>
 
-                            <a href="https://namanchandok.github.io/stallman/index.html" target="_blank" class="image">
-                                <img src="images/stallman.png" alt="">
-                            </a>
+                                    <a href="https://namanchandok.co/tonystark/index.html" target="_blank" class="image">
+                                        <img src="lib/tony.png" alt="">
+                                    </a>
 
-                            <a href="https://namanchandok.github.io/tonystark/index.html" target="_blank" class="image">
-                                <img src="images/tony.PNG" alt="">
-                            </a>
+                                    <a href="https://namanchandok.co/dynamix19" target="_blank" class="image">
+                                        <img src="lib/altech.png" alt="">
+                                    </a>
 
-                            <a href="https://namanchandok.github.io/autopilot" target="_blank" class="image">
-                                <img src="images/auto.PNG" alt="">
-                            </a>
+                                    <a href="https://namanchandok.co/alphanode/" target="_blank" class="image">
+                                        <img src="lib/hadestown.png" alt="">
+                                    </a>
 
-                            <a href="https://namanchandok.github.io/dynamix19" target="_blank" class="image">
-                                <img src="images/altehc.png" alt="">
-                            </a>
+                                    <a href="https://namanchandok.co/pyro/" target="_blank" class="image">
+                                        <img src="lib/pyro.png" alt="">
+                                    </a>
 
-                            <a href="https://namanchandok.github.io/alphanode/" target="_blank" class="image">
-                                <img src="images/hadestown.png" alt="">
-                            </a>
+                                    <a href="http://ordin.teampyro.tech" target="_blank" class="image">
+                                        <img src="lib/ordin.png" alt="">
+                                    </a>
 
-                            <a href="https://teampyro.tech/" target="_blank" class="image">
-                                <img src="images/pyro.png" alt="">
-                            </a>
+                                    <a href="http://crypt.teampyro.tech" target="_blank" class="image">
+                                        <img src="lib/crypt.png" alt="">
+                                    </a>
 
-                            <a href="http://ordin.teampyro.tech" target="_blank" class="image">
-                                <img src="images/ordin.png" alt="">
-                            </a>
-
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="col-md-2"></div>
                 </div>
             </div>
-            <hr>
-        </center>
 
-        <!---  CONTACT   --->
+            <!-- CONTACT -->
 
-        <center>
-            <div id="contact">
-                <div class="section-head">
-                    <h2>Contact Me</h2>
-                    <hr>
-                </div>
+            <div class="section" id="footer">
                 <div class="row">
-                    <div class="col-md-6">
-                        <i class="fas fa-phone"></i> +91 8750-627-282<br><br>
-                        <i class="fas fa-envelope"></i> namanchandok1@gmail.com<br><br>
-                        <i class="fas fa-map-marked-alt"></i> New Delhi, India<br>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 align-left">
+                        <h1 class="section-title">Naman Chandok</h1>
+                        <br>
+                        <div class="section-hr"></div>
+                        <br>
+                        <p class="section-text">
+                            <i class="far fa-phone"></i> +91 8750-627-282<br><br>
+                            <i class="far fa-map-marked-alt"></i> New Delhi, India<br><br>
+                            <a href="https://github.com/namanchandok" class="social-links" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="mailto:namanchandok1@gmail.co" class="social-links" target="_blank"><i class="fal fa-envelope"></i></a>
+                            <a href="https://www.instagram.com/namanchandok/" class="social-links" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <br>
+                            <small>&copy;2020 Naman Chandok</small>
+                        </p>
                     </div>
-                    <div class="col-md-4">
-                        <center>
-                            <form>
-                                <input placeholder="Name" name="name" type="text"><br>
-                                <input placeholder="Email" name="email" type="text"><br>
-                                <textarea placeholder="Comment" name="message"></textarea><br>
-                                <input class="button" type="submit" value="Submit">
-                            </form>
-                        </center>
-                    </div>
+                    <div class="col-md-2"></div>
                 </div>
             </div>
-        </center>
 
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.692033247572!2d77.06544621466256!3d28.638990782415306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04e5f360fd1f%3A0x74de1e2966049666!2sCharak+Sadan%2C+E+Block%2C+Vikaspuri%2C+Budella%2C+Vikaspuri%2C+Delhi%2C+110018!5e0!3m2!1sen!2sin!4v1541838781522" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-
-        <!---  FOOTER   --->
-
-
-        <div id="end">
-            <center>
-                <div class="footer-text">
-                    <div class="footer-copy font-alt">
-                        <a href="#home"><img src="images/logo.png" width="78" height="36" alt=""></a><br><br><br>
-                        © Naman Chandok
-                    </div>
-                    <br>
-                    <big>
-                        <p class="footer-made"> Made By: Naman Chandok</p>
-                    </big>
-                    <big>
-                        <p class="footer-made"> Website Hosted by <a href="https://www.github.com"> Github</a> </p>
-                    </big>
-                </div>
-            </center>
-        </div>
-
-
 
     </div>
 
-    <script>
+    <script type="text/javascript" src="fontawesome.js"></script>
+    <script type="text/javascript" src="fullpage.js"></script>
+    <script type="text/javascript">
+        // FULLPAGE
+
+        var myFullpage = new fullpage('#fullpage', {
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['Home', 'About Me', 'Skills', 'Works', 'Contact']
+        });
+
         // LOADER
 
         var myVar;
 
         function myFunction() {
-            myVar = setTimeout(showPage, 1500);
+            myVar = setTimeout(showPage, 3000);
         }
 
         function showPage() {
-            document.getElementById("load").style.display = "none";
-            document.getElementById("mainBod").style.display = "block";
+            document.getElementById("load").style.transform = "translateY(-100vh)";
         }
-
-        // TRANSPARENT NAVBAR
-
-        jQuery(document).on("scroll", function() {
-            if ($(document).scrollTop() > 120) {
-                $(".navbar").css("background-color", "var(--nav-bg-color)");
-            } else {
-                $(".navbar").css("background", "none");
-            }
-        });
-
-        // SMOOTH SCROLL
-
-        $(document).ready(function() {
-            $("a").on('click', function(event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    var hash = this.hash;
-
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function() {
-                        window.location.hash = hash;
-                    });
-                }
-            });
-        });
-
-        // PEOPLE SECTION SCRIPT
-
-        $('.people-pics img').click(function() {
-            $(".people-pics img").removeClass("active");
-            $(this).addClass("active");
-
-            $(".people").removeClass("active");
-            $("#" + $(this).attr("alt")).addClass("active");
-        })
 
         // DARK MODE
 
@@ -377,8 +304,6 @@
             }
         }
     </script>
-
-
 </body>
 
 </html>
