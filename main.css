@@ -286,6 +286,11 @@ a:hover {
 
 /* SECTIONS */
 
+.section {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
 .section-hr {
     height: 5px;
     width: 40%;
