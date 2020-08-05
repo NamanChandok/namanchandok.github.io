@@ -368,6 +368,7 @@ img.skill-img {
 
 img.skill-img {
     filter: var(--invert);
+    transition: 0.4s;
 }
 
 img.img-top {
