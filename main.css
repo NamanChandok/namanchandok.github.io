@@ -335,7 +335,7 @@ a:hover {
 /* ABOUT */
 
 .about-img {
-    width: 100%;
+    width: 90%;
     border-radius: 50%;
     border: 5px solid var(--scroll-fg-color);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);

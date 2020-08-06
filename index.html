@@ -59,7 +59,7 @@
             <div class="section" id="about">
                 <div class="row">
                     <div class="col-md-2"></div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 align-center">
                         <img src="lib/hallo.jpeg" class="about-img">
                     </div>
                     <div class="col-md-5 align-left">
@@ -267,9 +267,9 @@
 
         var myFullpage = new fullpage('#fullpage', {
             navigation: true,
+            scrollOverflow: true,
             navigationPosition: 'right',
-            navigationTooltips: ['Home', 'About Me', 'Skills', 'Works', 'Contact'],
-            scrollOverflow: true
+            navigationTooltips: ['Home', 'About Me', 'Skills', 'Works', 'Contact']
         });
 
         // LOADER
