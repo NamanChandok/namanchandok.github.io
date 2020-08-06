@@ -20,28 +20,81 @@ permalink: /404.html
 </head>
 
 <body>
-        
-        <!-- DARK MODE SWITCH -->
 
-        <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round">
-                    <center>
-                        <img src="lib/sun.png" class="sun">
-                        <img src="lib/moon.png" class="moon">
-                    </center>
-                </div>
-            </label>
-        </div>
-        <div id="fullpage">
-            <div class="section" id="404">
-                <div class="heading">
-                    <center>
-                        <h1><b>404</b></h1>
-                    </center>
-                </div>
+    <!-- DARK MODE SWITCH -->
+
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round">
+                <center>
+                    <img src="lib/sun.png" class="sun">
+                    <img src="lib/moon.png" class="moon">
+                </center>
             </div>
-       </div>     
+        </label>
+    </div>
+
+
+    <div id="fullpage">
+        <div class="section" id="oops">
+            <div class="heading">
+                <center>
+                    <h1><b>404</b></h1>
+                    <h3>Uh oh. ¯\_(ツ)_/¯</h3>
+                    <h5><a href="https://namanchandok.co">Back to Home?</a></h5>
+                </center>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="fontawesome.js"></script>
+    <script type="text/javascript" src="fullpage.js"></script>
+    <script type="text/javascript" src="scrolloverflow.js"></script>
+    <script type="text/javascript">
+        // FULLPAGE
+
+        var myFullpage = new fullpage('#fullpage', {});
+
+        // DARK MODE
+
+        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+        function switchTheme(e) {
+            if (e.target.checked) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        }
+
+        // SAVE PREFERENCE TO LOCAL STORAGE
+
+        toggleSwitch.addEventListener('change', switchTheme, false);
+
+        function switchTheme(e) {
+            if (e.target.checked) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        // CHECK LOCAL STORAGE FOR PREFERENCE
+
+        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+
+            if (currentTheme === 'dark') {
+                toggleSwitch.checked = true;
+            }
+        }
+    </script>
 </body>
+
 </html>

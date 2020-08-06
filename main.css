@@ -246,8 +246,6 @@ a:hover {
 
 #home::before {
     background-image: url(lib/homebg.png);
-    position: fixed;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -258,23 +256,12 @@ a:hover {
     opacity: 0.7;
 }
 
-#home .heading {
+.heading {
     visibility: visible;
     z-index: 1;
 }
 
-.fadeInDown {
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-name: fadeInDown 2s;
-    -moz-animation-name: fadeInDown 2s;
-    -o-animation-name: fadeInDown 2s;
-    animation-name: fadeInDown 2s;
-}
-
-#home .heading h1 {
+.heading h1 {
     color: var(--font-color);
     transition: 0.4s;
     font-size: 70px;
@@ -284,12 +271,37 @@ a:hover {
     margin-bottom: 10px;
 }
 
-/* SECTIONS */
-
-.section {
-    overflow-x: hidden;
-    overflow-y: scroll;
+#oops .heading h1 {
+    background-image: url(lib/homebg.png);
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 10px;
+    font-size: 150px;
+    font-weight: bolder;
+    -webkit-text-fill-color: rgba(0,0,0,0.1);
 }
+
+.heading h3, .heading  h5 a {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    color: var(--font-color);
+    transition: 0.4s;
+}
+
+#oops {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+    align-content: center;
+    justify-content: center;
+}
+
+/* SECTIONS */
 
 .section-hr {
     height: 5px;
