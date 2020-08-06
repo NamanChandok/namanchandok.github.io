@@ -246,6 +246,7 @@ a:hover {
 
 #home::before {
     background-image: url(lib/homebg.png);
+    position: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
