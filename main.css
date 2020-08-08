@@ -1,8 +1,8 @@
 /* VARIABLES */
 
 :root {
-    --primary-color: rgba(130, 224, 0, 0.9);
-    --secondary-color: rgba(94, 160, 2, 0.9);
+    --primary-color: rgba(227, 0, 7, 0.9);
+    --secondary-color: rgba(162, 0, 5, 0.9);
     --lighter-bg-color: #eee;
     --font-color: #000;
     --bg-color: #fff;
@@ -16,8 +16,8 @@
 }
 
 [data-theme="dark"] {
-    --primary-color: rgba(177, 255, 69, 0.9);
-    --secondary-color: rgba(94, 160, 2, 0.9);
+    --primary-color: rgba(227, 0, 7, 0.9);
+    --secondary-color: rgba(162, 0, 5, 0.9);
     --lighter-bg-color: rgb(30, 30, 30);
     --font-color: #ffffff;
     --bg-color: #0a0a0a;
@@ -274,7 +274,7 @@ a:hover {
 }
 
 #oops .heading h1 {
-    background-image: url(lib/homebg.png);
+    background-image: url(namanchandok.co/lib/homebg.png);
     background-size: cover;
     background-position: center;
     -webkit-background-clip: text;
