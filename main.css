@@ -45,18 +45,18 @@ html {
 }
 
 ::-moz-selection {
-    color: #fff;
-    background-color: var(--primary-color);
+    color: var(--font-color);
+    background-color: transparent;
 }
 
 ::-webkit-selection {
-    color: #fff;
-    background-color: var(--primary-color);
+    color: var(--font-color);
+    background-color: transparent;
 }
 
 ::selection {
-    color: #fff;
-    background-color: var(--primary-color);
+    color: var(--font-color);
+    background-color: transparent;
 }
 
 body {
@@ -365,6 +365,7 @@ a:hover {
     text-align: center;
     padding: 10px;
     margin: 5px;
+    transition: 0.4s;
 }
 
 .icon i {
