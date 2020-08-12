@@ -27,7 +27,7 @@ window.FontAwesomeKitConfig = {
             o = i.documentElement.doScroll,
             r = "DOMContentLoaded",
             a = (o ? /^loaded|^c/ : /^loaded|^i|^c/).test(i.readyState);
-        a || i.addEventListener(r, t = function() {
+        a || i.addEventListener(r, t = function() { 
             for (i.removeEventListener(r, t), a = 1; t = n.shift();) t()
         }), a ? setTimeout(e, 0) : n.push(e)
     }! function() {
