@@ -1,4 +1,4 @@
-/*!
+/*! 
  * fullPage 3.0.9
  * https://github.com/alvarotrigo/fullPage.js
  *
@@ -29,7 +29,7 @@
     var WRAPPER =               'fullpage-wrapper';
     var WRAPPER_SEL =           '.' + WRAPPER;
 
-    // slimscroll
+    // slimscroll 
     var SCROLLABLE =            'fp-scrollable';
     var SCROLLABLE_SEL =        '.' + SCROLLABLE;
 
