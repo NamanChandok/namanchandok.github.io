@@ -388,10 +388,6 @@ ul.icons li {
 img.skill-img {
     height: 50px;
     padding-bottom: 10px;
-    display: inline;
-}
-
-img.skill-img {
     filter: var(--invert);
     transition: 0.4s;
 }
