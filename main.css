@@ -114,7 +114,7 @@ a:hover {
     padding-top: 17%;
     position: fixed;
     table-layout: fixed;
-    transition: 10s ease-out;
+    transition: 5s ease-out;
     display: table;
 }
 
