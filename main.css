@@ -114,7 +114,7 @@ a:hover {
     padding-top: 17%;
     position: fixed;
     table-layout: fixed;
-    transition: 1s cubic-bezier(0, 0, 0, 1.03);
+    transition: 10s ease-out;
     display: table;
 }
 
