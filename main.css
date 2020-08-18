@@ -2,7 +2,7 @@
 /* VARIABLES */ 
 
 :root {
-    --primary-color: rgba(227, 0, 7, 0.9);
+    --primary-color: rgba(255, 0, 0, 0.9);
     --secondary-color: rgba(162, 0, 5, 0.9);
     --lighter-bg-color: #eee;
     --font-color: #000;
@@ -17,7 +17,7 @@
 }
 
 [data-theme="dark"] {
-    --primary-color: rgba(227, 0, 7, 0.9);
+    --primary-color: rgba(255, 0, 0, 0.9);
     --secondary-color: rgba(162, 0, 5, 0.9);
     --lighter-bg-color: rgb(30, 30, 30);
     --font-color: #ffffff;
