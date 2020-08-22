@@ -428,7 +428,6 @@ img.img-top {
 }
 
 .gallery img {
-    cursor: pointer;
     margin: 5px;
     transition: 0.4s;
 }
