@@ -12,7 +12,7 @@
     <meta name="author" content="Naman Chandok">
     <title>Naman Chandok</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Poiret+One&family=Raleway&display=swap&family=Poppins:wght@500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Poiret+One&family=Raleway&display=swap&family=Bebas+Neue&family=Odibee+Sans&family=Abel&family=Staatliches&family=Poppins:wght@500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -49,6 +49,20 @@
 
         <div id="fullpage">
 
+            <div class="section" id="home">
+                <div class="over"></div>
+                <div class="row align-center">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div class="heading">
+                            <h1>Naman Chandok</h1>
+                            <h3>Web Developer/Designer</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+
             <!-- ABOUT -->
 
             <div class="section" id="about">
@@ -58,7 +72,7 @@
                         <img src="lib/hallo.jpeg" class="about-img">
                     </div>
                     <div class="col-md-5 align-left">
-                        <h1 class="section-title">&#128075; Hi, I'm <b>Naman Chandok</b>.</h1>
+                        <h1 class="section-title">&#128075; Hi, I'm Naman Chandok.</h1>
                         <br>
                         <div class="section-hr left"></div>
                         <br>
@@ -203,19 +217,19 @@
                                             </a>
                                         </div>
                                         <div class="col-md-4">
-                                            <a href="http://ordin.teampyro.tech" target="_blank" class="image">
+                                            <a href="http://teampyro.tech/ordin20" target="_blank" class="image">
                                                 <img src="lib/ordin.png" alt="">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-2">
-                                            <a class="image">
-                                                <img src="lib/namanchandok.jpg" alt="" style="opacity: 0; width: 0px; height: 0px;">
+                                        <div class="col-md-4">
+                                            <a href="http://coreprelims20.herokuapp.com" target="_blank" class="image">
+                                                <img src="lib/gpl4.png" alt="">
                                             </a>
                                         </div>
                                         <div class="col-md-4">
-                                            <a href="http://crypt.teampyro.tech" target="_blank" class="image">
+                                            <a href="http://namanchandok.co/crypt" target="_blank" class="image">
                                                 <img src="lib/crypt.png" alt="">
                                             </a>
                                         </div>
@@ -224,7 +238,6 @@
                                                 <img src="lib/coral.png" alt="">
                                             </a>
                                         </div>
-                                        <div class="col-md-2"></div>
                                     </div>
                                 </div>
                             </div>
@@ -275,7 +288,8 @@
             navigation: true,
             scrollOverflow: true,
             navigationPosition: 'right',
-            navigationTooltips: ['About Me', 'Skills', 'Works', 'Contact']
+            navigationTooltips: ['Home', 'About Me', 'Skills', 'Works', 'Contact'],
+            css3: false
         });
 
         // LOADER

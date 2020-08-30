@@ -63,7 +63,6 @@ html {
 body {
     overflow-x: hidden;
     background-color: var(--bg-color);
-    transition: 0.4s;
 }
 
 hr {
@@ -114,7 +113,7 @@ a:hover {
     padding-top: 17%;
     position: fixed;
     table-layout: fixed;
-    transition: 1s ease-out;
+    transition: transform 1s ease-out;
     display: table;
 }
 
@@ -122,10 +121,6 @@ a:hover {
     display: table-cell;
     vertical-align: middle;
     position: relative;
-    background-image: url(lib/logo.svg);
-    background-size: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
     height: 200px;
     width: 200px;
 }
@@ -234,6 +229,26 @@ a:hover {
     color: var(--font-color) !important;
 }
 
+/* HOME */
+
+#home {
+    background-image: url('lib/homebg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#home .over {
+    background-image: url('lib/homefg.png');
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: bottom;
+    bottom: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
 
 .heading {
     visibility: visible;
@@ -241,17 +256,17 @@ a:hover {
 }
 
 .heading h1 {
-    color: var(--font-color);
+    color: #fff;
     transition: 0.4s;
     font-size: 70px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     font-weight: 300;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 #oops .heading h1 {
-    background-image: url(https://namanchandok.co/lib/homebg.png);
+    background-image: url('https://namanchandok.github.io/lib/homebg.png');
     background-size: cover;
     background-position: center;
     -webkit-background-clip: text;
@@ -265,7 +280,7 @@ a:hover {
 
 .heading h3, .heading  h5 a {
     text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Odibee Sans', sans-serif;
     letter-spacing: 2px;
     color: var(--font-color);
     transition: 0.4s;
@@ -293,7 +308,7 @@ a:hover {
 }
 
 .section-title {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     font-weight: 300px;
     font-size: 50px;
     padding: 10 10 10 0;
@@ -307,6 +322,10 @@ a:hover {
     padding: 20 10 10 10;
     color: var(--font-color);
     transition: 0.4s;
+}
+
+.section {
+    background-color: var(--bg-color);
 }
 
 /* ABOUT */
@@ -419,6 +438,14 @@ img.img-top {
 
 .far {
     color: var(--secondary-color);
+}
+
+#footer small {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300px;
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 2px;
 }
 
 /* ANIMATIONS */
