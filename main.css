@@ -265,6 +265,10 @@ a:hover {
     margin-bottom: 10px;
 }
 
+.sub-heading {
+    color: #fff !important;
+}
+
 #oops .heading h1 {
     background-image: url('https://namanchandok.github.io/lib/homebg.png');
     background-size: cover;
