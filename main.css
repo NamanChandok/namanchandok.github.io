@@ -2,8 +2,8 @@
 /* VARIABLES */ 
 
 :root {
-    --primary-color: rgba(255, 0, 0, 0.9);
-    --secondary-color: rgba(162, 0, 5, 0.9);
+    --primary-color: #CD9B7B;
+    --secondary-color: #9C644D;
     --lighter-bg-color: #eee;
     --font-color: #000;
     --bg-color: #fff;
@@ -17,8 +17,8 @@
 }
 
 [data-theme="dark"] {
-    --primary-color: rgba(255, 0, 0, 0.9);
-    --secondary-color: rgba(162, 0, 5, 0.9);
+    --primary-color: #CD9B7B;
+    --secondary-color:  #9C644D;
     --lighter-bg-color: rgb(30, 30, 30);
     --font-color: #ffffff;
     --bg-color: #0a0a0a;
@@ -121,8 +121,12 @@ a:hover {
     display: table-cell;
     vertical-align: middle;
     position: relative;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: var(--primary-color);
     height: 200px;
     width: 200px;
+    animation: spin 2s linear infinite;
 }
 
 .loader-wheel:after {
@@ -130,12 +134,12 @@ a:hover {
     position: absolute;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: var(--primary-color);
+    border-top-color: var(--font-color);
     top: 5px;
     left: 5px;
     right: 5px;
     bottom: 5px;
-    animation: spin 1.5s linear infinite;
+    animation: spin 3s linear infinite;
 }
 
 .loader-wheel::before {
@@ -144,7 +148,7 @@ a:hover {
     border-radius: 50%;
     border: 3px solid transparent;
     border-top-color: var(--secondary-color);
-    animation: spin 1s linear infinite;
+    animation: spin 1.5s linear infinite;
     top: 15px;
     left: 15px;
     right: 15px;
@@ -255,14 +259,10 @@ a:hover {
     z-index: 1;
 }
 
-.heading h1 {
-    color: #fff;
-    transition: 0.4s;
-    font-size: 70px;
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 300;
+.home-logo {
+    width: 40%;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .sub-heading {
