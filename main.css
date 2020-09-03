@@ -280,7 +280,20 @@ a:hover {
     letter-spacing: 10px;
     font-size: 150px;
     font-weight: bolder;
-    -webkit-text-fill-color: rgba(0,0,0,0.1);
+    -webkit-text-fill-color: var(--switch-bg-color);
+}
+
+#oops .heading h2 {
+    background-image: url('https://namanchandok.github.io/lib/idk.png');
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 5px;
+    font-size: 70px;
+    font-weight: bolder;
+    -webkit-text-fill-color: var(--switch-bg-color);
 }
 
 .heading h3, .heading  h5 a {
