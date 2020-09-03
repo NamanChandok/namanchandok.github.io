@@ -10,7 +10,7 @@ window.FontAwesomeKitConfig = {
     "license": "pro",
     "method": "css",
     "minify": {
-        "enabled": true
+        "enabled": true 
     },
     "v4FontFaceShim": {
         "enabled": true

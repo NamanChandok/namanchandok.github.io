@@ -239,6 +239,7 @@ a:hover {
     background-image: url('lib/homebg.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
 }
 
@@ -246,8 +247,8 @@ a:hover {
     background-image: url('lib/homefg.png');
     position: absolute;
     background-repeat: no-repeat;
-    background-size: 110%;
-    background-position: bottom;
+    background-size: cover;
+    background-position: center;
     bottom: 0px;
     left: 0px;
     height: 100%;
