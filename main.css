@@ -221,7 +221,7 @@ a:hover {
 /* NAVBAR */
 
 #fp-nav ul li a span {
-    background-color: var(--secondary-color) !important;
+    background-color: var(--font-color) !important;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
 }
 
