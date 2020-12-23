@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="description"
-        content="I’m a 15 year old high-school student living in New Delhi, India and this is my portfolio website.">
+        content="I’m a 16 year old high-school student living in New Delhi, India and this is my portfolio website.">
     <meta name="keywords"
         content="Naman, Chandok, Naman Chandok, naman, chandok, naman chandok, namanchandok, NamanChandok">
     <meta name="author" content="Naman Chandok">
@@ -19,6 +19,7 @@
     <link href='main.css' rel='stylesheet' type='text/css'>
     <link rel="icon" href="lib/favicon.png" sizes="26x26" type="image/png">
     <link rel="stylesheet" type="text/css" href="fullpage.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body onload="myFunction()">
@@ -68,7 +69,7 @@
 
             <!-- ABOUT -->
 
-            <div class="section" id="about">
+            <div class="section second" id="about">
                 <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-3 align-center">
@@ -79,7 +80,7 @@
                         <br>
                         <div class="section-hr left"></div>
                         <br>
-                        <p class="section-text">I’m a 15 year old high-school student living in New Delhi, India. I’m
+                        <p class="section-text">I’m a 16 year old high-school student living in New Delhi, India. I’m
                             currently studying in Tagore International School, Vasant Vihar. I’m the vice president of
                             my school’s computer club, Pyrotech. I'm continually endeavoring to improve my skills in
                             graphic design, web development & art.</p>
@@ -292,62 +293,7 @@
     <script type="text/javascript" src="fontawesome.js"></script>
     <script type="text/javascript" src="fullpage.js"></script>
     <script type="text/javascript" src="scrolloverflow.js"></script>
-    <script type="text/javascript">
-        // FULLPAGE
-
-        var myFullpage = new fullpage('#fullpage', {
-            navigation: true,
-            scrollOverflow: true,
-            navigationPosition: 'right',
-            navigationTooltips: ['Home', 'About Me', 'Skills', 'Works', 'Contact'],
-            css3: false
-        });
-
-        // LOADER
-
-        var myVar;
-
-        function myFunction() {
-            myVar = setTimeout(showPage, 3000);
-        }
-
-        function showPage() {
-            document.getElementById("load").style.transform = "translateY(-200vh)";
-        }
-
-        // DARK MODE
-
-        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-
-        function switchTheme(e) {
-            if (e.target.checked) {
-                document.documentElement.setAttribute('data-theme', 'dark');
-            } else {
-                document.documentElement.setAttribute('data-theme', 'light');
-            }
-        }
-        // SAVE PREFERENCE TO LOCAL STORAGE
-        toggleSwitch.addEventListener('change', switchTheme, false);
-
-        function switchTheme(e) {
-            if (e.target.checked) {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark');
-            } else {
-                document.documentElement.setAttribute('data-theme', 'light');
-                localStorage.setItem('theme', 'light');
-            }
-        }
-        // CHECK LOCAL STORAGE FOR PREFERENCE
-        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-        if (currentTheme) {
-            document.documentElement.setAttribute('data-theme', currentTheme);
-
-            if (currentTheme === 'dark') {
-                toggleSwitch.checked = true;
-            }
-        }
-    </script>
+    <script type="text/javascript" src="index.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
