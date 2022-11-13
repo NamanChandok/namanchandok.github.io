@@ -1,12 +1,12 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import { Nunito } from '@next/font/google'
+import { Cabin } from '@next/font/google'
 
-const nunito = Nunito({ subsets: ['latin'] })
+const cabin = Cabin({ subsets: ['latin'] })
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={nunito.className}>
+    <main className={cabin.className}>
       <Component {...pageProps} />
     </main>
   )
