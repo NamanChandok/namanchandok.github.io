@@ -41,7 +41,7 @@ export default function About({}: Props) {
             viewport={{once:true}}
             className='space-y-5 px-0 md:px-10'>
             <h4 className='text-2xl font-semibold'>👋 Hi, I&apos;m <span className='underline decoration-[#D9C9BA]/70 tracking-wide'>Naman Chandok</span></h4>
-            <p className='text-base text-[#D9C9BA]'>I&apos;m a 17 year old college student living in New Delhi, India. I&apos;m a front-end developer that uses React.js and Next.js. I&apos;m also proficient in programming in Python and Php.</p>
+            <p className='text-base text-[#D9C9BA]'>I&apos;m a college student living in New Delhi, India. I&apos;m a front-end developer that uses React.js and Next.js. I&apos;m also proficient in programming in Python and Php.</p>
             <SocialIcon 
                 url="https://instagram.com/namanchandok" 
                 bgColor='currentColor' 
