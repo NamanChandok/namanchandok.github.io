@@ -19,42 +19,42 @@ export default function Header({}: Props) {
                 scale: 1
             }}
             transition={{duration: 0.8}}
-            className='flex flex-row items-center text-[#A69C94]'>
+            className='flex flex-row items-center text-bruh-white'>
             <SocialIcon 
                 url="https://instagram.com/namanchandok" 
                 fgColor='currentColor' 
                 bgColor='transparent' 
-                className='hover:text-[#D9C9BA] transition duration-200 ease-in-out'
+                className='hover:text-bruh-gray transition duration-200 ease-in-out'
             />
             <SocialIcon 
                 url="https://github.com/namanchandok" 
                 fgColor='currentColor' 
                 bgColor='transparent' 
-                className='hover:text-[#D9C9BA] transition duration-200 ease-in-out'
+                className='hover:text-bruh-gray transition duration-200 ease-in-out'
             />
             <SocialIcon 
                 url="https://twitter.com/br0wot" 
                 fgColor='currentColor' 
                 bgColor='transparent' 
-                className='hover:text-[#D9C9BA] transition duration-200 ease-in-out'
+                className='hover:text-bruh-gray transition duration-200 ease-in-out'
             />
             <SocialIcon 
                 url="mailto:namanchandok1@gmail.com" 
                 fgColor='currentColor' 
                 bgColor='transparent' 
-                className='hover:text-[#D9C9BA] transition duration-200 ease-in-out'
+                className='hover:text-bruh-gray transition duration-200 ease-in-out'
             />
             <SocialIcon 
                 url="https://open.spotify.com/user/gh04xw1wcz6kkx4icrbbxogb3?si=0b493b9fe369429f" 
                 fgColor='currentColor' 
                 bgColor='transparent' 
-                className='hover:text-[#D9C9BA] transition duration-200 ease-in-out'
+                className='hover:text-bruh-gray transition duration-200 ease-in-out'
             />
             <SocialIcon
                 url='https://www.linkedin.com/in/naman-chandok-874b421b0/'
                 fgColor='currentColor' 
                 bgColor='transparent'
-                className='hover:text-[#D9C9BA] transition duration-200 ease-in-out'
+                className='hover:text-bruh-gray transition duration-200 ease-in-out'
             />
         </motion.div>
 
@@ -70,7 +70,7 @@ export default function Header({}: Props) {
                 scale: 1
             }}
             transition={{duration: 0.8}}
-            className='flex flex-row items-center text-[#A69C94] cursor-pointer hover:text-[#D9C9BA] transition duration-200 ease-in-out'>
+            className='flex flex-row items-center text-bruh-white cursor-pointer hover:text-bruh-gray transition duration-200 ease-in-out'>
             <SocialIcon 
                 url='https://discord.com/users/481518334509187089'
                 fgColor='transparent'

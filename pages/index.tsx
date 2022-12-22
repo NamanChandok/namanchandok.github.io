@@ -8,7 +8,7 @@ import Contact from '../components/Contact'
 
 export default function Home() {
   return (
-    <div className='bg-[#1F2226] text-white h-screen snap-y snap-mandatory overflow-y-scroll z-0 scrollbar-thin scrollbar-track-[#3B3C40]/20 scrollbar-thumb-[#A6775B]/80'>
+    <div className='bg-bruh-dark-back text-bruh-white h-screen snap-y snap-mandatory overflow-y-scroll z-0 scrollbar-thin scrollbar-track-[#3d3b40]/20 scrollbar-thumb-bruh-primary/80 scroll-smooth'>
       <Head>
         <title>Naman Chandok</title>
         <meta name="description"

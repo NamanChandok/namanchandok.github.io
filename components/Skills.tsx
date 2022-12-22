@@ -12,7 +12,7 @@ export default function Skills({}: Props) {
         transition={{duration:0.8}}
         className='flex relative flex-col text-center my-auto md:text-left xl:flex-row max-w-5xl xl:px-10 min-h-screen items-center mx-auto justify-center'>
         
-        <h3 className='absolute top-24 uppercase tracking-[20px] text-[#A69C94] text-xl -mr-[20px]'>Skills</h3>
+        <h3 className='absolute top-24 uppercase tracking-[20px] text-bruh-white text-xl -mr-[20px]'>Skills</h3>
         <div className='grid grid-cols-4 gap-5 mt-10'>
             <Skill imgUrl="./skills/html.png" name='html' />
             <Skill imgUrl="./skills/css.png" name='css' />

@@ -2,23 +2,20 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 type Props = {
-    directionLeft?: boolean;
     imgUrl: string;
     name: string;
 };
 
-export default function Skill({ directionLeft, imgUrl, name }: Props) {
+export default function Skill({ imgUrl, name }: Props) {
   return (
-    <div className='group relative flex cursor-pointer'>
-        <motion.img 
-            src={imgUrl}
-            className='rounded-full bg-[#A69C942A] border border-[#A69C94] object-cover w-24 h-24 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out'
-        />
-        <div className='absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-[#D9C9BA] h-24 w-24 xl:w-32 xl:h-32 rounded-full z-0'>
-            <div className='flex items-center justify-center h-full'>
-                <p className='text-md uppercase font-bold tracking-wide text-[#000] opacity-100 text-center'>{name}</p>
-            </div>
+    <div className='group relative flex flex-col items-center cursor-pointer'>
+        <div className='w-18 h-18 xl:w-24 xl:h-24 overflow-hidden'>
+            <motion.img 
+                src={imgUrl}
+                className='object-cover w-full h-full transition duration-300 ease-in-out filter grayscale-[30%] opacity-90 group-hover:grayscale-0 group-hover:scale-110 group-hover:opacity-100'
+            />
         </div>
+        <p className='text-md uppercase font-bold tracking-wide text-bruh-gray text-center transition duration-300 ease-in-out group-hover:text-bruh-white opacity-90 group-hover:opacity-100 group-hover:translate-y-1'>{name}</p>
     </div>
   )
 }

@@ -6,6 +6,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    colors: {
+      'bruh-dark-back': "#211f26",
+      'bruh-white': "#d4d0db",
+      'bruh-gray': "#b0aabf",
+      'bruh-primary': "#937fc7",
+
+    },
     extend: {
       backgroundImage: {
         'hero-pattern': "url('../public/browotinglines.png')",

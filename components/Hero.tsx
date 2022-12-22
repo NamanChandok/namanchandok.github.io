@@ -33,15 +33,15 @@ export default function Hero({}: Props) {
         transition={{
             duration:0.4
         }} >
-          <h2 className='text-sm uppercase text-[#A69C94] opacity-70 tracking-[5px]'>
+          <h2 className='text-sm uppercase text-bruh-white opacity-70 tracking-[5px]'>
             Hi, I&apos;m
           </h2>
           <h1 className='text-5xl lg:text-6xl font-semibold px-10'>
             Naman Chandok
           </h1>
-          <h3 className='text-l text-[#D9C9BA]'>
+          <h3 className='text-l text-bruh-gray'>
             <span>{text}</span>
-            <Cursor cursorColor='#A6775B' />
+            <Cursor cursorColor='#7c6aab' />
           </h3>
         </motion.div>
 

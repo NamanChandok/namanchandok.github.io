@@ -15,7 +15,7 @@ export default function Project({title, imgUrl, desc, gitUrl}: Props) {
         <motion.img initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.4}} viewport={{once:true}} className="rounded-3xl flex-shrink-0 h-72 mt-10 object-contain" src={imgUrl} alt={title} />
         <div className='space-y-3 px-0 md:px-10 max-w-6xl'>
             <h4 className='text-3xl font-semibold text-center tracking-tight'>{title}</h4>
-            <p className='text-l text-[#D9C9BA]/80'>{desc}</p>
+            <p className='text-l text-bruh-gray'>{desc}</p>
             <p className='underline decoration-[#D9C9BA] text-xs tracking-wider uppercase'><Link href={gitUrl}>View the project on github</Link></p>
         </div>
     </div>
