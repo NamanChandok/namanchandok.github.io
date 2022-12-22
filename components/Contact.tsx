@@ -60,37 +60,37 @@ export default function Contact({}: Props) {
                     <SocialIcon 
                         url="https://instagram.com/namanchandok" 
                         fgColor='currentColor' 
-                        bgColor='#3d3b402a' 
+                        bgColor='#26252b' 
                         className='hover:text-bruh-gray transition duration-200 ease-in-out'
                     />
                     <SocialIcon 
                         url="https://github.com/namanchandok" 
                         fgColor='currentColor' 
-                        bgColor='#3d3b402a' 
+                        bgColor='#26252b' 
                         className='hover:text-bruh-gray transition duration-200 ease-in-out'
                     />
                     <SocialIcon 
                         url="https://twitter.com/br0wot" 
                         fgColor='currentColor' 
-                        bgColor='#3d3b402a' 
+                        bgColor='#26252b' 
                         className='hover:text-bruh-gray transition duration-200 ease-in-out'
                     />
                     <SocialIcon 
                         url="https://discord.com/users/481518334509187089" 
                         fgColor='currentColor' 
-                        bgColor='#3d3b402a' 
+                        bgColor='#26252b' 
                         className='hover:text-bruh-gray transition duration-200 ease-in-out'
                     />
                     <SocialIcon 
                         url="https://open.spotify.com/user/gh04xw1wcz6kkx4icrbbxogb3?si=0b493b9fe369429f" 
                         fgColor='currentColor' 
-                        bgColor='#3d3b402a' 
+                        bgColor='#26252b' 
                         className='hover:text-bruh-gray transition duration-200 ease-in-out'
                     />
                     <SocialIcon
                         url='https://www.linkedin.com/in/naman-chandok-874b421b0/'
                         fgColor='currentColor'
-                        bgColor='#3d3b402a'
+                        bgColor='#26252b'
                         className='hover:text-bruh-gray transition duration-200 ease-in-out'
                     />
                 </motion.div>
