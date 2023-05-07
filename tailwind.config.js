@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'bruh-dark-back': "#211f26",
+      'bruh-dark-back': "#1b1a1f",
       'bruh-white': "#d4d0db",
       'bruh-gray': "#b0aabf",
       'bruh-primary': "#937fc7",

@@ -8,7 +8,7 @@ import Contact from '../components/Contact'
 
 export default function Home() {
   return (
-    <div className='bg-bruh-dark-back text-bruh-white h-screen snap-y snap-mandatory overflow-y-scroll z-0 scrollbar-thin scrollbar-track-[#3d3b40]/20 scrollbar-thumb-bruh-primary/80 scroll-smooth'>
+    <div className='bg-bruh-dark-back text-bruh-white h-screen overflow-y-scroll z-0 scrollbar-thin scrollbar-track-[#3d3b40]/20 scrollbar-thumb-bruh-primary/80 scroll-smooth'>
       <Head>
         <title>Naman Chandok</title>
         <meta name="description"
@@ -25,31 +25,31 @@ export default function Home() {
 
       {/* Hero */}
 
-      <section id='hero' className='snap-center'>
+      <section id='hero'>
         <Hero />
       </section>
       
       {/* About */}
       
-      <section id='about' className='snap-center'>
+      <section id='about'>
         <About />
       </section>
       
       {/* Skills */}
       
-      <section id='skills' className='snap-start'>
+      <section id='skills'>
         <Skills />
       </section>
 
       {/* Projects */}
 
-      <section id='projects' className='snap-start'>
+      <section id='projects'>
         <Projects /> 
       </section>
       
       {/* Contact Me */}
 
-      <section id='contact' className='snap-start'>
+      <section id='contact'>
         <Contact />
       </section>
 
