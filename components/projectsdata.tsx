@@ -24,12 +24,6 @@ export const projectsData = [
         gitUrl: "https://github.com/NamanChandok/alphanode"
     },
     {
-        title: "Stallman.org",
-        imgUrl: "./projects/stallman.png",
-        desc: "A modern redesign of stallman.org, the personal blog of Richard Mathew Stallman.",
-        gitUrl: "https://github.com/NamanChandok/stallman"
-    },
-    {
         title: "Pong",
         imgUrl: "./projects/pong.png",
         desc: "A recreation of Pong by Atari, one of the earliest arcade video games, using Lua.",
