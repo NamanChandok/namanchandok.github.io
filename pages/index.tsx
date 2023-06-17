@@ -12,7 +12,7 @@ export default function Home() {
       <Head>
         <title>Naman Chandok</title>
         <meta name="description"
-            content="I'm a 17 year old college student living in New Delhi, India and this is my portfolio website." />
+            content="I'm a college student living in New Delhi, India and this is my portfolio website." />
         <meta name="keywords"
             content="Naman, Chandok, Naman Chandok, naman, chandok, naman chandok, namanchandok, NamanChandok, br0wot" />
         <meta name="author" content="Naman Chandok" />
