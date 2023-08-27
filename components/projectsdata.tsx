@@ -15,7 +15,7 @@ export const projectsData = [
         title: "Posters",
         imgUrl: "/projects/posters.png",
         desc: "Graphic Design",
-        url: "https://github.com/NamanChandok/soluva"
+        url: "https://drive.google.com/drive/folders/1dDQmHFstzlWjxx6KNQLyFOCAkE3h_JCZ?usp=sharing"
     },
     {
         title: "Newstar Consulting",
