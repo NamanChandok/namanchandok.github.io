@@ -1,32 +1,56 @@
 export const projectsData = [
     {
-        title: "Crypt@trix",
-        imgUrl: "./projects/crypt.png",
-        desc: "The platform for a 48 hour long crypt hunt organised by Tagore International School, with over 150 participants.",
-        gitUrl: "https://github.com/PyrotechClub/crypt22"
+        title: "Soluva",
+        imgUrl: "/projects/soluva.png",
+        desc: "Web Development - Next.JS",
+        url: "https://github.com/NamanChandok/soluva"
     },
     {
-        title: "Coral",
-        imgUrl: "./projects/coral.png",
-        desc: "A concept for a mental health website and its marketing and branding.",
-        gitUrl: "https://github.com/NamanChandok/coral"
+        title: "Crypt@trix",
+        imgUrl: "/projects/crypt.png",
+        desc: "Web Development - PHP",
+        url: "https://github.com/PyrotechClub/crypt22"
+    },
+    {
+        title: "Posters",
+        imgUrl: "/projects/posters.png",
+        desc: "Graphic Design",
+        url: "https://github.com/NamanChandok/soluva"
+    },
+    {
+        title: "Newstar Consulting",
+        imgUrl: "/projects/newstar.png",
+        desc: "Web Design - HTML, CSS, JS",
+        url: "https://github.com/NamanChandok/newstar"
+    },
+    {
+        title: "Pong Recreation",
+        imgUrl: "/projects/pong.png",
+        desc: "Game Development - Lua",
+        url: "https://github.com/NamanChandok/pong"
+    },
+    {
+        title: "Outlive Yourself",
+        imgUrl: "/projects/outlive.png",
+        desc: "Web Development - Next.JS",
+        url: "https://github.com/NamanChandok/outlive"
     },
     {
         title: "Pyrotech",
-        imgUrl: "./projects/pyro.png",
-        desc: "The website for Pyrotech, the tech club of Tagore International School.",
-        gitUrl: "https://github.com/PyrotechClub/pyrotechclub.github.io"
+        imgUrl: "/projects/pyro.png",
+        desc: "Web Design - HTML, CSS, JS",
+        url: "https://github.com/PyrotechClub/pyrotechclub.github.io"
+    },
+    {
+        title: "Coral",
+        imgUrl: "/projects/coral.png",
+        desc: "Web Development - Next.JS",
+        url: "https://github.com/NamanChandok/coral"
     },
     {
         title: "HadesTown",
-        imgUrl: "./projects/hadestown.png",
-        desc: "A promotional website with branding and merch designs for Hadestown, a broadway musical.",
-        gitUrl: "https://github.com/NamanChandok/alphanode"
-    },
-    {
-        title: "Pong",
-        imgUrl: "./projects/pong.png",
-        desc: "A recreation of Pong by Atari, one of the earliest arcade video games, using Lua.",
-        gitUrl: "https://github.com/NamanChandok/pong"
+        imgUrl: "/projects/hadestown.png",
+        desc: "Web Design - HTML, CSS, JS",
+        url: "https://github.com/NamanChandok/alphanode"
     }
 ]

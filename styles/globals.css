@@ -1,9 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ 
+@font-face {
+    font-family: 'Akira';
+    src: url('/font.otf');
+}
 
-@layer components {
-    .heroButton {
-        @apply px-6 py-2 my-2 border border-[#3d3b40] rounded-full uppercase text-xs tracking-widest text-bruh-gray transition-all hover:border-bruh-primary/40 hover:text-bruh-white/80 mx-1
-    }
+.custom-shape-divider-bottom-1687952567 {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1687952567 svg {
+    position: relative;
+    display: block;
+    width: calc(135% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1687952567 .shape-fill {
+    fill: #E8EDDF;
 }

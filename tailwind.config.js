@@ -6,17 +6,24 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    colors: {
-      'bruh-dark-back': "#1b1a1f",
-      'bruh-white': "#d4d0db",
-      'bruh-gray': "#b0aabf",
-      'bruh-primary': "#937fc7",
-
-    },
-    extend: {
-      backgroundImage: {
-        'hero-pattern': "url('../public/browotinglines.png')",
-      }},
+      extend: {
+        colors: {
+          'bruh-black': "#242423",
+          'bruh-white': "#E8EDDF",
+          'bruh-gray': "#F5CB5C",
+        },
+        backgroundImage: {
+          "hero-bg": "url('/bg.svg')",
+        },
+        backgroundSize: {
+          '100': "100%",
+          '400': "400%",
+        },
+        fontFamily: {
+          cabin: "Cabin, sans-serif",
+          akira: "Akira, sans-serif",
+        },
+      },
   },
   plugins: [require('tailwind-scrollbar'),],
 }

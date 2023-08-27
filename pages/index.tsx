@@ -5,14 +5,15 @@ import About from '../components/About'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
-    <div className='bg-bruh-dark-back text-bruh-white h-screen overflow-y-scroll z-0 scrollbar-thin scrollbar-track-[#3d3b40]/20 scrollbar-thumb-bruh-primary/80 scroll-smooth'>
+    <div className='bg-bruh-white text-bruh-black h-screen overflow-y-scroll z-0 scrollbar-thin scrollbar-track-bruh-black scrollbar-thumb-bruh-white/70 scroll-smooth'>
       <Head>
         <title>Naman Chandok</title>
         <meta name="description"
-            content="I'm a 17 year old college student living in New Delhi, India and this is my portfolio website." />
+            content="I'm a college student living in New Delhi, India and this is my portfolio website." />
         <meta name="keywords"
             content="Naman, Chandok, Naman Chandok, naman, chandok, naman chandok, namanchandok, NamanChandok, br0wot" />
         <meta name="author" content="Naman Chandok" />
@@ -25,7 +26,7 @@ export default function Home() {
 
       {/* Hero */}
 
-      <section id='hero'>
+      <section id='home'>
         <Hero />
       </section>
       
@@ -51,6 +52,12 @@ export default function Home() {
 
       <section id='contact'>
         <Contact />
+      </section>
+      
+      {/* Footer */}
+
+      <section id='footer'>
+        <Footer />
       </section>
 
     </div>

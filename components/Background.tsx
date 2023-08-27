@@ -7,17 +7,15 @@ export default function BackgroundCircles({}: Props) {
   return (
     <motion.div
         initial={{
-            opacity: 0,
+            scale: 0,
         }}
         animate={{
-            opacity: [0.1,0.2,0.4,0.8,0.1,1.0],
+            scale: 1.0,
         }}
-        transition={{
-            duration:2.5
-        }}
-        className='relative flex justify-center items-center'>
-        <div className='absolute bg-hero-pattern h-[371px] w-[676px] opacity-20 filter-grayscale mt-52 animate-ping bg-cover' />
-        <div className='absolute bg-hero-pattern h-[371px] w-[676px] opacity-60 mt-52 animate-pulse bg-cover' />
+        transition={{duration: 2, ease:'anticipate'}}
+        className='absolute h-screen flex justify-center items-center'>
+        <div className="rounded-full h-[50vh] w-[50vh] md:h-[70vh] md:w-[70vh] border-2 border-bruh-white/20 absolute animate-pulse heroBg"></div>
+        <div className="rounded-full h-[40vh] w-[40vh] md:h-[60vh] md:w-[60vh] border-2 border-bruh-white/10 absolute animate-pulse heroBg"></div>
     </motion.div>
   )
 }
