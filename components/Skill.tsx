@@ -15,7 +15,7 @@ export default function Skill({ imgUrl, name }: Props) {
                 className='object-cover w-full h-full transition duration-300 ease-in-out filter grayscale-[30%] opacity-90 group-hover:grayscale-0 group-hover:scale-110 group-hover:opacity-100'
             />
         </div>
-        <p className='text-md uppercase font-bold tracking-wide text-[#333533] text-center transition duration-300 ease-in-out group-hover:text-bruh-black opacity-90 group-hover:opacity-100 group-hover:translate-y-1'>{name}</p>
+        <p className='text-md uppercase font-bold tracking-wide text-[#333533] text-center transition duration-300 ease-in-out group-hover:text-bruh-black group-hover:translate-y-1'>{name}</p>
     </div>
   )
 }
