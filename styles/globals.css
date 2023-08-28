@@ -27,3 +27,23 @@
 .custom-shape-divider-bottom-1687952567 .shape-fill {
     fill: #E8EDDF;
 }
+
+.side-nav-toggle {
+    z-index: 100;
+    width: 1.75rem;
+    aspect-ratio: 1;
+    background: url("/menu.svg");
+    border: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#side-nav[data-visible="true"] {
+    transform: translateX(0%);
+}
+
+.side-nav-toggle[aria-expanded="true"] {
+    background: url("/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
