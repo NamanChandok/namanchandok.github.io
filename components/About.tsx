@@ -24,7 +24,7 @@ export default function About({}: Props) {
             }}
             viewport={{once:true}}
             src="./hello.jpg"
-            className='flex-shrink-0 w-56 h-56 rounded-full object-cover object-left md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[400px]'
+            className='flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[400px]'
             />
         <motion.div
             initial={{
