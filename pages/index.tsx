@@ -9,7 +9,7 @@ import Footer from '../components/Footer'
 
 export default function Home() {
   return (
-    <div className='bg-bruh-white text-bruh-black h-screen overflow-y-scroll z-0 scrollbar-thin scrollbar-track-bruh-black scrollbar-thumb-bruh-white/70 scroll-smooth'>
+    <div className='bg-bruh-black text-bruh-white h-screen overflow-y-scroll z-0 scrollbar-thin scrollbar-track-bruh-black scrollbar-thumb-bruh-white/70 scroll-smooth'>
       <Head>
         <title>Naman Chandok</title>
         <meta name="description"

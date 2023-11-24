@@ -8,7 +8,7 @@ module.exports = {
   theme: {
       extend: {
         colors: {
-          'bruh-black': "#242423",
+          'bruh-black': "#181818",
           'bruh-white': "#E8EDDF",
           'bruh-gray': "#F5CB5C",
         },

@@ -25,7 +25,7 @@ export default function Hero({}: Props) {
     animate={{        
       backgroundSize: '100%',
     }}
-    transition={{duration: 2, ease:'anticipate'}} className='h-screen flex flex-col justify-center relative items-center text-center overflow-hidden bg-hero-bg bg-center bg-bruh-black bg-no-repeat'>
+    transition={{duration: 2, ease:'anticipate'}} className='h-screen flex flex-col justify-center relative items-center text-center overflow-hidden bg-hero-bg bg-center bg-[#111] bg-no-repeat'>
       <Background />
       <div className="absolute bg-bruh-black/50 inset-0 z-0"></div>
       <div className='z-20 space-y-3'>
@@ -40,13 +40,13 @@ export default function Hero({}: Props) {
               ease:'anticipate',
               delay: 1,
             }}>
-          <h2 className='text-sm uppercase text-[#CFDBD5] opacity-70 tracking-[5px]'>
+          <h2 className='text-sm uppercase text-gray-400 opacity-70 tracking-[5px]'>
             Hi, I&apos;m
           </h2>
           <h1 className='text-3xl lg:text-5xl text-bruh-white font-semibold font-akira p-2 px-10'>
             Naman Chandok
           </h1>
-          <h3 className='text-l text-[#CFDBD5] opacity-70'>
+          <h3 className='text-l text-gray-400 opacity-70'>
             <span>{text}</span>
             <Cursor cursorColor='#7c6aab' />
           </h3>

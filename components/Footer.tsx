@@ -9,7 +9,8 @@ type Props = {}
 
 export default function Footer({}: Props) {
   return (
-    <div className='flex flex-col py-16 items-center bg-bruh-black text-bruh-white'>
+    <div className='flex flex-col py-16 items-center bg-[#111] text-bruh-white relative'>
+      <div className="absolute bg-bruh-black/50 inset-0 z-0"></div>
         <motion.div
             initial={{
                 opacity:0,
@@ -24,9 +25,9 @@ export default function Footer({}: Props) {
             }}
             viewport={{
                 once: true
-            }} className='text-center space-y-6'>
+            }} className='text-center space-y-6 z-10'>
             <Link href="#home" className='font-akira text-4xl hover:text-[#CFDBD5]/90 transition duration-300'>Naman Chandok</Link>
-            <div className='flex items-center space-x-5 justify-center'>
+            <div className='flex items-center space-x-5 justify-center text-gray-300'>
                 <Link href="https://instagram.com/namanchandok" className='h-6 hover:text-bruh-gray transiton duration-300'>
                     <FontAwesomeIcon icon={faInstagram} className='h-full'/>
                 </Link>
@@ -52,7 +53,7 @@ export default function Footer({}: Props) {
                     <FontAwesomeIcon icon={faSpotify} className='h-full'/>
                 </Link>
             </div>
-            <p className='text-sm text-[#CFDBD5]/70'>© 2023 <b>Naman Chandok</b>. All Rights Reserved.</p>
+            <p className='text-sm text-gray-400'>© 2023 <b>Naman Chandok</b>. All Rights Reserved.</p>
         </motion.div>
     </div>
   )
