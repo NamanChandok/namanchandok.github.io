@@ -30,7 +30,7 @@ export default function Hero({}: Props) {
       <div className="absolute bg-bruh-black/50 inset-0 z-0"></div>
       <div className='z-20 space-y-3'>
         <motion.div initial={{
-              clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0);',
+              clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)',
             }}
             animate={{
               clipPath: 'polygon(0px 100%, 100% 100%, 100% 0px, 0px 0px)'
