@@ -11,7 +11,7 @@ export default function About({}: Props) {
         whileInView={{opacity:1}}
         transition={{duration:0.8}}
         className='py-16 flex relative flex-col text-center gap-6 md:text-left md:flex-row-reverse max-w-7xl px-10 mx-auto items-center overflow-x-hidden'>
-        <motion.img 
+        <motion.div 
             initial={{
                 x:100,
                 opacity:0
@@ -23,9 +23,8 @@ export default function About({}: Props) {
                 x:0, opacity:1
             }}
             viewport={{once:true}}
-            src="./hello.jpg"
-            className='flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[400px]'
-            />
+            className="flex-shrink-0 w-56 h-56 rounded-full md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[400px] bg-[url('/hello.jpg')] bg-cover bg-center"
+            ></motion.div>
         <motion.div
             initial={{
                 x:-100,

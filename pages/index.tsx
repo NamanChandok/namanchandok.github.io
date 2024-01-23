@@ -17,6 +17,23 @@ export default function Home() {
         <meta name="keywords"
             content="Naman, Chandok, Naman Chandok, naman, chandok, naman chandok, namanchandok, NamanChandok, br0wot" />
         <meta name="author" content="Naman Chandok" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#111111" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@br0wot" />
+        <meta name="twitter:creator" content="@br0wot" />
+        <meta name="twitter:title" content="Naman Chandok" />
+        <meta name="twitter:description"
+            content="I'm a college student living in New Delhi, India and this is my portfolio website." />
+        <meta name="twitter:image" content="/hello.jpg" />
+        <meta property="og:title" content="Naman Chandok" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://namanchandok.me/" />
+        <meta property="og:image" content="/hello.jpg" />
+        <meta property="og:description"
+            content="I'm a college student living in New Delhi, India and this is my portfolio website." />
+        <meta property="og:site_name" content="Naman Chandok" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

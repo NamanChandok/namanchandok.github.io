@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram, faGithub, faSpotify, faDiscord, faLinkedinIn, faBehance } from '@fortawesome/free-brands-svg-icons';
@@ -9,21 +10,42 @@ type Props = {}
 
 export default function Header({}: Props) {
     
-  function handleClick() {
+    function handleClick() {
 
-    const navbar = document.getElementById("side-nav");
-    const toggle = document.querySelector(".side-nav-toggle");
+        const navbar = document.getElementById("side-nav");
+        const toggle = document.querySelector(".side-nav-toggle");
 
-    const visibility = navbar!.getAttribute('data-visible');
-    if(visibility === "false") {
-        navbar!.setAttribute('data-visible', 'true');
-        toggle!.setAttribute('aria-expanded', 'true');
-    } else {
-        navbar!.setAttribute('data-visible', 'false');
-        toggle!.setAttribute('aria-expanded', 'false');
+        const visibility = navbar!.getAttribute('data-visible');
+        if(visibility === "false") {
+            navbar!.setAttribute('data-visible', 'true');
+            toggle!.setAttribute('aria-expanded', 'true');
+        } else {
+            navbar!.setAttribute('data-visible', 'false');
+            toggle!.setAttribute('aria-expanded', 'false');
+        }
     }
-  }
 
+    const [clientWindowHeight, setClientWindowHeight] = useState(0);
+
+    const handleScroll = () => {
+        setClientWindowHeight(window.scrollY);
+        console.log(window.scrollY);
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        }
+    }, []);
+
+    const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
+
+    useEffect(() => {
+        let backgroundTransparacyVar = Number(clientWindowHeight > 100);
+        setBackgroundTransparacy(backgroundTransparacyVar);
+    }, [clientWindowHeight]);
+  
   return (
     <motion.header 
     initial={{
@@ -37,7 +59,7 @@ export default function Header({}: Props) {
         ease:'anticipate',
         delay: 1,
     }}
-    className='fixed top-0 p-5 md:px-24 flex items-center justify-between bg-[#141414] inset-x-0 z-30'>
+    className='fixed top-0 p-5 md:px-24 flex items-center justify-between inset-x-0 z-30' style={{background: `rgba(20,20,20,${backgroundTransparacy})`}}>
 
     <Link href="#home" className='font-akira text-bruh-white hover:text-[#CFDBD5]/90 transition duration-300 block md:hidden'>Naman Chandok</Link>
 
