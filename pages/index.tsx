@@ -26,7 +26,7 @@ export default function Home() {
         <meta property="og:title" content="Naman Chandok" />
         <meta property="og:description" content="I am a college student living in New Delhi, India and this is my portfolio website." />
 
-        <meta property="og:image" content="/public/preview.png" />
+        <meta property="og:image" content="https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v3/namanchandok.me/Naman%20Chandok/https%3A%2F%2Fnamanchandok.me%2Fhello.jpg/og.png" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="namanchandok.me" />
@@ -34,7 +34,7 @@ export default function Home() {
         <meta name="twitter:title" content="Naman Chandok" />
         <meta name="twitter:description" content="I am a college student living in New Delhi, India and this is my portfolio website." />
 
-        <meta name="twitter:image" content="/public/preview.png" />
+        <meta name="twitter:image" content="https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v3/namanchandok.me/Naman%20Chandok/https%3A%2F%2Fnamanchandok.me%2Fhello.jpg/og.png" />
 
         <link rel="apple-touch-icon" href="/favicon.ico" />
         <link rel="icon" href="/favicon.ico" />
