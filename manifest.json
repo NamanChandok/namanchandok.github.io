@@ -1,0 +1,17 @@
+{
+    "name": "Portfolio",
+    "version": "1.0.0",
+    "description": "I am a college student living in New Delhi, India and this is my portfolio website.",
+    "author": "Naman Chandok",
+    "homepage": "https://namanchandok.me",
+    "repository": "https://github.com/namanchandok/namanchandok.github.io",
+    "keywords": ["Naman", "Chandok", "Naman Chandok", "naman", "chandok", "naman chandok", "namanchandok", "NamanChandok", "br0wot"],
+    "icons": {
+        "48": "/icon48.png",
+        "128": "/icon128.png",
+        "16": "/icon16.png"
+    },
+    "start_url": "/",
+    "display": "standalone",
+    "prefer_related_applications": false
+}

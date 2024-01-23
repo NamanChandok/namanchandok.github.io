@@ -36,6 +36,8 @@ export default function Home() {
 
         <meta name="twitter:image" content="/preview.png" />
 
+        <link rel="manifest" href="/manifest.json" />
+
         <link rel="apple-touch-icon" href="/favicon.ico" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
