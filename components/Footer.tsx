@@ -28,28 +28,28 @@ export default function Footer({}: Props) {
             }} className='text-center space-y-6 z-10'>
             <Link href="#home" className='font-akira text-4xl hover:text-[#CFDBD5]/90 transition duration-300'>Naman Chandok</Link>
             <div className='flex items-center space-x-5 justify-center text-gray-300'>
-                <Link href="https://instagram.com/namanchandok" className='h-6 hover:text-bruh-gray transiton duration-300'>
+                <Link href="https://instagram.com/namanchandok" className='h-6 hover:text-bruh-gray transiton duration-300' aria-label='instagram'>
                     <FontAwesomeIcon icon={faInstagram} className='h-full'/>
                 </Link>
-                <Link href="https://github.com/namanchandok" className='h-6 hover:text-bruh-gray transiton duration-300'>
+                <Link href="https://github.com/namanchandok" className='h-6 hover:text-bruh-gray transiton duration-300' aria-label='github'>
                     <FontAwesomeIcon icon={faGithub} className='h-full'/>
                 </Link>
-                <Link href="https://twitter.com/br0wot" className='h-6 hover:text-bruh-gray transiton duration-300'>
+                <Link href="https://twitter.com/br0wot" className='h-6 hover:text-bruh-gray transiton duration-300' aria-label='twitter'>
                     <FontAwesomeIcon icon={faTwitter} className='h-full'/>
                 </Link>
-                <Link href="mailto:namanchandok1@gmail.com" className='h-6 hover:text-bruh-gray transiton duration-300'>
+                <Link href="mailto:namanchandok1@gmail.com" className='h-6 hover:text-bruh-gray transiton duration-300' aria-label='email'>
                     <FontAwesomeIcon icon={faEnvelope} className='h-full'/>
                 </Link>
-                <Link href="https://www.linkedin.com/in/naman-chandok-874b421b0/" className='h-6 hover:text-bruh-gray transiton duration-300'>
+                <Link href="https://www.linkedin.com/in/naman-chandok-874b421b0/" className='h-6 hover:text-bruh-gray transiton duration-300' aria-label='linkedin'>
                     <FontAwesomeIcon icon={faLinkedinIn} className='h-full'/>
                 </Link>
-                <Link href="https://www.behance.net/naman-chandok" className='h-6 hover:text-bruh-gray transiton duration-300'>
+                <Link href="https://www.behance.net/naman-chandok" className='h-6 hover:text-bruh-gray transiton duration-300' aria-label='behance'>
                     <FontAwesomeIcon icon={faBehance} className='h-full'/>
                 </Link>
-                <Link href="https://discord.com/users/481518334509187089" className='h-6 hover:text-bruh-gray transiton duration-300'>
+                <Link href="https://discord.com/users/481518334509187089" className='h-6 hover:text-bruh-gray transiton duration-300' aria-label='discord'>
                     <FontAwesomeIcon icon={faDiscord} className='h-full'/>
                 </Link>
-                <Link href="https://open.spotify.com/user/gh04xw1wcz6kkx4icrbbxogb3?si=0b493b9fe369429f" className='h-6 hover:text-bruh-gray transiton duration-300'>
+                <Link href="https://open.spotify.com/user/gh04xw1wcz6kkx4icrbbxogb3?si=0b493b9fe369429f" className='h-6 hover:text-bruh-gray transiton duration-300' aria-label='spotify'>
                     <FontAwesomeIcon icon={faSpotify} className='h-full'/>
                 </Link>
             </div>

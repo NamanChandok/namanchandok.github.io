@@ -18,7 +18,7 @@ export default function Home() {
             content="Naman, Chandok, Naman Chandok, naman, chandok, naman chandok, namanchandok, NamanChandok, br0wot" />
         <meta name="author" content="Naman Chandok" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="theme-color" content="#111111" />
+        <meta name="theme-color" content="#141414" />
         <meta name="description" content="I am a college student living in New Delhi, India and this is my portfolio website." />
 
         <meta property="og:url" content="https://namanchandok.me" />

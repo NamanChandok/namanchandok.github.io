@@ -46,10 +46,10 @@ export default function Hero({}: Props) {
           <h1 className='text-3xl lg:text-5xl text-bruh-white font-semibold font-akira p-2 px-10'>
             Naman Chandok
           </h1>
-          <h3 className='text-l text-gray-400 opacity-70'>
+          <p className='text-l text-gray-400 opacity-70'>
             <span>{text}</span>
             <Cursor cursorColor='#7c6aab' />
-          </h3>
+          </p>
         </motion.div>
       </div>
       <motion.div initial={{

@@ -35,7 +35,7 @@ export default function Contact({}: Props) {
                         once: true
                     }} className='space-y-4 text-lg'>
                     <div className='group relative px-2 cursor-pointer w-max mx-auto'>
-                        <Link href='mailto:namanchandok1@gmail.com' className='text-gray-300 z-20 relative group-hover:text-bruh-black transition duration-300 '>namanchandok1@gmail.com</Link>
+                        <Link href='mailto:namanchandok1@gmail.com' className='text-gray-300 z-20 relative group-hover:text-bruh-black transition duration-300' aria-label='email: namanchandok1@gmail.com'>namanchandok1@gmail.com</Link>
                         <div className='absolute bg-bruh-gray/70 transition-all duration-200 h-1.5 group-hover:h-4 bottom-1 inset-x-0 z-0'></div>
                     </div>
                     <div className='group relative px-2 cursor-pointer w-max mx-auto'>

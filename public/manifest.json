@@ -9,9 +9,12 @@
     "icons": {
         "48": "/icon48.png",
         "128": "/icon128.png",
-        "16": "/icon16.png"
+        "16": "/icon16.png",
+        "512": "/icon512.png"
     },
     "start_url": "/",
     "display": "standalone",
+    "theme_color": "#141414",
+    "background_color": "#181818",
     "prefer_related_applications": false
 }
