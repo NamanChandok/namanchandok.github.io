@@ -6,12 +6,28 @@
     "homepage": "https://namanchandok.me",
     "repository": "https://github.com/namanchandok/namanchandok.github.io",
     "keywords": ["Naman", "Chandok", "Naman Chandok", "naman", "chandok", "naman chandok", "namanchandok", "NamanChandok", "br0wot"],
-    "icons": {
-        "48": "/icon48.png",
-        "128": "/icon128.png",
-        "16": "/icon16.png",
-        "512": "/icon512.png"
-    },
+    "icons": [
+        {
+            "src": "/icon12.png",
+            "sizes": "12x12",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
     "start_url": "/",
     "display": "standalone",
     "theme_color": "#141414",
