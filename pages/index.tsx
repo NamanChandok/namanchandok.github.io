@@ -13,26 +13,29 @@ export default function Home() {
       <Head>
         <title>Naman Chandok</title>
         <meta name="description"
-            content="I'm a college student living in New Delhi, India and this is my portfolio website." />
+            content="I am a college student living in New Delhi, India and this is my portfolio website." />
         <meta name="keywords"
             content="Naman, Chandok, Naman Chandok, naman, chandok, naman chandok, namanchandok, NamanChandok, br0wot" />
         <meta name="author" content="Naman Chandok" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#111111" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@br0wot" />
-        <meta name="twitter:creator" content="@br0wot" />
-        <meta name="twitter:title" content="Naman Chandok" />
-        <meta name="twitter:description"
-            content="I'm a college student living in New Delhi, India and this is my portfolio website." />
-        <meta name="twitter:image" content="/hello.jpg" />
-        <meta property="og:title" content="Naman Chandok" />
+        <meta name="description" content="I am a college student living in New Delhi, India and this is my portfolio website." />
+
+        <meta property="og:url" content="https://namanchandok.me" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://namanchandok.me/" />
-        <meta property="og:image" content="/hello.jpg" />
-        <meta property="og:description"
-            content="I'm a college student living in New Delhi, India and this is my portfolio website." />
-        <meta property="og:site_name" content="Naman Chandok" />
+        <meta property="og:title" content="Naman Chandok" />
+        <meta property="og:description" content="I am a college student living in New Delhi, India and this is my portfolio website." />
+
+        <meta property="og:image" content="/public/preview.png" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="namanchandok.me" />
+        <meta property="twitter:url" content="https://namanchandok.me" />
+        <meta name="twitter:title" content="Naman Chandok" />
+        <meta name="twitter:description" content="I am a college student living in New Delhi, India and this is my portfolio website." />
+
+        <meta name="twitter:image" content="/public/preview.png" />
+
         <link rel="apple-touch-icon" href="/favicon.ico" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
