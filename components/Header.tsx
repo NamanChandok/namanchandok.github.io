@@ -24,27 +24,6 @@ export default function Header({}: Props) {
             toggle!.setAttribute('aria-expanded', 'false');
         }
     }
-
-    const [clientWindowHeight, setClientWindowHeight] = useState(0);
-
-    const handleScroll = () => {
-        setClientWindowHeight(window.scrollY);
-        console.log(window.scrollY);
-    };
-
-    useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        }
-    }, []);
-
-    const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
-
-    useEffect(() => {
-        let backgroundTransparacyVar = Number(clientWindowHeight > 100);
-        setBackgroundTransparacy(backgroundTransparacyVar);
-    }, [clientWindowHeight]);
   
   return (
     <motion.header 
@@ -59,7 +38,7 @@ export default function Header({}: Props) {
         ease:'anticipate',
         delay: 1,
     }}
-    className='fixed top-0 p-5 md:px-24 flex items-center justify-between inset-x-0 z-30' style={{background: `rgba(20,20,20,${backgroundTransparacy})`}}>
+    className='fixed top-0 p-5 md:px-24 flex items-center justify-between inset-x-0 z-30 bg-[#141414]'>
 
     <Link href="#home" className='font-akira text-bruh-white hover:text-[#CFDBD5]/90 transition duration-300 block md:hidden' aria-label='Naman Chandok'>Naman Chandok</Link>
 
