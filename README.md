@@ -2,7 +2,7 @@
 
 - 🌱 I’m currently learning **node.js**
 
-- 👨‍💻 All of my projects are available at [namanchandok.xyz](https://namanchandok.xyz)
+- 👨‍💻 All of my projects are available at [namanchandok.me](https://namanchandok.me)
 
 - 💬 Pronouns **he/him**
 
