@@ -1,6 +1,6 @@
-// @ts-check
- 
-/** @type {import('next').NextConfig} */
+/**
+* @type {import('next').NextConfig}
+*/
 const nextConfig = {
   output: 'export',
   basePath: "/nextjs-github-pages",
@@ -10,3 +10,4 @@ const nextConfig = {
 }
  
 module.exports = nextConfig
+
