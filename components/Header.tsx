@@ -43,7 +43,7 @@ export default function Header({}: Props) {
     <Link href="#home" className='font-akira text-bruh-white hover:text-[#CFDBD5]/90 transition duration-300 block md:hidden' aria-label='Naman Chandok'>Naman Chandok</Link>
 
     <div className='flex md:flex-row flex-col md:static fixed justify-between items-start md:p-0 p-6 pt-16 pb-32 h-screen md:h-auto w-full inset-y-0 inset-x-0 bg-[#141414]/60 backdrop-blur-lg z-20 -translate-x-full transition duration-300 ease-in-out md:translate-x-0' id="side-nav" data-visible="false">
-        <div className="flex flex-col md:flex-row underline decoration-transparent text-bruh-white text-2xl md:text-sm underline-offset-2 gap-8 md:gap-6">
+        <div className="flex flex-col md:flex-row underline decoration-transparent text-bruh-white text-2xl md:text-base underline-offset-2 gap-8 md:gap-6">
 
             <Link className="transition duration-300 decoration-transparent hover:decoration-bruh-gray" href="#home" onClick={handleClick} aria-label='home'>HOME</Link>
             <Link className="transition duration-300 decoration-transparent hover:decoration-bruh-gray" href="#about" onClick={handleClick} aria-label='about'>ABOUT</Link>

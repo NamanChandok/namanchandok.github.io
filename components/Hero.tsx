@@ -18,14 +18,7 @@ export default function Hero({}: Props) {
     delaySpeed: 4000
   });  
   return (
-    <motion.div
-    initial={{
-      backgroundSize: '150%',
-    }}
-    animate={{        
-      backgroundSize: '100%',
-    }}
-    transition={{duration: 2, ease:'anticipate'}} className='h-screen flex flex-col justify-center relative items-center text-center overflow-hidden bg-hero-bg bg-center bg-[#111] bg-no-repeat'>
+    <div className='h-screen flex flex-col justify-center relative items-center text-center overflow-hidden bg-[#111]'>
       <Background />
       <div className="absolute bg-bruh-black/50 inset-0 z-0"></div>
       <div className='z-20 space-y-3'>
@@ -40,13 +33,13 @@ export default function Hero({}: Props) {
               ease:'anticipate',
               delay: 1,
             }}>
-          <h2 className='text-sm uppercase text-gray-400 opacity-70 tracking-[5px]'>
+          <h2 className='text-lg uppercase text-gray-400 opacity-70 tracking-[5px]'>
             Hi, I&apos;m
           </h2>
-          <h1 className='text-3xl lg:text-5xl text-bruh-white font-semibold font-akira p-2 px-10'>
+          <h1 className='text-3xl lg:text-6xl text-bruh-white font-semibold font-akira p-2 px-10'>
             Naman Chandok
           </h1>
-          <p className='text-l text-gray-400 opacity-70'>
+          <p className='text-lg text-gray-400 opacity-70'>
             <span>{text}</span>
             <Cursor cursorColor='#7c6aab' />
           </p>
@@ -69,6 +62,6 @@ export default function Hero({}: Props) {
             className="shape-fill"></path>
         </svg>
       </motion.div>
-    </motion.div>
+    </div>
   )
 }

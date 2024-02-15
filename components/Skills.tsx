@@ -12,7 +12,7 @@ export default function Skills({}: Props) {
         transition={{duration:0.8}}
         className='flex relative flex-col text-center my-auto md:text-left xl:px-10 items-center mx-auto justify-center py-16'>
         
-        <h3 className='text-4xl font-semibold font-akira'>Skills</h3>
+        <h3 className='text-5xl font-semibold font-akira'>Skills</h3>
         <div className='grid grid-cols-2 md:grid-cols-6 gap-5 mt-10'>
             <Skill imgUrl="/skills/html.png" name='html' />
             <Skill imgUrl="/skills/css.png" name='css' />

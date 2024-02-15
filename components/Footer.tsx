@@ -53,7 +53,7 @@ export default function Footer({}: Props) {
                     <FontAwesomeIcon icon={faSpotify} className='h-full'/>
                 </Link>
             </div>
-            <p className='text-sm text-gray-400'>© 2023 <b>Naman Chandok</b>. All Rights Reserved.</p>
+            <p className='text-gray-400'>© 2023 <b>Naman Chandok</b>. All Rights Reserved.</p>
         </motion.div>
     </div>
   )

@@ -7,6 +7,18 @@
     src: url('/font.otf');
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #181818;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(232 237 223 / 0.7);
+}
+
 .custom-shape-divider-bottom-1687952567 {
     position: absolute;
     bottom: 0px;

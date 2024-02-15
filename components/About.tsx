@@ -38,8 +38,8 @@ export default function About({}: Props) {
             }}
             viewport={{once:true}}
             className='space-y-5 px-0 md:px-10 text-gray-300'>
-            <h4 className='text-4xl font-semibold font-akira'>Hi, I&apos;m <span className='underline decoration-bruh-gray tracking-wide'>Naman Chandok</span></h4>
-            <p className='text-base text-gray-400'>I&apos;m a college student living in New Delhi, India. I am a front-end developer using React.js and Next.js. I am also proficient in programming in Python and Php. I also work with Adobe Software including Photoshop, Illustrator, After Effects and Premiere Pro.</p>
+            <h4 className='text-5xl font-semibold font-akira'>Hi, I&apos;m <span className='underline decoration-bruh-gray tracking-wide'>Naman Chandok</span></h4>
+            <p className='text-lg text-gray-400'>I&apos;m a college student living in New Delhi, India. I am a front-end developer using React.js and Next.js. I am also proficient in programming in Python and Php. I also work with Adobe Software including Photoshop, Illustrator, After Effects and Premiere Pro.</p>
             <SocialIcon 
                 url="https://instagram.com/namanchandok" 
                 bgColor='currentColor' 
