@@ -1,36 +1,33 @@
-name: Node.js CI
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: GitHub Pages deploy
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-      # https://github.com/actions/checkout
-      - uses: actions/checkout@v3
-        
-      # a standard step for GitHub actions on Node
-      # https://github.com/actions/setup-node
-      - uses: actions/setup-node@v3
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v1
         with:
-          # update the Node version to meet your needs
-          node-version: 16
-          cache: npm
+          node-version: '16.x'
 
-      - name: Build
-        run: |
-          npm ci
-          npm run build
-          npm run export
-          touch out/.nojekyll
+      - name: Installing my packages
+        run: npm ci
 
-      - name: Deploy
-        # https://github.com/JamesIves/github-pages-deploy-action
-        uses: JamesIves/github-pages-deploy-action@4.4.0
+      - name: Build my App
+        run: npm run build && npm run export && touch ./out/.nojekyll
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
-          branch: gh-pages
-          folder: out
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: public # The branch the action will deploy to
+          FOLDER: out # The folder the action will deploy to
