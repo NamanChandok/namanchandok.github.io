@@ -1,27 +1,21 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { Cabin } from '@next/font/google'
-import Lenis from '@studio-freight/lenis'
 import { useEffect } from 'react'
+
+import { ReactLenis, useLenis } from '@studio-freight/react-lenis'
 
 const cabin = Cabin({ subsets: ['latin'] })
 
 export default function App({ Component, pageProps }: AppProps) {
 
-  useEffect(() => {
-    const lenis = new Lenis()
-
-    function raf(time:any) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
-
-    requestAnimationFrame(raf)
-  } ,[])
+  const lenis = useLenis(()=>{})
 
   return (
+    <ReactLenis root>
     <main className={cabin.className+' bg-bruh-black text-bruh-white'} >
       <Component {...pageProps} />
     </main>
+    </ReactLenis>
   )
 }

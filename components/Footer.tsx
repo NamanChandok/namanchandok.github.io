@@ -4,17 +4,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram, faGithub, faSpotify, faDiscord, faLinkedinIn, faBehance } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import Link from 'next/link';
+import { useLenis } from '@studio-freight/react-lenis';
 
 type Props = {}
 
 export default function Footer({}: Props) {
+    const lenis = useLenis(()=>{})
   return (
     <div className='flex flex-col py-16 items-center bg-[#111] text-bruh-white relative'>
       <div className="absolute bg-bruh-black/50 inset-0 z-0"></div>
         <motion.div
             initial={{
                 opacity:0,
-                y:100
+                y:50
             }}
             whileInView={{
                 opacity:1,
@@ -26,7 +28,8 @@ export default function Footer({}: Props) {
             viewport={{
                 once: true
             }} className='text-center space-y-6 z-10'>
-            <Link href="#home" className='font-akira text-4xl hover:text-[#CFDBD5]/90 transition duration-300'>Naman Chandok</Link>
+
+            <Link href="#home" onClick={()=>{lenis?.scrollTo("#home")}} className='font-akira text-4xl hover:text-[#CFDBD5]/90 transition duration-300'>Naman Chandok</Link>
             <div className='flex items-center space-x-5 justify-center text-gray-300'>
                 <Link href="https://instagram.com/namanchandok" className='h-6 hover:text-bruh-gray transiton duration-300' aria-label='instagram'>
                     <FontAwesomeIcon icon={faInstagram} className='h-full'/>

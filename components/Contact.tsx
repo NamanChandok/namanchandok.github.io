@@ -22,7 +22,7 @@ export default function Contact({}: Props) {
                 <motion.div
                     initial={{
                         opacity:0,
-                        y:-100
+                        y:-50
                     }}
                     whileInView={{
                         opacity:1,
