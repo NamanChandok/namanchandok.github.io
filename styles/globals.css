@@ -7,6 +7,10 @@
     src: url('/font.otf');
 }
 
+html {
+    background-color: #141414;
+}
+
 ::-webkit-scrollbar {
     width: 8px;
 }

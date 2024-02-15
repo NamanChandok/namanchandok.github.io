@@ -9,7 +9,7 @@ export default function Contact({}: Props) {
         <motion.div
             initial={{opacity:0}}
             whileInView={{opacity:1}}
-            transition={{duration:0.8}}
+            transition={{duration:1}}
             className='py-16 flex flex-col text-center md:text-left max-w-7xl px-10 space-y-8 mx-auto items-center'>
 
                 <div className='space-y-4'>
@@ -29,7 +29,7 @@ export default function Contact({}: Props) {
                         y:0
                     }}
                     transition={{
-                        duration:0.4
+                        duration:1.5, ease:'anticipate'
                     }}
                     viewport={{
                         once: true

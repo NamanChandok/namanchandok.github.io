@@ -28,13 +28,15 @@ export default function Header({}: Props) {
   return (
     <motion.header 
     initial={{
-        y:-80
+        y:-20,
+        opacity:0
     }}
     animate={{
-        y:0
+        y:0,
+        opacity:1
     }}
     transition={{
-        duration: 2, 
+        duration: 2.5, 
         ease:'anticipate',
         delay: 1,
     }}

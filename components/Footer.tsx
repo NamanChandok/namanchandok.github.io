@@ -21,7 +21,7 @@ export default function Footer({}: Props) {
                 y:0
             }}
             transition={{
-                duration:0.4
+                duration:1.5, ease:'anticipate'
             }}
             viewport={{
                 once: true
