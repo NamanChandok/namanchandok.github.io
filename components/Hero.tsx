@@ -12,7 +12,7 @@ export default function Hero({}: Props) {
       "Front-End Developer",
       "Adobe Connoisseur",
       "Coffee Addict",
-      "brain the just not working"
+      "brain the just not working "
     ],
     loop: true,
     delaySpeed: 4000
