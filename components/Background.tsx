@@ -12,7 +12,7 @@ export default function BackgroundCircles({}: Props) {
         backgroundSize: '150%',
       }}
       animate={{        
-        backgroundSize: '100%',
+        backgroundSize: '100% ',
       }}
     transition={{duration: 2, ease:'anticipate'}} className='absolute inset-0 bg-hero-bg bg-center bg-no-repeat'>
     </motion.div>
