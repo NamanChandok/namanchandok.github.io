@@ -34,7 +34,7 @@ export default function Hero({}: Props) {
               ease:'anticipate',
               delay: 1,
             }} className='text-lg uppercase text-gray-400 opacity-70 tracking-[5px]'>
-            Hi, I&apos;m
+            Hi there, I&apos;m
           </motion.h2>
           <motion.h1 initial={{
               clipPath: 'polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)',
