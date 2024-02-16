@@ -22,28 +22,50 @@ export default function Hero({}: Props) {
       <Background />
       <div className="absolute bg-bruh-black/50 inset-0 z-0"></div>
       <div className='z-20 space-y-3'>
-        <motion.div initial={{
-              clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)',
+        <div>
+          <motion.h2 initial={{
+              clipPath: 'polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)',
             }}
             animate={{
               clipPath: 'polygon(0px 100%, 100% 100%, 100% 0px, 0px 0px)'
             }}
             transition={{
-              duration:2, 
+              duration:2.5, 
               ease:'anticipate',
               delay: 1,
-            }}>
-          <h2 className='text-lg uppercase text-gray-400 opacity-70 tracking-[5px]'>
+            }} className='text-lg uppercase text-gray-400 opacity-70 tracking-[5px]'>
             Hi, I&apos;m
-          </h2>
-          <h1 className='text-3xl lg:text-6xl text-bruh-white font-semibold font-akira p-2 px-10'>
+          </motion.h2>
+          <motion.h1 initial={{
+              clipPath: 'polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)',
+            }}
+            animate={{
+              clipPath: 'polygon(0px 100%, 100% 100%, 100% 0px, 0px 0px)'
+            }}
+            transition={{
+              duration:2.5, 
+              ease:'anticipate',
+              delay: 1,
+            }} className='text-3xl lg:text-6xl text-bruh-white font-semibold font-akira p-2 px-10'>
             Naman Chandok
-          </h1>
-          <p className='text-lg text-gray-400 opacity-70'>
+          </motion.h1>
+          <motion.p initial={{
+              opacity:0,
+              y:20
+            }}
+            animate={{
+              opacity:1,
+              y:0
+            }}
+            transition={{
+              duration:2.5, 
+              ease:'anticipate',
+              delay: 1.5,
+            }} className='text-lg text-gray-400 opacity-70'>
             <span>{text}</span>
             <Cursor cursorColor='#7c6aab' />
-          </p>
-        </motion.div>
+          </motion.p>
+        </div>
       </div>
       <motion.div initial={{
               bottom:'-20vh',
@@ -54,7 +76,7 @@ export default function Hero({}: Props) {
             transition={{
               duration:2, 
               ease:'anticipate',
-              delay: 1,
+              delay: 1.5,
             }} className="custom-shape-divider-bottom-1687952567 heroTexture z-0">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path

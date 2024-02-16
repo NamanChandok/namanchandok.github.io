@@ -1,12 +1,12 @@
-/**
-* @type {import('next').NextConfig}
-*/
+/** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true,
+  basePath: '',
+  assetPrefix: '/',
   images: {
-    loader: 'akamai',
-    path: '',
+    unoptimized: true,
   },
-  assetPrefix: './',
-};
+}
 
-export default nextConfig;
+module.exports = nextConfig

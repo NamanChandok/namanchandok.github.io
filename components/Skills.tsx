@@ -9,7 +9,7 @@ export default function Skills({}: Props) {
     <motion.div 
         initial={{opacity:0}}
         whileInView={{opacity:1}}
-        transition={{duration:0.8}}
+        transition={{duration:1}}
         className='flex relative flex-col text-center my-auto md:text-left xl:px-10 items-center mx-auto justify-center py-16'>
         
         <h3 className='text-5xl font-semibold font-akira'>Skills</h3>
