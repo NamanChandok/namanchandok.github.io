@@ -23,7 +23,7 @@ export default function About({}: Props) {
                 x:0, opacity:1
             }}
             viewport={{once:true}}
-            className="flex-shrink-0 w-56 h-56 rounded-full md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[400px] bg-[url('/hello.jpg')] bg-cover bg-center"
+            className="flex-shrink-0 w-56 h-56 rounded-full md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[400px] bg-[url('./hello.jpg')] bg-cover bg-center"
             ></motion.div>
         <motion.div
             initial={{

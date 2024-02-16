@@ -1,55 +1,55 @@
 export const projectsData = [
     {
         title: "Soluva",
-        imgUrl: "/projects/soluva.png",
+        imgUrl: "./projects/soluva.png",
         desc: "Web Development - Next.JS",
         url: "https://github.com/NamanChandok/soluva"
     },
     {
         title: "Crypt@trix",
-        imgUrl: "/projects/crypt.png",
+        imgUrl: "./projects/crypt.png",
         desc: "Web Development - PHP",
         url: "https://github.com/PyrotechClub/crypt22"
     },
     {
         title: "Posters",
-        imgUrl: "/projects/posters.png",
+        imgUrl: "./projects/posters.png",
         desc: "Graphic Design",
         url: "https://drive.google.com/drive/folders/1dDQmHFstzlWjxx6KNQLyFOCAkE3h_JCZ?usp=sharing"
     },
     {
         title: "Newstar Consulting",
-        imgUrl: "/projects/newstar.png",
+        imgUrl: "./projects/newstar.png",
         desc: "Web Design - HTML, CSS, JS",
         url: "https://github.com/NamanChandok/newstar"
     },
     {
         title: "Pong Recreation",
-        imgUrl: "/projects/pong.png",
+        imgUrl: "./projects/pong.png",
         desc: "Game Development - Lua",
         url: "https://github.com/NamanChandok/pong"
     },
     {
         title: "Outlive Yourself",
-        imgUrl: "/projects/outlive.png",
+        imgUrl: "./projects/outlive.png",
         desc: "Web Development - Next.JS",
         url: "https://github.com/NamanChandok/outlive"
     },
     {
         title: "Pyrotech",
-        imgUrl: "/projects/pyro.png",
+        imgUrl: "./projects/pyro.png",
         desc: "Web Design - HTML, CSS, JS",
         url: "https://github.com/PyrotechClub/pyrotechclub.github.io"
     },
     {
         title: "Coral",
-        imgUrl: "/projects/coral.png",
+        imgUrl: "./projects/coral.png",
         desc: "Web Development - Next.JS",
         url: "https://github.com/NamanChandok/coral"
     },
     {
         title: "HadesTown",
-        imgUrl: "/projects/hadestown.png",
+        imgUrl: "./projects/hadestown.png",
         desc: "Web Design - HTML, CSS, JS",
         url: "https://github.com/NamanChandok/alphanode"
     }

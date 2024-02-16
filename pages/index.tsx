@@ -34,12 +34,12 @@ export default function Home() {
         <meta name="twitter:title" content="Naman Chandok" />
         <meta name="twitter:description" content="I am a college student living in New Delhi, India and this is my portfolio website." />
 
-        <meta name="twitter:image" content="/preview.png" />
+        <meta name="twitter:image" content="./preview.png" />
 
-        <link rel="manifest" href="/manifest.json" />
+        <link rel="manifest" href="./manifest.json" />
 
-        <link rel="apple-touch-icon" href="/favicon.ico" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="./favicon.ico" />
+        <link rel="icon" href="./favicon.ico" />
       </Head>
 
       {/* Header */}

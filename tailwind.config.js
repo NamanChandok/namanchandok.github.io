@@ -13,7 +13,7 @@ module.exports = {
           'bruh-gray': "#F5CB5C",
         },
         backgroundImage: {
-          "hero-bg": "url('/bg.svg')",
+          "hero-bg": "url('./bg.svg')",
         },
         backgroundSize: {
           '100': "100%",
