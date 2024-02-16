@@ -23,7 +23,7 @@ export default function Footer({}: Props) {
                 y:0
             }}
             transition={{
-                duration:1.5, ease:'anticipate'
+                duration:0.4
             }}
             viewport={{
                 once: true

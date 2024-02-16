@@ -22,50 +22,28 @@ export default function Hero({}: Props) {
       <Background />
       <div className="absolute bg-bruh-black/50 inset-0 z-0"></div>
       <div className='z-20 space-y-3'>
-        <div>
-          <motion.h2 initial={{
-              clipPath: 'polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)',
+        <motion.div initial={{
+              clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)',
             }}
             animate={{
               clipPath: 'polygon(0px 100%, 100% 100%, 100% 0px, 0px 0px)'
             }}
             transition={{
-              duration:2.5, 
+              duration:2, 
               ease:'anticipate',
               delay: 1,
-            }} className='text-lg uppercase text-gray-400 opacity-70 tracking-[5px]'>
-            Hi there, I&apos;m
-          </motion.h2>
-          <motion.h1 initial={{
-              clipPath: 'polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)',
-            }}
-            animate={{
-              clipPath: 'polygon(0px 100%, 100% 100%, 100% 0px, 0px 0px)'
-            }}
-            transition={{
-              duration:2.5, 
-              ease:'anticipate',
-              delay: 1,
-            }} className='text-3xl lg:text-6xl text-bruh-white font-semibold font-akira p-2 px-10'>
+            }}>
+          <h2 className='text-lg uppercase text-gray-400 opacity-70 tracking-[5px]'>
+            Hi, I&apos;m
+          </h2>
+          <h1 className='text-3xl lg:text-6xl text-bruh-white font-semibold font-akira p-2 px-10'>
             Naman Chandok
-          </motion.h1>
-          <motion.p initial={{
-              y: 20,
-              opacity: 0,
-            }}
-            animate={{
-              y: 0,
-              opacity: 1,
-            }}
-            transition={{
-              duration:2.5, 
-              ease:'anticipate',
-              delay: 1.5,
-            }} className='text-lg text-gray-400 opacity-70'>
+          </h1>
+          <p className='text-lg text-gray-400 opacity-70'>
             <span>{text}</span>
             <Cursor cursorColor='#7c6aab' />
-          </motion.p>
-        </div>
+          </p>
+        </motion.div>
       </div>
       <motion.div initial={{
               bottom:'-20vh',
@@ -74,7 +52,7 @@ export default function Hero({}: Props) {
               bottom:0,
             }}
             transition={{
-              duration:2.5, 
+              duration:2, 
               ease:'anticipate',
               delay: 1,
             }} className="custom-shape-divider-bottom-1687952567 heroTexture z-0">

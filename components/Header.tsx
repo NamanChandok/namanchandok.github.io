@@ -38,9 +38,9 @@ export default function Header({}: Props) {
         opacity:1
     }}
     transition={{
-        duration: 2.5, 
+        duration: 2, 
         ease:'anticipate',
-        delay: 1,
+        delay: 1.5,
     }}
     className='fixed top-0 p-5 md:px-24 flex items-center justify-between inset-x-0 z-30 bg-[#141414]'>
 

@@ -9,7 +9,7 @@ export default function About({}: Props) {
     <motion.div
         initial={{opacity:0}}
         whileInView={{opacity:1}}
-        transition={{duration:1}}
+        transition={{duration:0.8}}
         className='py-16 flex relative flex-col text-center gap-6 md:text-left md:flex-row-reverse max-w-7xl px-10 mx-auto items-center overflow-x-hidden'>
         <motion.div 
             initial={{
@@ -17,7 +17,7 @@ export default function About({}: Props) {
                 opacity:0
             }}
             transition={{
-                duration: 2, ease:'anticipate'
+                duration: 0.8
             }}
             whileInView={{
                 x:0, opacity:1
@@ -31,7 +31,7 @@ export default function About({}: Props) {
                 opacity:0
             }}
             transition={{
-                duration: 2, ease:'anticipate'
+                duration: 0.8
             }}
             whileInView={{
                 x:0, opacity:1
