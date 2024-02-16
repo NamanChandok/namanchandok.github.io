@@ -4,7 +4,7 @@
  
 @font-face {
     font-family: 'Akira';
-    src: url('./font.otf');
+    src: url('/font.otf');
 }
 
 ::-webkit-scrollbar {
