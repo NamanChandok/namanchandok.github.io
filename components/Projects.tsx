@@ -38,7 +38,7 @@ export default function Projects({}: Props) {
                     initial={{opacity:0, y:20}}
                     whileInView={{opacity:1, y:0}}
                     viewport={{once:true}}
-                    transition={{duration:1, ease:'anticipate', delay: 0.2*i}}>
+                    transition={{duration:1, ease:'anticipate', delay: 0.2*(i%3)}}>
                         <Project {...project} />
                     </motion.div>
                 ))}
