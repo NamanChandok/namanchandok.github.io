@@ -11,10 +11,13 @@ type Props = {
 
 export default function Project({title, imgUrl, desc, url}: Props) {
   return (
-    <Link href={url} className='flex-shrink-0 snap-center flex flex-col items-center bg-[#333533] group overflow-hidden rounded-md' aria-label={title}>
-        <Image className="flex-shrink-0 w-full h-64 object-cover group-hover:scale-110 transition duration-500" src={imgUrl} alt={title} width={400} height={400} />
-        <div className='space-y-1 px-4 md:px-10 py-6 bg-[#222] w-full z-10'>
-            <h4 className='text-3xl font-black text-bruh-white'>{title}</h4>
+    <Link href={url} className='card relative flex-shrink-0 snap-center flex flex-col items-center bg-[#222] group rounded-xl' aria-label={title}>
+        <div className='card-border'></div>
+        <div className='h-48 p-2 w-full'>
+          <Image className="h-full w-full rounded-lg border-[3px] border-[#232323] object-cover" src={imgUrl} alt={title} width={400} height={400} />
+        </div>
+        <div className='space-y-1 px-3 pb-4 pt-1 w-full z-10'>
+            <h4 className='text-2xl font-black text-bruh-white'>{title}</h4>
             <div className='relative h-6 overflow-hidden'>
               <p className='text-gray-400 uppercase text-base absolute translate-y-0 transition duration-500 group-hover:-translate-y-10'>{desc}</p>
               <p className='text-gray-400 text-base uppercase absolute translate-y-10 transition duration-500 hover:text-bruh-gray group-hover:translate-y-0'>Show Project</p>

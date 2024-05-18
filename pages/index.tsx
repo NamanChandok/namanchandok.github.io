@@ -6,10 +6,39 @@ import Skills from '../components/Skills'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
+import { useEffect } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 export default function Home() {
+
+  useEffect(() => {
+    const trailer = document.getElementById('trailer') as HTMLElement;
+    const animateTrailer = (e:any, i:any) => {
+      const keyframes = {
+        left: e.clientX - trailer.offsetWidth/2 + 'px',
+        top: e.clientY - trailer.offsetWidth/2 + 'px',
+        transform: `scale(${i ? 1.35 : 1})`,
+        color: i ? '#fff' : 'transparent',
+        border: i ? '2px solid #fff' : '2px solid #333',
+      }
+      trailer.animate(keyframes, {
+        duration: 300,
+        fill: 'forwards'
+      })
+    }
+    window.onmousemove = (e:any) => {
+      const interactable = e.target.closest('a') || e.target.closest('button');
+      const interacting = interactable !== null;
+      animateTrailer(e, interacting); 
+    }
+    
+  }, [])
   return (
     <>
+      <div id='trailer' className='hidden h-6 w-6 rounded-full border-[#333] border-2 fixed top-0 left-0 z-[100] md:flex items-center justify-center bg-black/40 pointer-events-none opacity-0 transition-opacity duration-500 ease-in-out'>
+        <FontAwesomeIcon icon={faChevronRight} className='text-inherit h-2.5 trailer-icon' />
+      </div>
       <Head>
         <title>Naman Chandok</title>
         <meta name="description"

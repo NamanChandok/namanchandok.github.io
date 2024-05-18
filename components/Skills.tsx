@@ -13,7 +13,7 @@ export default function Skills({}: Props) {
         className='flex relative flex-col text-center my-auto md:text-left xl:px-10 items-center mx-auto justify-center py-16'>
         
         <h3 className='text-5xl font-semibold font-akira'>Skills</h3>
-        <div className='grid grid-cols-2 md:grid-cols-6 gap-5 mt-10'>
+        <div className='grid grid-cols-3 md:grid-cols-6 gap-5 mt-10'>
             <Skill imgUrl="./skills/html.png" name='html' />
             <Skill imgUrl="./skills/css.png" name='css' />
             <Skill imgUrl="./skills/js.png" name='javascript' />
@@ -35,7 +35,6 @@ export default function Skills({}: Props) {
             <Skill imgUrl="./skills/heroku.png" name='heroku' />
             <Skill imgUrl="./skills/mysql.png" name='mysql' />
             <Skill imgUrl="./skills/bs.png" name='bootstrap' />
-            <Skill imgUrl="./skills/lua.png" name='lua' />
         </div>
 
     </motion.div>

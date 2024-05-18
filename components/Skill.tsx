@@ -8,7 +8,7 @@ type Props = {
 
 export default function Skill({ imgUrl, name }: Props) {
   return (
-    <div className='group relative flex flex-col items-center cursor-pointer'>
+    <div className='group relative flex flex-col items-center'>
         <div className='w-18 h-18 xl:w-24 xl:h-24 overflow-hidden'>
             <Image 
                 src={imgUrl} alt={name} width={100} height={100}

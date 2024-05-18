@@ -34,11 +34,11 @@ export default function Contact({}: Props) {
                     viewport={{
                         once: true
                     }} className='space-y-4 text-xl'>
-                    <div className='group relative px-2 cursor-pointer w-max mx-auto'>
+                    <div className='group relative px-2 w-max mx-auto'>
                         <Link href='mailto:namanchandok1@gmail.com' className='text-gray-300 z-20 relative group-hover:text-bruh-black transition duration-300' aria-label='email: namanchandok1@gmail.com'>namanchandok1@gmail.com</Link>
                         <div className='absolute bg-bruh-gray/70 transition-all duration-200 h-1 group-hover:h-5 bottom-1 inset-x-0 z-0'></div>
                     </div>
-                    <div className='group relative px-2 cursor-pointer w-max mx-auto'>
+                    <div className='group relative px-2 w-max mx-auto'>
                         <p className='text-gray-300 z-20 relative group-hover:text-bruh-black transition duration-300'>New Delhi, India</p>
                         <div className='absolute bg-bruh-gray/70 transition-all duration-200 h-1 group-hover:h-5 bottom-1 inset-x-0 z-0'></div>
                     </div>

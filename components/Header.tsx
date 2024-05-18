@@ -49,11 +49,11 @@ export default function Header({}: Props) {
     <div className='flex md:flex-row flex-col md:static fixed justify-between items-start md:p-0 p-6 pt-16 pb-32 h-screen md:h-auto w-full inset-y-0 inset-x-0 bg-[#141414]/90 z-20 -translate-x-full transition duration-300 ease-in-out md:translate-x-0' id="side-nav" data-visible="false">
         <div className="flex flex-col md:flex-row underline decoration-transparent text-bruh-white text-2xl md:text-base underline-offset-2 gap-8 md:gap-6">
 
-            <Link className="transition duration-300 decoration-transparent hover:decoration-bruh-gray" href="#home" onClick={()=>{lenis?.scrollTo("#home"); handleClick()}} aria-label='home'>HOME</Link>
-            <Link className="transition duration-300 decoration-transparent hover:decoration-bruh-gray" href="#about" onClick={()=>{lenis?.scrollTo("#about"); handleClick()}} aria-label='about'>ABOUT</Link>
-            <Link className="transition duration-300 decoration-transparent hover:decoration-bruh-gray" href="#skills" onClick={()=>{lenis?.scrollTo("#skills"); handleClick()}} aria-label='skills'>SKILLS</Link>
-            <Link className="transition duration-300 decoration-transparent hover:decoration-bruh-gray" href="#projects" onClick={()=>{lenis?.scrollTo("#projects"); handleClick()}} aria-label='projects'>PROJECTS</Link>
-            <Link className="transition duration-300 decoration-transparent hover:decoration-bruh-gray" href="#contact" onClick={()=>{lenis?.scrollTo("#contact"); handleClick()}} aria-label='contact'>CONTACT</Link>
+            <Link className="interactable transition duration-300 decoration-transparent hover:decoration-bruh-gray" href="#home" onClick={()=>{lenis?.scrollTo("#home"); handleClick()}} aria-label='home'>HOME</Link>
+            <Link className="interactable transition duration-300 decoration-transparent hover:decoration-bruh-gray" href="#about" onClick={()=>{lenis?.scrollTo("#about"); handleClick()}} aria-label='about'>ABOUT</Link>
+            <Link className="interactable transition duration-300 decoration-transparent hover:decoration-bruh-gray" href="#skills" onClick={()=>{lenis?.scrollTo("#skills"); handleClick()}} aria-label='skills'>SKILLS</Link>
+            <Link className="interactable transition duration-300 decoration-transparent hover:decoration-bruh-gray" href="#projects" onClick={()=>{lenis?.scrollTo("#projects"); handleClick()}} aria-label='projects'>PROJECTS</Link>
+            <Link className="interactable transition duration-300 decoration-transparent hover:decoration-bruh-gray" href="#contact" onClick={()=>{lenis?.scrollTo("#contact"); handleClick()}} aria-label='contact'>CONTACT</Link>
 
         </div>
 

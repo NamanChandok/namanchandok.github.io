@@ -23,6 +23,15 @@ module.exports = {
           cabin: "Cabin, sans-serif",
           akira: "Akira, sans-serif",
         },
+        keyframes: {
+          scale: {
+            '0%, 100%': { transform: 'scale(100%))' },
+            '50%': { transform: 'scale(110%)' },
+          }
+        },
+        animation: {
+          scale: 'scale 0.8s ease-in-out',
+        }
       },
   },
   plugins: [require('tailwind-scrollbar'),],
