@@ -23,7 +23,7 @@ export default function Home() {
         border: i ? '2px solid #fff' : '2px solid #333',
       }
       trailer.animate(keyframes, {
-        duration: 300,
+        duration: 200,
         fill: 'forwards'
       })
     }
