@@ -59,7 +59,7 @@ export default function About({}: Props) {
                 className='hover:text-bruh-gray h-10 w-10 mr-2 transition duration-200 ease-in-out'
             />
             <SocialIcon
-                url='https://www.linkedin.com/in/naman-chandok-874b421b0/'
+                url='https://www.linkedin.com/in/namanchandok/'
                 bgColor='currentColor'
                 fgColor='transparent'
                 className='hover:text-bruh-gray h-10 w-10 mr-2 transition duration-200 ease-in-out'

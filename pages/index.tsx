@@ -29,7 +29,8 @@ export default function Home() {
         fill: 'forwards'
       })
       icon.animate(keyframes_icon, {
-        duration: 300, 
+        duration: 250,
+        delay: 50, 
         fill: 'forwards',
       })
     }

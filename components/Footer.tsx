@@ -43,7 +43,7 @@ export default function Footer({}: Props) {
                 <Link href="mailto:namanchandok1@gmail.com" className='h-6 hover:text-bruh-gray transiton duration-300' aria-label='email'>
                     <FontAwesomeIcon icon={faEnvelope} className='h-full'/>
                 </Link>
-                <Link href="https://www.linkedin.com/in/naman-chandok-874b421b0/" className='h-6 hover:text-bruh-gray transiton duration-300' aria-label='linkedin'>
+                <Link href="https://www.linkedin.com/in/namanchandok/" className='h-6 hover:text-bruh-gray transiton duration-300' aria-label='linkedin'>
                     <FontAwesomeIcon icon={faLinkedinIn} className='h-full'/>
                 </Link>
                 <Link href="https://www.behance.net/naman-chandok" className='h-6 hover:text-bruh-gray transiton duration-300' aria-label='behance'>
