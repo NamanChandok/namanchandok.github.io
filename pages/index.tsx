@@ -25,12 +25,11 @@ export default function Home() {
       }
       const keyframes_icon = {rotate: i ? '-45deg' : '0deg'}
       trailer.animate(keyframes, {
-        duration: 200,
+        duration: 150,
         fill: 'forwards'
       })
       icon.animate(keyframes_icon, {
-        duration: 250,
-        delay: 50, 
+        duration: 200,
         fill: 'forwards',
       })
     }

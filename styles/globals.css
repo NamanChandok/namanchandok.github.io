@@ -82,11 +82,7 @@ body:hover #trailer {
     opacity: 1;
 }
 
-html {
-    cursor: none;
-}
-
-a {
+html, a, button {
     cursor: none;
 }
 

@@ -2,7 +2,9 @@ import React from 'react'
 import Link from 'next/link';
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import Background from "./Background";
-import {delay, motion} from 'framer-motion';
+import {motion} from 'framer-motion';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFileContract } from '@fortawesome/free-solid-svg-icons';
 
 type Props = {}
 
@@ -61,10 +63,25 @@ export default function Hero({}: Props) {
               duration:2.5, 
               ease:'anticipate',
               delay: 1.5,
-            }} className='text-lg text-gray-400 opacity-70'>
+            }} className='text-lg text-gray-400 opacity-70 pb-4'>
             <span>{text}</span>
             <Cursor cursorColor='#7c6aab' />
           </motion.p>
+          <motion.a target='_blank' 
+            href='https://docs.google.com/document/d/14uKJW6Xv5lxFtsOCv4H1ggWbsm3HZOSQpp7KCxWiIwE/edit?usp=sharing' 
+            initial={{
+              opacity:0,
+            }}
+            animate={{
+              opacity:1,
+            }}
+            transition={{
+              duration:2, 
+              ease:'anticipate',
+              delay: 2.5,
+            }} className='text-gray-400 border-2 border-gray-400 hover:border-gray-300 py-1.5 px-4 rounded-full opacity-70 hover:text-gray-300 transition-all duration-300 ease-in-out'>
+            <FontAwesomeIcon icon={faFileContract} className='h-4 pr-1 inline-block' /> View Resume
+          </motion.a>
         </div>
       </div>
       <motion.div initial={{
