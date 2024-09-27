@@ -14,7 +14,7 @@ export default function Hero({}: Props) {
       "Front-End Developer",
       "Adobe Connoisseur",
       "Coffee Addict",
-      "brain the just not working "
+      "brain the just not working"
     ],
     loop: true,
     delaySpeed: 4000
@@ -34,7 +34,7 @@ export default function Hero({}: Props) {
             transition={{
               duration:2.5, 
               ease:'anticipate',
-              delay: 1,
+              delay: 0.5,
             }} className='text-lg uppercase text-gray-400 opacity-70 tracking-[5px]'>
             Hi there, I&apos;m
           </motion.h2>
@@ -47,7 +47,7 @@ export default function Hero({}: Props) {
             transition={{
               duration:2.5, 
               ease:'anticipate',
-              delay: 1,
+              delay: 0.5,
             }} className='text-3xl lg:text-6xl text-bruh-white font-semibold font-akira p-2 px-10'>
             Naman Chandok
           </motion.h1>
@@ -62,7 +62,7 @@ export default function Hero({}: Props) {
             transition={{
               duration:2.5, 
               ease:'anticipate',
-              delay: 1.5,
+              delay: 1,
             }} className='text-lg text-gray-400 opacity-70 pb-4'>
             <span>{text}</span>
             <Cursor cursorColor='#7c6aab' />
@@ -78,7 +78,7 @@ export default function Hero({}: Props) {
             transition={{
               duration:2, 
               ease:'anticipate',
-              delay: 2.5,
+              delay: 1.5,
             }} className='text-gray-400 border-2 border-gray-400 hover:border-gray-300 py-1.5 px-4 rounded-full opacity-70 hover:text-gray-300 transition-all duration-300 ease-in-out'>
             <FontAwesomeIcon icon={faFileContract} className='h-4 pr-1 inline-block' /> View Resume
           </motion.a>

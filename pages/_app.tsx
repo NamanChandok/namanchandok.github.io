@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
   })
 
   return (
-    <ReactLenis options={{duration:1, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -5 * t))}} root>
+    <ReactLenis options={{duration:1, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))}} root>
     <main className={cabin.className+' bg-bruh-black text-bruh-white'} >
       <Component {...pageProps} />
     </main>
