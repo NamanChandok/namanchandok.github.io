@@ -56,7 +56,6 @@ export default function Footer({}: Props) {
                     <FontAwesomeIcon icon={faSpotify} className='h-full'/>
                 </Link>
             </div>
-            <img src="https://www.cutercounter.com/hits.php?id=hxqdqcd&nd=5&style=37" className='w-full h-5 object-contain' alt="website views counter" />
             <p className='text-gray-400'>© 2023 <b>Naman Chandok</b>. All Rights Reserved.</p>
         </motion.div>
     </div>
