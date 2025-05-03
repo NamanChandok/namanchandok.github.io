@@ -37,7 +37,7 @@
 }
 
 .custom-shape-divider-bottom-1687952567 .shape-fill {
-    fill: #181818;
+    fill: #111;
 }
 
 .side-nav-toggle {
@@ -92,7 +92,7 @@ button {
 .card-border::before {
     background: radial-gradient(
         800px circle at var(--x) var(--y),
-        rgba(245, 203, 92, 0.4),
+        rgba(146, 180, 201, 0.4),
         transparent 20%
     );
 }

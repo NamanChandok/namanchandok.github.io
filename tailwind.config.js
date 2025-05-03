@@ -8,9 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "bruh-black": "#181818",
-        "bruh-white": "#E8EDDF",
-        "bruh-gray": "#F5CB5C",
+        "bruh-black": "#111",
+        "bruh-white": "#e8e8e8",
+        "bruh-gray": "#92b4c9",
       },
       backgroundImage: {
         "hero-bg": "url('/bg.jpg')",
