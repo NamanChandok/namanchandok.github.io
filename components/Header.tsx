@@ -49,7 +49,7 @@ export default function Header({}: Props) {
         ease: "anticipate",
         delay: 1.5,
       }}
-      className="fixed top-0 p-5 md:px-24 flex items-center justify-between inset-x-0 z-30 bg-[#0c0c0c]"
+      className="fixed top-0 p-5 md:px-24 flex items-center justify-between inset-x-0 z-30 bg-[#090909]"
     >
       <Link
         href="#home"
@@ -60,7 +60,7 @@ export default function Header({}: Props) {
       </Link>
 
       <div
-        className="flex md:flex-row flex-col md:static fixed justify-between items-start md:p-0 p-6 pt-16 pb-32 h-screen md:h-auto w-full inset-y-0 inset-x-0 bg-[#0c0c0c]/90 z-20 -translate-x-full transition duration-300 ease-in-out md:translate-x-0"
+        className="flex md:flex-row flex-col md:static fixed justify-between items-start md:p-0 p-6 pt-16 pb-32 h-screen md:h-auto w-full inset-y-0 inset-x-0 bg-[#090909]/90 z-20 -translate-x-full transition duration-300 ease-in-out md:translate-x-0"
         id="side-nav"
         data-visible="false"
       >
