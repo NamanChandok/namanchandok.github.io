@@ -1,33 +1,45 @@
-import React from 'react'
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
-type Props = {}
+type Props = {};
 
 export default function BackgroundCircles({}: Props) {
-
   return (
-  <>
-    <motion.div 
-      initial={{
-        backgroundSize: '150%',
-      }}
-      animate={{        
-        backgroundSize: '100% ',
-      }}
-    transition={{duration: 2, ease:'anticipate'}} className='absolute inset-0 bg-hero-bg bg-center bg-no-repeat'>
-    </motion.div>
-    {/* <motion.div
+    <div className="bg-black absolute inset-0 flex items-center justify-center">
+      <motion.div
+        className="flex border-4 border-[#696969] justify-center"
         initial={{
-            scale: 0,
+          gap: "35vw",
+          border: "0px solid #696969",
+          margin: "0",
         }}
         animate={{
-            scale: 1.0,
+          gap: "0",
+          border: "4px solid #696969",
+          margin: "1em",
         }}
-        transition={{duration: 2, ease:'anticipate'}}
-        className='absolute h-screen flex justify-center items-center'>
-        <div className="rounded-full h-[50vh] w-[50vh] md:h-[70vh] md:w-[70vh] border-2 border-bruh-white/20 absolute animate-pulse heroBg"></div>
-        <div className="rounded-full h-[40vh] w-[40vh] md:h-[60vh] md:w-[60vh] border-2 border-bruh-white/10 absolute animate-pulse heroBg"></div>
-    </motion.div> */}
-  </>
-  )
+        transition={{
+          duration: 2,
+          ease: "anticipate",
+          border: { duration: 0.5, delay: 1.5 },
+        }}
+      >
+        <Image
+          src="/bg-left.png"
+          height={500}
+          width={500}
+          alt="Background Left"
+          className="w-1/2"
+        />
+        <Image
+          src="/bg-right.png"
+          height={500}
+          width={500}
+          alt="Background Right"
+          className="w-1/2"
+        />
+      </motion.div>
+    </div>
+  );
 }
