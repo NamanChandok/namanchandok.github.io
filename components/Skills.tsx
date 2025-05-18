@@ -1,41 +1,64 @@
 import React from "react";
-import { motion } from "framer-motion";
 import Skill from "./Skill";
-
-type Props = {};
-
-export default function Skills({}: Props) {
+export default function Skills() {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      className="flex relative flex-col text-center my-auto md:text-left xl:px-10 items-center mx-auto justify-center py-16"
+    <section
+      id="skills"
+      className="max-w-7xl mx-auto p-6 space-y-12 text-center md:text-left"
     >
-      <h3 className="text-5xl font-semibold font-akira">Skills</h3>
-      <div className="grid grid-cols-3 md:grid-cols-6 gap-5 mt-10">
-        <Skill imgUrl="./skills/js.png" name="javascript" />
-        <Skill imgUrl="./skills/ts.png" name="typescript" />
-        <Skill imgUrl="./skills/py.png" name="python" />
-        <Skill imgUrl="./skills/mysql.png" name="sql" />
-        <Skill imgUrl="./skills/php.png" name="php" />
-        <Skill imgUrl="./skills/html.png" name="html" />
-        <Skill imgUrl="./skills/css.png" name="css" />
-        <Skill imgUrl="./skills/react.png" name="react.js" />
-        <Skill imgUrl="./skills/next.png" name="next.js" />
-        <Skill imgUrl="./skills/node.png" name="node.js" />
-        <Skill imgUrl="./skills/flask.png" name="flask" />
-        <Skill imgUrl="./skills/firebase.png" name="firebase" />
-        <Skill imgUrl="./skills/mongodb.png" name="mongodb" />
-        <Skill imgUrl="./skills/supabase.png" name="supabase" />
-        <Skill imgUrl="./skills/git.png" name="git" />
-        <Skill imgUrl="./skills/tailwind.png" name="tailwind css" />
-        <Skill imgUrl="./skills/ps.png" name="photoshop" />
-        <Skill imgUrl="./skills/ae.png" name="after effects" />
-        <Skill imgUrl="./skills/ai.png" name="graphic design" />
-        <Skill imgUrl="./skills/ui.png" name="ui design" />
-        <Skill imgUrl="./skills/3d.png" name="3d modelling" />
+      <div className="flex gap-8 items-center">
+        <hr className="w-full border-muted" />
+        <p className="shrink-0 text-lg">
+          <span className="text-muted">02.</span> Skills
+        </p>
       </div>
-    </motion.div>
+      <div className="flex flex-col md:flex-row justify-between items-center gap-12">
+        <h2 className="font-semibold text-3xl md:text-4xl md:w-2/5">
+          Programming Languages
+        </h2>
+        <div className="w-px h-32 bg-muted md:block hidden"></div>
+        <div className="flex gap-4 justify-center md:justify-start flex-wrap md:w-3/5">
+          <Skill imgUrl="/skills/js.png" name="JavaScript" />
+          <Skill imgUrl="/skills/ts.png" name="TypeScript" />
+          <Skill imgUrl="/skills/html.png" name="HTML" />
+          <Skill imgUrl="/skills/css.png" name="CSS" />
+          <Skill imgUrl="/skills/py.png" name="Python" />
+          <Skill imgUrl="/skills/mysql.png" name="SQL" />
+          <Skill imgUrl="/skills/php.png" name="PHP" />
+        </div>
+      </div>
+      <div className="flex flex-col md:flex-row justify-between items-center gap-12">
+        <h2 className="font-semibold text-3xl md:text-4xl md:w-2/5">
+          Libraries/Frameworks
+        </h2>
+        <div className="w-px h-32 bg-muted md:block hidden"></div>
+        <div className="flex gap-4 justify-center md:justify-start flex-wrap md:w-3/5">
+          <Skill imgUrl="/skills/react.png" name="React.js" />
+          <Skill imgUrl="/skills/next.png" name="Next.js" />
+          <Skill imgUrl="/skills/tailwind.png" name="Tailwind CSS" />
+          <Skill imgUrl="/skills/flask.png" name="Flask" />
+          <Skill imgUrl="/skills/node.png" name="Node.js" />
+          <Skill imgUrl="/skills/keras.png" name="Keras" />
+          <Skill imgUrl="/skills/tensor.png" name="TensorFlow" />
+        </div>
+      </div>
+      <div className="flex flex-col md:flex-row justify-between items-center gap-12">
+        <h2 className="font-semibold text-3xl md:text-4xl md:w-2/5 gap-12">
+          Tools/Platforms
+        </h2>
+        <div className="w-px h-32 bg-muted md:block hidden"></div>
+        <div className="flex gap-4 justify-center md:justify-start flex-wrap md:w-3/5">
+          <Skill imgUrl="/skills/git.png" name="Git" />
+          <Skill imgUrl="/skills/firebase.png" name="Firebase" />
+          <Skill imgUrl="/skills/mongodb.png" name="MongoDB" />
+          <Skill imgUrl="/skills/supabase.png" name="Supabase" />
+          <Skill imgUrl="/skills/ui.png" name="Figma" />
+          <Skill imgUrl="/skills/ps.png" name="Photoshop" />
+          <Skill imgUrl="/skills/ae.png" name="After Effects" />
+          <Skill imgUrl="/skills/ai.png" name="Illustrator" />
+          <Skill imgUrl="/skills/3d.png" name="Blender" />
+        </div>
+      </div>
+    </section>
   );
 }

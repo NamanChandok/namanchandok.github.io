@@ -1,88 +1,48 @@
-import { motion } from 'framer-motion';
-import { SocialIcon } from 'react-social-icons';
-import React from 'react';
-
-type Props = {}
-
-export default function About({}: Props) {
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import SocialIcons from "./SocialIcons";
+export default function About() {
   return (
-    <motion.div
-        initial={{opacity:0}}
-        whileInView={{opacity:1}}
-        transition={{duration:1}}
-        className='py-16 flex relative flex-col text-center gap-6 md:text-left md:flex-row-reverse max-w-7xl px-10 mx-auto items-center overflow-x-hidden'>
-        <motion.div 
-            initial={{
-                x:100,
-                opacity:0
-            }}
-            transition={{
-                duration: 2, ease:'anticipate'
-            }}
-            whileInView={{
-                x:0, opacity:1
-            }}
-            viewport={{once:true}}
-            className="flex-shrink-0 w-56 h-56 rounded-full md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[400px] bg-[url('/hello.jpg')] bg-cover bg-center"
-            ></motion.div>
-        <motion.div
-            initial={{
-                x:-100,
-                opacity:0
-            }}
-            transition={{
-                duration: 2, ease:'anticipate'
-            }}
-            whileInView={{
-                x:0, opacity:1
-            }}
-            viewport={{once:true}}
-            className='space-y-5 px-0 md:px-10 text-gray-300'>
-            <h4 className='text-5xl font-semibold font-akira text-bruh-white'>Hi, I&apos;m <span className='underline decoration-bruh-gray tracking-wide'>Naman Chandok</span></h4>
-            <p className='text-lg text-gray-400'>I&apos;m a college student living in New Delhi, India. I am a front-end developer using React.js and Next.js. I am also proficient in programming in Python and Php. I also work with Adobe Software including Photoshop, Illustrator, After Effects and Premiere Pro.</p>
-            <SocialIcon 
-                url="https://instagram.com/namanchandok" 
-                bgColor='currentColor' 
-                fgColor='transparent'
-                className='hover:text-bruh-gray h-10 w-10 mr-2 transition duration-200 ease-in-out'
-            />
-            <SocialIcon 
-                url="https://github.com/namanchandok" 
-                bgColor='currentColor' 
-                fgColor='transparent'
-                className='hover:text-bruh-gray h-10 w-10 mr-2 transition duration-200 ease-in-out'
-            />
-            <SocialIcon 
-                url="https://twitter.com/br0wot" 
-                bgColor='currentColor' 
-                fgColor='transparent'
-                className='hover:text-bruh-gray h-10 w-10 mr-2 transition duration-200 ease-in-out'
-            />
-            <SocialIcon
-                url='https://www.linkedin.com/in/namanchandok/'
-                bgColor='currentColor'
-                fgColor='transparent'
-                className='hover:text-bruh-gray h-10 w-10 mr-2 transition duration-200 ease-in-out'
-            />
-            <SocialIcon 
-                url="https://www.behance.net/naman-chandok" 
-                bgColor='currentColor' 
-                fgColor='transparent'
-                className='hover:text-bruh-gray h-10 w-10 mr-2 transition duration-200 ease-in-out'
-            />
-            <SocialIcon
-                url='https://discord.com/users/481518334509187089'
-                bgColor='currentColor'
-                fgColor='transparent'
-                className='hover:text-bruh-gray h-10 w-10 mr-2 transition duration-200 ease-in-out'
-            />
-            <SocialIcon 
-                url="https://open.spotify.com/user/gh04xw1wcz6kkx4icrbbxogb3?si=0b493b9fe369429f" 
-                bgColor='currentColor' 
-                fgColor='transparent'
-                className='hover:text-bruh-gray h-10 w-10 mr-2 transition duration-200 ease-in-out'
-            />
-        </motion.div>
-    </motion.div>
-  )
+    <section id="about" className="max-w-7xl mx-auto p-6 space-y-12">
+      <div className="flex gap-8 items-center">
+        <p className="shrink-0 text-lg">
+          <span className="text-muted">01.</span> About
+        </p>
+        <hr className="w-full border-muted" />
+      </div>
+      <div className="flex flex-col md:flex-row-reverse gap-12">
+        <Image
+          src="/photo.jpeg"
+          alt="photo"
+          width={400}
+          height={400}
+          className="object-cover w-56 self-center h-56 md:w-80 md:h-96 rounded-full md:rounded-md"
+        />
+        <div className="space-y-6">
+          <h2 className="font-semibold text-4xl md:text-5xl">
+            Hi, I'm{" "}
+            <span className="underline underline-offset-4 decoration-3 decoration-accent">
+              Naman Chandok
+            </span>
+          </h2>
+          <p className="text-secondary">
+            I'm a full stack developer based in New Delhi with 4+ years of
+            experience building scalable web apps using React, Next.js and
+            Node.js. I specialize in sleek front-end design, seamless API
+            integrations, and machine learning algorithms using Python,
+            TensorFlow, and Keras. Currently a college student, I'm eager to
+            build high-impact intelligent solution that actually make a
+            difference.
+            <br />
+            <br />
+            When I'm not buried in code, I'm probably exploring the latest AI
+            tools, chasing hackathon deadlines, or pretending to take a "quick
+            break" that turns into a YouTube rabbit hole.
+          </p>
+          <SocialIcons />
+        </div>
+      </div>
+    </section>
+  );
 }

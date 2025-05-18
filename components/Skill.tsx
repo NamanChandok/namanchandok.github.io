@@ -1,21 +1,24 @@
-import React from 'react'
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 type Props = {
-    imgUrl: string;
-    name: string;
+  imgUrl: string;
+  name: string;
 };
 
 export default function Skill({ imgUrl, name }: Props) {
   return (
-    <div className='group relative flex flex-col items-center'>
-        <div className='w-18 h-18 xl:w-24 xl:h-24 overflow-hidden'>
-            <Image 
-                src={imgUrl} alt={name} width={100} height={100}
-                className='object-cover w-full h-full transition duration-300 ease-in-out filter grayscale-[30%] opacity-90 group-hover:grayscale-0 group-hover:scale-110 group-hover:opacity-100'
-            />
-        </div>
-        <p className='text-base uppercase font-bold tracking-wide text-gray-400 text-center transition duration-300 ease-in-out group-hover:text-gray-300 group-hover:translate-y-1'>{name}</p>
+    <div className="group relative flex flex-col items-center">
+      <Image
+        src={imgUrl}
+        alt={name}
+        width={100}
+        height={100}
+        className="object-cover w-18 h-18 transition filter grayscale-[30%] opacity-90 group-hover:grayscale-0 group-hover:scale-110 group-hover:opacity-100"
+      />
+      <p className="text-secondary text-center transition group-hover:text-foreground group-hover:translate-y-1">
+        {name}
+      </p>
     </div>
-  )
+  );
 }

@@ -13,26 +13,25 @@ export default function Project({ title, imgUrl, desc, url }: Props) {
   return (
     <Link
       href={url}
-      className="card relative flex-shrink-0 snap-center flex flex-col items-center bg-[#222] group rounded-xl"
+      className="flex-shrink-0 relative snap-center flex flex-col items-center bg-muted/30 group rounded-xl overflow-hidden"
       aria-label={title}
     >
-      <div className="card-border"></div>
-      <div className="h-48 p-2 w-full">
+      <div className="h-64 w-full p-1">
         <Image
-          className="h-full w-full rounded-lg border-[3px] border-[#232323] object-cover"
+          className="h-full w-full rounded-lg object-cover grayscale-50 opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition duration-300"
           src={imgUrl}
           alt={title}
           width={400}
           height={400}
         />
       </div>
-      <div className="space-y-1 px-3 pb-4 pt-1 w-full z-10">
-        <h4 className="text-2xl font-black text-bruh-white">{title}</h4>
+      <div className="flex flex-col justify-end space-y-1 p-3 pt-1 w-full">
+        <h4 className="text-xl font-semibold text-foreground">{title}</h4>
         <div className="relative h-6 overflow-hidden">
-          <p className="text-gray-400 uppercase text-base absolute translate-y-0 transition duration-500 group-hover:-translate-y-10">
+          <p className="text-secondary uppercase absolute translate-y-0 transition duration-300 group-hover:-translate-y-10">
             {desc}
           </p>
-          <p className="text-gray-400 text-base uppercase absolute translate-y-10 transition duration-500 hover:text-bruh-gray group-hover:translate-y-0">
+          <p className="text-secondary uppercase absolute translate-y-10 transition duration-300 hover:text-accent group-hover:translate-y-0">
             Show Project
           </p>
         </div>
