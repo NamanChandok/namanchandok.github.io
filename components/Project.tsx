@@ -17,12 +17,9 @@ export default function Project({ title, imgUrl, desc, url }: Props) {
       aria-label={title}
     >
       <div className="h-64 w-full p-1">
-        <Image
-          className="h-full w-full rounded-lg object-cover grayscale-50 opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition duration-300"
-          src={imgUrl}
-          alt={title}
-          width={400}
-          height={400}
+        <div
+          className="h-full w-full rounded-lg bg-cover grayscale-50 opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition duration-300"
+          style={{ backgroundImage: `url(${imgUrl}` }}
         />
       </div>
       <div className="flex flex-col justify-end space-y-1 p-3 pt-1 w-full">

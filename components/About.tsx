@@ -12,7 +12,7 @@ export default function About() {
         <hr className="w-full border-muted" />
       </div>
       <div className="flex flex-col md:flex-row-reverse gap-12">
-        <div className="w-56 self-center h-56 md:w-80 md:h-96 rounded-full md:rounded-md bg-[url(/photo.jpeg)] bg-cover" />
+        <div className="w-56 self-center h-56 md:w-80 md:h-96 rounded-full md:rounded-md bg-[url(/photo.jpeg)] bg-cover shrink-0" />
         <div className="space-y-6">
           <h2 className="font-semibold text-4xl md:text-5xl">
             Hi, I'm{" "}
