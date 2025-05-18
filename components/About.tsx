@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import SocialIcons from "./SocialIcons";
-import photo from "../public/photo.jpeg";
 export default function About() {
   return (
     <section id="about" className="max-w-7xl mx-auto p-6 space-y-12">
@@ -14,7 +13,7 @@ export default function About() {
       </div>
       <div className="flex flex-col md:flex-row-reverse gap-12">
         <Image
-          src={photo}
+          src="./photo.jpeg"
           alt="photo"
           width={400}
           height={400}
