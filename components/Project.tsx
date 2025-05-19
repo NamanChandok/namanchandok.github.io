@@ -25,11 +25,11 @@ export default function Project({ title, imgUrl, desc, url }: Props) {
       <div className="flex flex-col justify-end space-y-1 p-3 pt-1 w-full">
         <h4 className="text-xl font-semibold text-foreground">{title}</h4>
         <div className="relative h-6 overflow-hidden">
-          <p className="text-secondary uppercase absolute translate-y-0 transition duration-300 group-hover:-translate-y-10">
+          <p className="text-secondary absolute translate-y-0 transition duration-300 group-hover:-translate-y-10">
             {desc}
           </p>
-          <p className="text-secondary uppercase absolute translate-y-10 transition duration-300 hover:text-accent group-hover:translate-y-0">
-            Show Project
+          <p className="text-secondary absolute translate-y-10 transition duration-300 hover:text-accent group-hover:translate-y-0">
+            View Project →
           </p>
         </div>
       </div>
