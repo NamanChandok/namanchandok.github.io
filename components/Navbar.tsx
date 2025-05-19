@@ -1,11 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useLenis } from "lenis/react";
 export default function Navbar() {
   const [navOpen, setNavOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const threshold = window.innerHeight * 0.3;
+      if (window.scrollY > threshold) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   const lenis = useLenis();
   return (
-    <nav className="fixed top-0 inset-x-0 md:py-10 p-6 bg-background">
+    <nav
+      className={`fixed top-0 inset-x-0 md:py-10 p-6 transition ${scrolled && "bg-background"}`}
+    >
       <div className="flex gap-8 items-center max-w-7xl mx-auto font-sans">
         <Link
           href="#home"

@@ -17,7 +17,7 @@ export default function Hero() {
 
   return (
     <section
-      className="h-screen w-screen content-center p-6 bg-[url(/bg.png)] bg-contain bg-no-repeat bg-center"
+      className="h-screen w-screen content-center bg-[url(/mobilebg.png)] md:bg-[url(/bg.png)] p-6 bg-cover md:bg-contain bg-no-repeat bg-center"
       id="home"
     >
       <div className="mx-auto md:w-max space-y-2">
