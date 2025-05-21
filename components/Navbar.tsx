@@ -21,7 +21,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 inset-x-0 md:py-10 p-6 transition ${scrolled && "bg-background"}`}
     >
-      <div className="flex gap-8 items-center max-w-7xl mx-auto font-sans">
+      <div className="flex gap-8 items-center max-w-7xl mx-auto font-sans px-6">
         <Link
           href="#home"
           onClick={() => lenis?.scrollTo("#home")}
@@ -54,7 +54,7 @@ export default function Navbar() {
           </svg>
         </button>
         <div
-          className={`shrink-0 md:relative fixed flex md:flex-row flex-col md:text-base text-3xl bg-background/60 md:bg-transparent backdrop-blur-sm md:backdrop-blur-none inset-y-0 gap-8 py-10 md:py-0 md:right-0 transition-all px-6 ${navOpen ? "right-0" : "-right-full"}`}
+          className={`shrink-0 md:relative fixed flex md:flex-row flex-col md:text-base text-3xl bg-background/60 md:bg-transparent backdrop-blur-sm md:backdrop-blur-none inset-y-0 gap-8 py-10 md:py-0 md:right-0 transition-all px-6 md:px-0 ${navOpen ? "right-0" : "-right-full"}`}
         >
           <div className="h-8 w-8 md:hidden shrink-0"></div>
           <Link
