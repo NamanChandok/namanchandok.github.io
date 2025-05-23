@@ -87,7 +87,7 @@ export default function Contact() {
       </div>
       <small className="leading-loose text-secondary">
         Built with <b>Next.js</b> and <b>Tailwind CSS</b>, deployed with{" "}
-        <b>Github</b>. All text is set in the <b>Space Grotesk</b> typeface.
+        <b>Github</b>.
         <br /> © 2025 <b>Naman Chandok</b>. All Rights Reserved.
       </small>
     </section>

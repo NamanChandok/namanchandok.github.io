@@ -54,7 +54,7 @@ export default function Navbar() {
           </svg>
         </button>
         <div
-          className={`shrink-0 md:relative fixed flex md:flex-row flex-col md:text-base text-3xl bg-background/60 md:bg-transparent backdrop-blur-sm md:backdrop-blur-none inset-y-0 gap-8 py-10 md:py-0 md:right-0 transition-all px-6 md:px-0 ${navOpen ? "right-0" : "-right-full"}`}
+          className={`shrink-0 md:relative fixed flex md:flex-row flex-col md:text-base text-3xl bg-background/80 md:bg-transparent backdrop-blur-sm md:backdrop-blur-none inset-y-0 gap-8 py-10 md:py-0 md:right-0 transition-all duration-300 px-6 md:px-0 w-screen md:w-max ${navOpen ? "right-0" : "-right-full"}`}
         >
           <div className="h-8 w-8 md:hidden shrink-0"></div>
           <Link
@@ -106,6 +106,16 @@ export default function Navbar() {
             className="underline underline-offset-4 decoration-transparent hover:decoration-foreground transition"
           >
             <span className="text-muted">04.</span> Contact
+          </Link>
+          <Link
+            href="https://docs.google.com/document/d/14uKJW6Xv5lxFtsOCv4H1ggWbsm3HZOSQpp7KCxWiIwE/view"
+            target="_blank"
+            onClick={() => {
+              setNavOpen(false);
+            }}
+            className="underline underline-offset-4 decoration-transparent hover:decoration-foreground transition"
+          >
+            <span className="text-muted">05.</span> Resume
           </Link>
         </div>
       </div>

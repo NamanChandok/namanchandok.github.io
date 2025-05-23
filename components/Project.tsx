@@ -7,13 +7,15 @@ type Props = {
   imgUrl: string;
   desc: string;
   url: string;
+  badge?: string;
 };
 
-export default function Project({ title, imgUrl, desc, url }: Props) {
+export default function Project({ title, imgUrl, desc, url, badge }: Props) {
   return (
     <Link
       href={url}
-      className="bg-muted/30 p-1 group rounded-xl"
+      target="_blank"
+      className="bg-muted/30 p-1 group rounded-xl relative"
       aria-label={title}
     >
       <div
@@ -21,7 +23,14 @@ export default function Project({ title, imgUrl, desc, url }: Props) {
         style={{ backgroundImage: `url(${imgUrl}` }}
       />
       <div className="space-y-1 p-3 pt-2">
-        <h4 className="text-xl font-semibold text-foreground">{title}</h4>
+        <div className="flex items-end justify-between">
+          <h4 className="text-xl font-semibold text-foreground">{title}</h4>
+          {badge && (
+            <span className="w-max h-max text-xs py-1 px-3 rounded-full font-medium bg-muted shadow-md text-foreground">
+              {badge}
+            </span>
+          )}
+        </div>
         <div className="relative h-6 overflow-hidden">
           <p className="text-secondary absolute translate-y-0 transition duration-300 group-hover:-translate-y-10">
             {desc}
