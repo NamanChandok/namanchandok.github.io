@@ -8,7 +8,6 @@ export default function Hero() {
       "Full Stack Developer",
       "Machine Learning Enthusiast",
       "UI/UX Designer",
-      "Coffee Addict",
       "brain the just not working",
     ],
     loop: true,
