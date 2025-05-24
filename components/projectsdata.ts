@@ -4,7 +4,7 @@ export const projectsData = [
     imgUrl: "/projects/automate.png",
     desc: "Web Development - Full Stack",
     url: "https://coral-app-he6oc.ondigitalocean.app/",
-    badge: "🖊 Contract Job",
+    badge: "Contract Job",
   },
   {
     title: "ASL Translator",
@@ -23,21 +23,21 @@ export const projectsData = [
     imgUrl: "/projects/outlive.png",
     desc: "Web Development - Next.JS",
     url: "https://github.com/NamanChandok/outlive",
-    badge: "🖊 Contract Job",
+    badge: "Contract Job",
   },
   {
     title: "ACM Website",
     imgUrl: "/projects/acm.png",
     desc: "Web Development - Next.JS",
     url: "https://github.com/NamanChandok/acm-dtc",
-    badge: "🎖 Award Winner",
+    badge: "Award Winner",
   },
   {
     title: "Soluva",
     imgUrl: "/projects/soluva.png",
     desc: "Web Development - Next.JS",
     url: "https://github.com/NamanChandok/soluva",
-    badge: "🖊 Contract Job",
+    badge: "Contract Job",
   },
   {
     title: "Posters",
