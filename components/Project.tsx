@@ -23,7 +23,7 @@ export default function Project({ title, imgUrl, desc, url, badge }: Props) {
         style={{ backgroundImage: `url(${imgUrl}` }}
       />
       <div className="space-y-1 p-3 pt-2">
-        <div className="flex items-end justify-between">
+        <div className="flex items-center justify-between">
           <h4 className="text-xl font-semibold text-foreground">{title}</h4>
           {badge && (
             <span className="flex items-center gap-1 text-xs py-1 px-3 rounded-full font-medium bg-muted shadow-md text-foreground">
