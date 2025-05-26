@@ -23,10 +23,10 @@ export default function About() {
           <p className="text-secondary">
             I'm a full stack developer based in New Delhi with 4+ years of
             experience building scalable web apps using React, Next.js and
-            Node.js. I specialize in sleek front-end design, seamless API
+            Node.js. I specialize in sleek front-end design, seamless REST API
             integrations, and machine learning algorithms using Python,
             TensorFlow, and Keras. Currently a college student, I'm eager to
-            build high-impact intelligent solution that actually make a
+            build high-impact intelligent solutions that actually make a
             difference.
             <br />
             <br />
