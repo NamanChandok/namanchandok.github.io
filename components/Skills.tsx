@@ -35,7 +35,11 @@ export default function Skills() {
         <div className="flex gap-4 justify-center md:justify-start flex-wrap md:w-3/5">
           <Skill imgUrl="/skills/react.png" name="React.js" />
           <Skill imgUrl="/skills/next.png" name="Next.js" />
+          <Skill imgUrl="/skills/express.png" name="Express.js" />
           <Skill imgUrl="/skills/tailwind.png" name="Tailwind CSS" />
+          <Skill imgUrl="/skills/firebase.png" name="Firebase" />
+          <Skill imgUrl="/skills/mongodb.png" name="MongoDB" />
+          <Skill imgUrl="/skills/supabase.png" name="Supabase" />
           <Skill imgUrl="/skills/flask.png" name="Flask" />
           <Skill imgUrl="/skills/node.png" name="Node.js" />
           <Skill imgUrl="/skills/keras.png" name="Keras" />
@@ -49,9 +53,6 @@ export default function Skills() {
         <div className="w-px h-32 bg-muted md:block hidden"></div>
         <div className="flex gap-4 justify-center md:justify-start flex-wrap md:w-3/5">
           <Skill imgUrl="/skills/git.png" name="Git" />
-          <Skill imgUrl="/skills/firebase.png" name="Firebase" />
-          <Skill imgUrl="/skills/mongodb.png" name="MongoDB" />
-          <Skill imgUrl="/skills/supabase.png" name="Supabase" />
           <Skill imgUrl="/skills/ui.png" name="Figma" />
           <Skill imgUrl="/skills/ps.png" name="Photoshop" />
           <Skill imgUrl="/skills/ae.png" name="After Effects" />
