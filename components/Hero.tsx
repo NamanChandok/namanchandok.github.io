@@ -1,19 +1,7 @@
 import React, { useRef } from "react";
-import { Cursor, useTypewriter } from "react-simple-typewriter";
 import Link from "next/link";
 
 export default function Hero() {
-  const [text] = useTypewriter({
-    words: [
-      "Full Stack Developer",
-      "Machine Learning Enthusiast",
-      "UI/UX Designer",
-      "brain the just not working",
-    ],
-    loop: true,
-    delaySpeed: 4000,
-  });
-
   return (
     <section
       className="h-screen w-screen content-center bg-[url(/mobilebg.png)] md:bg-[url(/bg.png)] p-6 bg-cover md:bg-contain bg-no-repeat bg-center"
@@ -31,10 +19,13 @@ export default function Hero() {
           <i className="text-muted font-normal">$ @br0wot</i>
         </h1>
         <div className="flex flex-col md:flex-row justify-between gap-2">
-          <p className="text-xl md:text-2xl text-secondary">
-            {text}
-            <Cursor cursorColor="var(--accent)" />
-          </p>
+          <Link
+            href="https://docs.google.com/document/d/14uKJW6Xv5lxFtsOCv4H1ggWbsm3HZOSQpp7KCxWiIwE/view"
+            target="_blank"
+            className="decoration-transparent text-xl md:text-2xl text-secondary hover:text-foreground hover:decoration-accent transition underline decoration-2 underline-offset-4 md:self-end"
+          >
+            View Resume
+          </Link>
           <p className="text-xl md:text-2xl text-secondary flex items-center gap-2">
             <svg
               className="w-8 h-8 inline"
@@ -54,13 +45,6 @@ export default function Hero() {
             <span>New Delhi, India</span>
           </p>
         </div>
-        {/* <Link
-          href="https://docs.google.com/document/d/14uKJW6Xv5lxFtsOCv4H1ggWbsm3HZOSQpp7KCxWiIwE/view"
-          target="_blank"
-          className="decoration-foreground text-xl md:text-2xl text-secondary hover:text-foreground transition underline underline-offset-4 md:self-end"
-        >
-          View Resume
-        </Link> */}
       </div>
     </section>
   );

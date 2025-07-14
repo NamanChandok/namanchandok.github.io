@@ -78,6 +78,16 @@ export default function Navbar() {
             <span className="text-muted">01.</span> About
           </Link>
           <Link
+            href="#experience"
+            onClick={() => {
+              lenis?.scrollTo("#experience");
+              setNavOpen(false);
+            }}
+            className="underline underline-offset-4 decoration-transparent hover:decoration-foreground transition"
+          >
+            <span className="text-muted">02.</span> Experience
+          </Link>
+          <Link
             href="#skills"
             onClick={() => {
               lenis?.scrollTo("#skills");
@@ -85,7 +95,7 @@ export default function Navbar() {
             }}
             className="underline underline-offset-4 decoration-transparent hover:decoration-foreground transition"
           >
-            <span className="text-muted">02.</span> Skills
+            <span className="text-muted">03.</span> Skills
           </Link>
           <Link
             href="#projects"
@@ -95,7 +105,7 @@ export default function Navbar() {
             }}
             className="underline underline-offset-4 decoration-transparent hover:decoration-foreground transition"
           >
-            <span className="text-muted">03.</span> Projects
+            <span className="text-muted">04.</span> Projects
           </Link>
           <Link
             href="#contact"
@@ -105,17 +115,7 @@ export default function Navbar() {
             }}
             className="underline underline-offset-4 decoration-transparent hover:decoration-foreground transition"
           >
-            <span className="text-muted">04.</span> Contact
-          </Link>
-          <Link
-            href="https://docs.google.com/document/d/14uKJW6Xv5lxFtsOCv4H1ggWbsm3HZOSQpp7KCxWiIwE/view"
-            target="_blank"
-            onClick={() => {
-              setNavOpen(false);
-            }}
-            className="underline underline-offset-4 decoration-transparent hover:decoration-foreground transition"
-          >
-            <span className="text-muted">05.</span> Resume
+            <span className="text-muted">05.</span> Contact
           </Link>
         </div>
       </div>
