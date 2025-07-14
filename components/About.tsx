@@ -12,7 +12,13 @@ export default function About() {
         <hr className="w-full border-muted" />
       </div>
       <div className="flex flex-col md:flex-row-reverse gap-12">
-        <div className="w-56 self-center h-56 md:w-80 md:h-96 rounded-full md:rounded-md bg-[url(/photo.jpeg)] bg-cover shrink-0" />
+        <Image
+          className="w-56 self-center h-56 md:w-80 md:h-96 rounded-full md:rounded-md shrink-0 object-cover"
+          src="/photo.jpeg"
+          width={500}
+          height={500}
+          alt="Naman Chandok"
+        />
         <div className="space-y-6">
           <h2 className="font-semibold text-4xl md:text-5xl">
             Hi, I'm{" "}
@@ -21,13 +27,12 @@ export default function About() {
             </span>
           </h2>
           <p className="text-secondary">
-            I'm a full stack developer based in New Delhi with 4+ years of
-            experience building scalable web apps using React, Next.js and
-            Node.js. I specialize in sleek front-end design, seamless REST API
-            integrations, and machine learning algorithms using Python,
-            TensorFlow, and Keras. Currently a college student, I'm eager to
-            build high-impact intelligent solutions that actually make a
-            difference.
+            I'm a full stack developer based in New Delhi building scalable web
+            apps using React, Next.js and Node.js. I specialize in sleek
+            front-end design, seamless REST API integrations, and machine
+            learning algorithms using Python, TensorFlow, and Keras. Currently a
+            college student, I'm eager to build high-impact intelligent
+            solutions that actually make a difference.
             <br />
             <br />
             When I'm not buried in code, I'm probably exploring the latest AI
