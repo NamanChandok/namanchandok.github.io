@@ -8,7 +8,7 @@ export default function Skills() {
     >
       <div className="flex gap-8 items-center">
         <p className="shrink-0 text-lg">
-          <span className="text-muted">02.</span> Skills
+          <span className="text-muted">03.</span> Skills
         </p>
         <hr className="w-full border-muted" />
       </div>

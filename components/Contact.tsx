@@ -9,7 +9,7 @@ export default function Contact() {
     >
       <div className="flex gap-8 items-center">
         <p className="shrink-0 text-lg">
-          <span className="text-muted">04.</span> Contact
+          <span className="text-muted">05.</span> Contact
         </p>
         <hr className="w-full border-muted" />
       </div>

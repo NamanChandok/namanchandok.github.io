@@ -7,7 +7,7 @@ export default function Projects() {
       <div className="flex gap-8 items-center">
         <hr className="w-full border-muted" />
         <p className="shrink-0 text-lg">
-          <span className="text-muted">03.</span> Projects
+          <span className="text-muted">04.</span> Projects
         </p>
       </div>
       <div className="flex flex-col md:flex-row justify-between md:items-end items-center gap-6">
