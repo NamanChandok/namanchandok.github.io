@@ -5,7 +5,7 @@ I'm a full stack developer based in New Delhi building scalable web apps using R
 
 When I'm not buried in code, I'm probably exploring the latest AI tools, chasing hackathon deadlines, or pretending to take a "quick break" that turns into a YouTube rabbit hole.
 
-### Built with Next.js and Tailwind CSS deployed with Github All text is set in the Space Grotesk typeface.
+### Built with Next.js and Tailwind CSS, deployed with Github
 
 ## Getting Started
 Firstly clone the repository.
