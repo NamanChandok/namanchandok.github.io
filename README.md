@@ -1,8 +1,7 @@
 <img style="width:100%" alt="Naman Chandok" src="https://github.com/user-attachments/assets/5dc88326-42e7-4b3f-992e-9f3c7293bc40" />
 
 ## Introduction
-I'm a full stack developer based in New Delhi with 4+ years of experience building scalable web apps using React, Next.js and Node.js. I specialize in sleek front-end design, seamless API integrations, and machine learning algorithms using Python, TensorFlow, and Keras. Currently a college student, I'm eager to build high-impact intelligent solution that actually make a difference.
-
+I'm a full stack developer based in New Delhi building scalable web apps using React, Next.js and Node.js. I specialize in sleek front-end design, seamless REST API integrations, and machine learning algorithms using Python, TensorFlow, and Keras. Currently a college student, I'm eager to build high-impact intelligent solutions that actually make a difference.
 When I'm not buried in code, I'm probably exploring the latest AI tools, chasing hackathon deadlines, or pretending to take a "quick break" that turns into a YouTube rabbit hole.
 
 ### Built with Next.js and Tailwind CSS deployed with Github All text is set in the Space Grotesk typeface.
