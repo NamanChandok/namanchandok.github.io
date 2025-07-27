@@ -1,9 +1,9 @@
 export const projectsData = [
   {
-    title: "Automate Business",
-    imgUrl: "/projects/automate.png",
+    title: "Automata",
+    imgUrl: "/projects/automata.png",
     desc: "Web Development - Full Stack",
-    url: "https://coral-app-he6oc.ondigitalocean.app/",
+    url: "https://github.com/TeamCata1yst/automata",
     badge: "Contract Job",
   },
   {
