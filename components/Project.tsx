@@ -1,20 +1,22 @@
-import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 type Props = {
   title: string;
   imgUrl: string;
   desc: string;
-  url: string;
+  url?: string;
+  gitUrl?: string;
+  content: string[];
   badge?: string;
 };
 
-export default function Project({ title, imgUrl, desc, url, badge }: Props) {
+export default function Project({ title, imgUrl, desc, badge }: Props) {
   return (
     <Link
-      href={url}
-      target="_blank"
+      href={`/project/${title
+        .toLowerCase()
+        .replace(/\s+/g, "-")
+        .replace(/[^a-z0-9\-]/g, "")}`}
       className="bg-muted/30 p-1 group rounded-xl relative"
       aria-label={title}
     >
