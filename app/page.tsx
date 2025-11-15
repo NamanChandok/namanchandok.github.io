@@ -10,8 +10,7 @@ import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
 
 export default function Home() {
-  const lenis = useLenis((lenis) => {
-    // called every scroll
+  useLenis((lenis) => {
     console.log(lenis);
   });
 

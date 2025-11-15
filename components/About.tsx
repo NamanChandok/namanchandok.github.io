@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
 import SocialIcons from "./SocialIcons";
 export default function About() {
   return (
@@ -21,23 +19,23 @@ export default function About() {
         />
         <div className="space-y-6">
           <h2 className="font-semibold text-4xl md:text-5xl">
-            Hi, I'm{" "}
+            Hi, I&apos;m{" "}
             <span className="underline underline-offset-4 decoration-3 decoration-accent">
               Naman Chandok
             </span>
           </h2>
           <p className="text-secondary">
-            I'm a full stack developer based in New Delhi building scalable web
-            apps using React, Next.js and Node.js. I specialize in sleek
+            I&apos;m a full stack developer based in New Delhi building scalable
+            web apps using React, Next.js and Node.js. I specialize in sleek
             front-end design, seamless REST API integrations, and machine
             learning algorithms using Python, TensorFlow, and Keras. Currently a
-            college student, I'm eager to build high-impact intelligent
+            college student, I&apos;m eager to build high-impact intelligent
             solutions that actually make a difference.
             <br />
             <br />
-            When I'm not buried in code, I'm probably exploring the latest AI
-            tools, chasing hackathon deadlines, or pretending to take a "quick
-            break" that turns into a YouTube rabbit hole.
+            When I&apos;m not buried in code, I&apos;m probably exploring the
+            latest AI tools, chasing hackathon deadlines, or pretending to take
+            a &quot;quick break&quot; that turns into a YouTube rabbit hole.
           </p>
           <SocialIcons />
         </div>

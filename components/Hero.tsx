@@ -1,4 +1,3 @@
-import React, { useRef } from "react";
 import Link from "next/link";
 
 export default function Hero() {
@@ -9,7 +8,7 @@ export default function Hero() {
     >
       <div className="mx-auto md:w-max flex flex-col gap-2">
         <p className="text-xl md:text-2xl text-secondary" id="subtitle">
-          Hi there, I'm
+          Hi there, I&apos;m
         </p>
         <h1
           className="text-5xl md:text-7xl leading-tight font-semibold flex flex-col md:flex-row"

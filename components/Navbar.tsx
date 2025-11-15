@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
 import { useLenis } from "lenis/react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 export default function Navbar() {
   const [navOpen, setNavOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      const threshold = window.innerHeight * 0.3;
+      const threshold = window.innerHeight * 0.1;
       if (window.scrollY > threshold) {
         setScrolled(true);
       } else {
@@ -23,7 +23,7 @@ export default function Navbar() {
     >
       <div className="flex gap-8 items-center max-w-7xl mx-auto font-sans px-6">
         <Link
-          href="#home"
+          href="/#home"
           onClick={() => lenis?.scrollTo("#home")}
           className="font-semibold text-xl w-max underline decoration-2 underline-offset-4 decoration-transparent hover:decoration-foreground transition"
         >
@@ -58,7 +58,7 @@ export default function Navbar() {
         >
           <div className="h-8 w-8 md:hidden shrink-0"></div>
           <Link
-            href="#home"
+            href="/#home"
             onClick={() => {
               lenis?.scrollTo("#home");
               setNavOpen(false);
@@ -68,7 +68,7 @@ export default function Navbar() {
             <span className="text-muted">00.</span> Home
           </Link>
           <Link
-            href="#about"
+            href="/#about"
             onClick={() => {
               lenis?.scrollTo("#about");
               setNavOpen(false);
@@ -78,7 +78,7 @@ export default function Navbar() {
             <span className="text-muted">01.</span> About
           </Link>
           <Link
-            href="#experience"
+            href="/#experience"
             onClick={() => {
               lenis?.scrollTo("#experience");
               setNavOpen(false);
@@ -88,7 +88,7 @@ export default function Navbar() {
             <span className="text-muted">02.</span> Experience
           </Link>
           <Link
-            href="#skills"
+            href="/#skills"
             onClick={() => {
               lenis?.scrollTo("#skills");
               setNavOpen(false);
@@ -98,7 +98,7 @@ export default function Navbar() {
             <span className="text-muted">03.</span> Skills
           </Link>
           <Link
-            href="#projects"
+            href="/#projects"
             onClick={() => {
               lenis?.scrollTo("#projects");
               setNavOpen(false);
@@ -108,7 +108,7 @@ export default function Navbar() {
             <span className="text-muted">04.</span> Projects
           </Link>
           <Link
-            href="#contact"
+            href="/#contact"
             onClick={() => {
               lenis?.scrollTo("#contact");
               setNavOpen(false);

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import React, { useState } from "react";
-import { experienceData } from "./experiencedata";
 import Link from "next/link";
+import { useState } from "react";
+import { experienceData } from "./experiencedata";
 export default function Experience() {
   const [active, setActive] = useState("work");
   return (

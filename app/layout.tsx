@@ -3,7 +3,7 @@ import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
 const space = Space_Grotesk({
-  variable: "--font-geist-sans",
+  variable: "--font-space",
   subsets: ["latin"],
 });
 

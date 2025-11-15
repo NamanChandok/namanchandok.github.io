@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import SocialIcons from "./SocialIcons";
 export default function Contact() {
   return (
@@ -88,7 +87,8 @@ export default function Contact() {
       <small className="leading-loose text-secondary">
         Built with <b>Next.js</b> and <b>Tailwind CSS</b>, deployed with{" "}
         <b>Github</b>.
-        <br /> © 2025 <b>Naman Chandok</b>. All Rights Reserved.
+        <br /> © {new Date().getFullYear()} <b>Naman Chandok</b>. All Rights
+        Reserved.
       </small>
     </section>
   );

@@ -1,4 +1,3 @@
-import React from "react";
 import Skill from "./Skill";
 export default function Skills() {
   return (
@@ -13,11 +12,11 @@ export default function Skills() {
         <hr className="w-full border-muted" />
       </div>
       <div className="flex flex-col md:flex-row justify-between items-center gap-12">
-        <h2 className="font-semibold text-3xl md:text-4xl md:w-2/5">
+        <h2 className="font-semibold text-2xl md:text-3xl md:w-2/7">
           Programming Languages
         </h2>
         <div className="w-px h-32 bg-muted md:block hidden"></div>
-        <div className="flex gap-4 justify-center md:justify-start flex-wrap md:w-3/5">
+        <div className="flex gap-4 justify-center md:justify-start flex-wrap md:w-5/7">
           <Skill imgUrl="/skills/js.png" name="JavaScript" />
           <Skill imgUrl="/skills/ts.png" name="TypeScript" />
           <Skill imgUrl="/skills/html.png" name="HTML" />
@@ -28,11 +27,11 @@ export default function Skills() {
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-between items-center gap-12">
-        <h2 className="font-semibold text-3xl md:text-4xl md:w-2/5">
+        <h2 className="font-semibold text-2xl md:text-3xl md:w-2/7">
           Libraries/Frameworks
         </h2>
         <div className="w-px h-32 bg-muted md:block hidden"></div>
-        <div className="flex gap-4 justify-center md:justify-start flex-wrap md:w-3/5">
+        <div className="flex gap-4 justify-center md:justify-start flex-wrap md:w-5/7">
           <Skill imgUrl="/skills/react.png" name="React.js" />
           <Skill imgUrl="/skills/next.png" name="Next.js" />
           <Skill imgUrl="/skills/express.png" name="Express.js" />
@@ -47,11 +46,11 @@ export default function Skills() {
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-between items-center gap-12">
-        <h2 className="font-semibold text-3xl md:text-4xl md:w-2/5 gap-12">
+        <h2 className="font-semibold text-2xl md:text-3xl md:w-2/7">
           Tools/Platforms
         </h2>
         <div className="w-px h-32 bg-muted md:block hidden"></div>
-        <div className="flex gap-4 justify-center md:justify-start flex-wrap md:w-3/5">
+        <div className="flex gap-4 justify-center md:justify-start flex-wrap md:w-5/7">
           <Skill imgUrl="/skills/git.png" name="Git" />
           <Skill imgUrl="/skills/ui.png" name="Figma" />
           <Skill imgUrl="/skills/ps.png" name="Photoshop" />

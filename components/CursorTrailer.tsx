@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 export default function CursorTrailer() {
   useEffect(() => {
     const trailer = document.getElementById("trailer") as HTMLElement;
     const cursor = document.getElementById("cursor") as HTMLElement;
-    const animateTrailer = (e: any, i: boolean) => {
+    const animateTrailer = (e: MouseEvent, i: boolean) => {
       const keyframes = {
         left: e.clientX - trailer.offsetWidth / 2 + "px",
         top: e.clientY - trailer.offsetWidth / 2 + "px",
@@ -16,12 +16,13 @@ export default function CursorTrailer() {
         fill: "forwards",
       });
     };
-    const animateCursor = (e: any) => {
+    const animateCursor = (e: MouseEvent) => {
       cursor.style.left = e.clientX - cursor.offsetWidth / 2 + "px";
       cursor.style.top = e.clientY - cursor.offsetWidth / 2 + "px";
     };
-    window.onmousemove = (e: any) => {
-      const interactable = e.target.closest("a") || e.target.closest("button");
+    window.onmousemove = (e: MouseEvent) => {
+      const target = e.target as Element | null;
+      const interactable = target?.closest("a, button");
       const interacting = interactable !== null;
       animateTrailer(e, interacting);
       animateCursor(e);

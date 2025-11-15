@@ -1,4 +1,3 @@
-import React from "react";
 import Project from "./Project";
 import { projectsData } from "./projectsdata";
 export default function Projects() {
@@ -10,7 +9,7 @@ export default function Projects() {
           <span className="text-muted">04.</span> Projects
         </p>
       </div>
-      <div className="flex flex-col md:flex-row justify-between md:items-end items-center gap-6">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-6">
         <h2 className="font-semibold text-3xl md:text-4xl">
           Browse my Portfolio
         </h2>
