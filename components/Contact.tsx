@@ -87,8 +87,7 @@ export default function Contact() {
       <small className="leading-loose text-secondary">
         Built with <b>Next.js</b> and <b>Tailwind CSS</b>, deployed with{" "}
         <b>Github</b>.
-        <br /> © {new Date().getFullYear()} <b>Naman Chandok</b>. All Rights
-        Reserved.
+        <br /> © {new Date().getFullYear()} <b>Naman Chandok</b>.
       </small>
     </section>
   );

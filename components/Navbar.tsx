@@ -60,16 +60,6 @@ export default function Navbar() {
           <Link
             href="/#home"
             onClick={() => {
-              lenis?.scrollTo("#home");
-              setNavOpen(false);
-            }}
-            className="md:hidden underline underline-offset-4 decoration-transparent hover:decoration-foreground transition"
-          >
-            <span className="text-muted">00.</span> Home
-          </Link>
-          <Link
-            href="/#about"
-            onClick={() => {
               lenis?.scrollTo("#about");
               setNavOpen(false);
             }}
@@ -88,16 +78,6 @@ export default function Navbar() {
             <span className="text-muted">02.</span> Experience
           </Link>
           <Link
-            href="/#skills"
-            onClick={() => {
-              lenis?.scrollTo("#skills");
-              setNavOpen(false);
-            }}
-            className="underline underline-offset-4 decoration-transparent hover:decoration-foreground transition"
-          >
-            <span className="text-muted">03.</span> Skills
-          </Link>
-          <Link
             href="/#projects"
             onClick={() => {
               lenis?.scrollTo("#projects");
@@ -105,7 +85,17 @@ export default function Navbar() {
             }}
             className="underline underline-offset-4 decoration-transparent hover:decoration-foreground transition"
           >
-            <span className="text-muted">04.</span> Projects
+            <span className="text-muted">03.</span> Projects
+          </Link>
+          <Link
+            href="/#skills"
+            onClick={() => {
+              lenis?.scrollTo("#skills");
+              setNavOpen(false);
+            }}
+            className="underline underline-offset-4 decoration-transparent hover:decoration-foreground transition"
+          >
+            <span className="text-muted">04.</span> Skills
           </Link>
           <Link
             href="/#contact"

@@ -2,7 +2,6 @@
 import { ReactLenis, useLenis } from "lenis/react";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
-import About from "@/components/About";
 import CursorTrailer from "@/components/CursorTrailer";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
@@ -20,10 +19,9 @@ export default function Home() {
       <main className="font-sans">
         <Hero />
         <div className="space-y-20">
-          <About />
           <Experience />
-          <Skills />
           <Projects />
+          <Skills />
           <Contact />
         </div>
       </main>
