@@ -28,9 +28,9 @@ export default function Hero() {
           </p>
           <hr className="w-full border-muted" />
         </div>
-        <div className="flex flex-col md:flex-row-reverse gap-12">
+        <div className="flex flex-col md:flex-row-reverse items-center gap-12">
           <Image
-            className="w-56 self-center h-56 md:w-80 md:h-96 rounded-full md:rounded-md shrink-0 object-cover"
+            className="w-56 h-56 md:w-80 md:h-96 rounded-full md:rounded-md shrink-0 object-cover"
             src="/photo.jpeg"
             width={500}
             height={500}
