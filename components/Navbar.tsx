@@ -60,7 +60,7 @@ export default function Navbar() {
           <Link
             href="/#home"
             onClick={() => {
-              lenis?.scrollTo("#about");
+              lenis?.scrollTo("#home");
               setNavOpen(false);
             }}
             className="underline underline-offset-4 decoration-transparent hover:decoration-foreground transition"
