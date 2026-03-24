@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { ReactLenis, useLenis } from "lenis/react";
 import Navbar from "@/components/Navbar";
 import CursorTrailer from "@/components/CursorTrailer";
 import { projectsData } from "@/components/projectsdata";
@@ -21,10 +20,6 @@ interface Project {
 }
 
 const ProjectPage: React.FC<ProjectPageProps> = ({ slug }) => {
-  useLenis((lenis) => {
-    console.log(lenis);
-  });
-
   const [project] = useState<Project>(() => {
     const proj = projectsData.find(
       (project) =>
@@ -45,7 +40,6 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ slug }) => {
 
   return (
     <>
-      <ReactLenis root />
       <main className="mt-16 md:mt-24 max-w-5xl space-y-8 mx-auto p-6 font-sans">
         <div
           className="rounded-2xl ring-2 ring-muted/30 h-80 bg-cover opacity-70"
