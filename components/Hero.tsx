@@ -45,7 +45,7 @@ export default function Hero() {
               <i className="text-muted font-normal">@br0wot</i>
             </h2>
             <p className="text-secondary">
-              I&apos;m a {age} year old CS student based in{" "}
+              I&apos;m a {age} year old developer based in{" "}
               <svg
                 className="w-5 h-5 inline"
                 aria-hidden="true"
@@ -63,7 +63,7 @@ export default function Hero() {
               </svg>{" "}
               New Delhi building web apps with React, Next.js, and Node.js, with
               a focus on clean UI, reliable backend systems, and practical AI
-              integration using Python and TensorFlow.
+              integration using Python.
               <br />
               <br />I love creating polished products, collaborating on
               interesting projects and joining hackathons. When I&apos;m not
