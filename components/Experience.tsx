@@ -47,8 +47,8 @@ export default function Experience() {
                     />
                     </Link>
                   ): (
-                      <div className="w-14 h-6 shrink-0 flex items-center justify-center">
-                        <div className="h-4 w-4 rounded-full bg-muted/30"></div>
+                      <div className="w-14 h-5 shrink-0 flex items-center justify-center">
+                        <div className="h-3 w-3 rounded-full bg-muted/50"></div>
                       </div>
                   )}
                   <div className="w-0.5 h-full bg-muted/30"></div>
