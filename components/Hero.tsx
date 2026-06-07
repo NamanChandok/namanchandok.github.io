@@ -61,7 +61,7 @@ export default function Hero() {
                   clipRule="evenodd"
                 />
               </svg>{" "}
-              New Delhi building web apps with React, Next.js, and Node.js, with
+              Hyderabad building web apps with React, Next.js, and Node.js, with
               a focus on clean UI, reliable backend systems, and practical AI
               integration using Python.
               <br />

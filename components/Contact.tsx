@@ -79,7 +79,7 @@ export default function Contact() {
                 Location
               </span>
               <br />
-              New Delhi, India
+              Hyderabad, India
             </p>
           </div>
         </div>

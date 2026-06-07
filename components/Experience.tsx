@@ -36,26 +36,34 @@ export default function Experience() {
               <div key={i} className="flex gap-4">
                 <div className="flex flex-col items-center shrink-0">
                   <div className="w-0.5 h-4 bg-muted/30 shrink-0"></div>
-                  <Link href={d.orgUrl}>
-                    <Image
-                      width={100}
-                      height={100}
-                      className="h-14 w-14 shrink-0 rounded-lg border-2 object-cover border-muted/30"
-                      src={d.orgImg}
+                  { d.org != (active == "work" ? experienceData.work : experienceData.education)[i-1]?.org ? (
+                    <Link href={d.orgUrl}>
+                      <Image
+                        width={100}
+                        height={100}
+                        className="h-14 w-14 shrink-0 rounded-lg border-2 object-cover border-muted/30"
+                        src={d.orgImg}
                       alt={d.org[0]}
                     />
-                  </Link>
+                    </Link>
+                  ): (
+                      <div className="w-14 h-6 shrink-0 flex items-center justify-center">
+                        <div className="h-4 w-4 rounded-full bg-muted/30"></div>
+                      </div>
+                  )}
                   <div className="w-0.5 h-full bg-muted/30"></div>
                 </div>
                 <div className="py-4">
                   <p className="text-xs text-secondary">{d.date}</p>
-                  <Link
-                    href={d.orgUrl}
-                    target="_blank"
-                    className="text-lg font-medium underline underline-offset-2 decoration-2 decoration-transparent transition hover:decoration-accent"
-                  >
-                    {d.org}
-                  </Link>
+                  {d.org != (active == "work" ? experienceData.work : experienceData.education)[i-1]?.org && (
+                    <Link
+                      href={d.orgUrl}
+                      target="_blank"
+                      className="text-lg font-medium underline underline-offset-2 decoration-2 decoration-transparent transition hover:decoration-accent"
+                    >
+                      {d.org}
+                    </Link>
+                  )}
                   <p className="text-secondary">{d.profile}</p>
                   {d.desc && (
                     <ul className="pt-1 list-disc pl-4">
