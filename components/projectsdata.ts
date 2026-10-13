@@ -64,7 +64,7 @@ export const projectsData = [
     imgUrl: "/projects/acm.png",
     desc: "Web Development - Next.JS",
     gitUrl: "https://github.com/NamanChandok/acm-dtc",
-    url: "https://acm-dtc.vercel.app/",
+    url: "https://arcihve-acm-dtc.vercel.app/",
     badge: "Award Winner",
     content: [
       "A Next.js-based website for the ACM Student Chapter at DTC, dynamically fetching data from Firebase. The website serves as the digital hub for the student chapter, showcasing events, announcements, blog posts, and member details.",
